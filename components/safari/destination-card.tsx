@@ -1,11 +1,18 @@
 import Link from "next/link";
 import { Icon } from "@/components/ui/icon";
 import { SafariImage, isImageKey } from "@/components/ui/safari-image";
+import { images } from "@/lib/data/images";
 import type { Destination } from "@/lib/data/types";
 
 export function DestinationCard({ destination, priority = false }: { destination: Destination; priority?: boolean }) {
   const [heroKey, altKey] = destination.imageKeys;
   const href = `/destinations/${destination.slug}`;
+  // The hover image gets its own alt; add the park name where the registry alt leaves it out.
+  const altText = isImageKey(altKey)
+    ? images[altKey].alt.includes(destination.shortName)
+      ? images[altKey].alt
+      : `${images[altKey].alt}, ${destination.name}`
+    : "";
 
   return (
     <article className="group relative flex h-full flex-col overflow-hidden rounded-3xl bg-white shadow-card transition-shadow duration-300 hover:shadow-lift">
@@ -25,8 +32,7 @@ export function DestinationCard({ destination, priority = false }: { destination
             fill
             sizes="(min-width: 1280px) 400px, (min-width: 768px) 50vw, 100vw"
             className="object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100"
-            aria-hidden
-            alt=""
+            alt={altText}
           />
         ) : null}
         <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-forest-950/75 px-3 py-1 text-xs font-semibold text-sand-50 backdrop-blur">

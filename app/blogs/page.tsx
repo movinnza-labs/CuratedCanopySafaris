@@ -4,19 +4,18 @@ import { PageHero } from "@/components/sections/page-hero";
 import { Container } from "@/components/ui/container";
 import { JsonLd } from "@/components/ui/json-ld";
 import { blogPosts } from "@/lib/data/blog";
-import { breadcrumbJsonLd } from "@/lib/seo/json-ld";
-import { buildMetadata } from "@/lib/seo/metadata";
+import { breadcrumbJsonLd, pageJsonLd } from "@/lib/seo/json-ld";
+import { pageH1, pageMetadata } from "@/lib/seo/metadata";
 
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Blogs", path: "/blogs" },
 ];
 
-export const metadata = buildMetadata({
+export const metadata = pageMetadata("/blogs", {
   title: "Safari Blogs & Planning Guides",
   description:
     "Tiger safari planning guides from Curated Canopy Safaris — the best time for a tiger safari in India, park-by-park booking guides, and season updates.",
-  path: "/blogs",
   imageKey: "blogBestTimeMonth",
 });
 
@@ -25,7 +24,7 @@ export default function BlogsPage() {
   return (
     <>
       <PageHero
-        title="Blogs"
+        title={pageH1("/blogs", "Blogs")}
         eyebrow="Field notes & guides"
         intro="Planning guides and season updates for India’s tiger reserves."
         imageKey="heroTigerDrinking"
@@ -46,7 +45,7 @@ export default function BlogsPage() {
         </Container>
       </section>
       <CtaBanner />
-      <JsonLd data={breadcrumbJsonLd(breadcrumbs)} />
+      <JsonLd data={pageJsonLd("/blogs") ?? breadcrumbJsonLd(breadcrumbs)} />
     </>
   );
 }

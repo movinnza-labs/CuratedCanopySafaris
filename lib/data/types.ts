@@ -57,6 +57,16 @@ export type Destination = {
   seo: { title: string; description: string };
   /** Keys into `images` from lib/data/images.ts. First is the hero. */
   imageKeys: string[];
+  /** Park-page hero photo when it should override the automatic choice (the first wide landscape photo). */
+  heroImageKey?: string;
+  /** Keyword text link to the park's schedule, shown beside the hero buttons. */
+  scheduleLinkText?: string;
+  /** Parks shown under "More wild places", in order; defaults to parks in the same state. */
+  relatedSlugs?: string[];
+  /** Line above the "More wild places" cards; may contain `[label](href)` links. */
+  relatedIntro?: string;
+  /** Line after the season cards; may contain `[label](href)` links. */
+  bestTimeNote?: string;
   /** Opening narrative sections at the top of the destination page. */
   intro: ContentSection[];
   about?: ContentSection;
@@ -165,7 +175,11 @@ export type BlogBlock =
   | { type: "paragraph"; text: string }
   | { type: "list"; ordered?: boolean; items: string[] }
   | { type: "table"; head: string[]; rows: string[][] }
-  | { type: "callout"; title?: string; text: string };
+  | { type: "callout"; title?: string; text: string }
+  /** Rendered as an H2 (default "Frequently asked questions") with H3 questions; also emitted as FAQPage JSON-LD. */
+  | { type: "faq"; title?: string; items: Faq[] }
+  /** Boxed call to action with a WhatsApp button to the site's WhatsApp number. */
+  | { type: "cta"; title: string; text: string; buttonLabel?: string };
 
 export type BlogPost = {
   slug: string;

@@ -13,8 +13,8 @@ import { blogPosts, getBlogPost, getRelatedPosts } from "@/lib/data/blog";
 import { getDestination } from "@/lib/data/destinations";
 import type { Destination } from "@/lib/data/types";
 import { images } from "@/lib/data/images";
-import { blogPostingJsonLd, breadcrumbJsonLd } from "@/lib/seo/json-ld";
-import { buildMetadata } from "@/lib/seo/metadata";
+import { blogPostingJsonLd, breadcrumbJsonLd, faqJsonLd, pageJsonLd } from "@/lib/seo/json-ld";
+import { pageH1, pageMetadata } from "@/lib/seo/metadata";
 import { formatDate } from "@/lib/utils";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -29,12 +29,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return {};
-  return buildMetadata({
+  return pageMetadata(`/blogs/${post.slug}`, {
     title: post.seo.title,
     // Post SEO titles are already near Google's ~60-character limit; the site-name suffix would get cut off.
     absoluteTitle: true,
     description: post.seo.description,
-    path: `/blogs/${post.slug}`,
     imageKey: isImageKey(post.imageKey) ? post.imageKey : undefined,
     type: "article",
     publishedTime: post.publishedAt,
@@ -58,6 +57,8 @@ export default async function BlogPostPage({ params }: Props) {
     .filter((destination): destination is Destination => Boolean(destination))
     .slice(0, 3);
   const relatedPosts = getRelatedPosts(post);
+  const faqs = post.body.flatMap((block) => (block.type === "faq" ? block.items : []));
+  const suppliedJsonLd = pageJsonLd(`/blogs/${post.slug}`);
 
   return (
     <>
@@ -86,7 +87,7 @@ export default async function BlogPostPage({ params }: Props) {
           <article className="mt-10 sm:mt-12 lg:px-12">
             <header>
               <h1 className="text-3xl leading-tight font-semibold text-forest-900 sm:text-4xl lg:text-5xl">
-                {post.title}
+                {pageH1(`/blogs/${post.slug}`, post.title)}
               </h1>
               {post.subtitle ? (
                 <p className="mt-4 text-lg leading-snug font-semibold text-ink-700 sm:text-xl">{post.subtitle}</p>
@@ -131,7 +132,13 @@ export default async function BlogPostPage({ params }: Props) {
 
       <CtaBanner />
 
-      <JsonLd data={[breadcrumbJsonLd(breadcrumbs), blogPostingJsonLd(post, images[imageKey].src)]} />
+      <JsonLd
+        data={[
+          ...(suppliedJsonLd ? [suppliedJsonLd] : [breadcrumbJsonLd(breadcrumbs), blogPostingJsonLd(post, images[imageKey].src)]),
+          // The SEO pack has no FAQ markup for posts; the in-article FAQ blocks supply it.
+          ...(faqs.length ? [faqJsonLd(faqs)] : []),
+        ]}
+      />
     </>
   );
 }

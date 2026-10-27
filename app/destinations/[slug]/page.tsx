@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BestTime } from "@/components/safari/best-time";
 import { BookingEssentials } from "@/components/safari/booking-essentials";
@@ -23,8 +24,8 @@ import { getPostsForDestination } from "@/lib/data/blog";
 import { getPackageSummary } from "@/lib/data/departures";
 import { destinations, getDestination } from "@/lib/data/destinations";
 import { images, type ImageKey } from "@/lib/data/images";
-import { breadcrumbJsonLd, destinationJsonLd, faqJsonLd, serviceJsonLd } from "@/lib/seo/json-ld";
-import { buildMetadata } from "@/lib/seo/metadata";
+import { breadcrumbJsonLd, destinationJsonLd, faqJsonLd, hasSchemaType, pageJsonLd, serviceJsonLd } from "@/lib/seo/json-ld";
+import { pageH1, pageMetadata } from "@/lib/seo/metadata";
 import { cn } from "@/lib/utils";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -46,9 +47,13 @@ function groupSpeciesLines(paragraphs: string[]): Array<string | { name: string;
   return blocks;
 }
 
-/** Full-bleed heroes blur below ~1200px wide and crop badly when portrait, so prefer the first photo that is both; otherwise keep the lead photo. */
-function splitHeroImage(keys: ImageKey[]): { heroKey: ImageKey; galleryKeys: ImageKey[] } {
-  const heroKey = keys.find((key) => images[key].width >= 1200 && images[key].width >= images[key].height) ?? keys[0] ?? "pageHeader";
+/** Full-bleed heroes blur below ~1200px wide and crop badly when portrait, so prefer the first photo that is both; otherwise keep the lead photo. A park can name its hero instead. */
+function splitHeroImage(keys: ImageKey[], preferred?: string): { heroKey: ImageKey; galleryKeys: ImageKey[] } {
+  const heroKey =
+    keys.find((key) => key === preferred) ??
+    keys.find((key) => images[key].width >= 1200 && images[key].width >= images[key].height) ??
+    keys[0] ??
+    "pageHeader";
   return { heroKey, galleryKeys: keys.filter((key) => key !== heroKey) };
 }
 
@@ -63,11 +68,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const destination = getDestination(slug);
   if (!destination) return {};
-  const { heroKey } = splitHeroImage(destination.imageKeys.filter(isImageKey) as ImageKey[]);
-  return buildMetadata({
+  const { heroKey } = splitHeroImage(destination.imageKeys.filter(isImageKey) as ImageKey[], destination.heroImageKey);
+  return pageMetadata(`/destinations/${destination.slug}`, {
     title: destination.seo.title,
     description: destination.seo.description,
-    path: `/destinations/${destination.slug}`,
     imageKey: heroKey,
     absoluteTitle: true,
   });
@@ -79,7 +83,7 @@ export default async function DestinationPage({ params }: Props) {
   if (!destination) notFound();
 
   const imageKeys = destination.imageKeys.filter(isImageKey) as ImageKey[];
-  const { heroKey, galleryKeys } = splitHeroImage(imageKeys);
+  const { heroKey, galleryKeys } = splitHeroImage(imageKeys, destination.heroImageKey);
   const summary = getPackageSummary(destination.slug);
   const [leadIntro, ...moreIntro] = destination.intro;
   // Avoid repeating the page title as a section heading.
@@ -88,18 +92,22 @@ export default async function DestinationPage({ params }: Props) {
   const aboutTitle =
     destination.about && destination.about.heading !== destination.name ? destination.about.heading : "About the Reserve";
   const wildlifeBlocks = groupSpeciesLines(destination.wildlife?.paragraphs ?? []);
+  const path = `/destinations/${destination.slug}`;
   const service = serviceJsonLd(destination);
+  const suppliedJsonLd = pageJsonLd(path);
 
-  const related = [
-    ...destinations.filter((d) => d.slug !== destination.slug && d.state === destination.state),
-    ...destinations.filter((d) => d.slug !== destination.slug && d.state !== destination.state),
-  ].slice(0, 3);
+  const related = destination.relatedSlugs
+    ? destination.relatedSlugs.flatMap((relatedSlug) => getDestination(relatedSlug) ?? [])
+    : [
+        ...destinations.filter((d) => d.slug !== destination.slug && d.state === destination.state),
+        ...destinations.filter((d) => d.slug !== destination.slug && d.state !== destination.state),
+      ].slice(0, 3);
   const guides = getPostsForDestination(destination.slug).slice(0, 3);
 
   const breadcrumbs = [
     { name: "Home", path: "/" },
     { name: "Safari Packages", path: "/safari-packages" },
-    { name: destination.shortName, path: `/destinations/${destination.slug}` },
+    { name: destination.name, path: `/destinations/${destination.slug}` },
   ];
 
   const sections = [
@@ -116,7 +124,7 @@ export default async function DestinationPage({ params }: Props) {
   return (
     <>
       <PageHero
-        title={destination.pageTitle ?? destination.name}
+        title={pageH1(path, destination.pageTitle ?? destination.name)}
         eyebrow={destination.tagline ?? destination.state}
         imageKey={heroKey}
         breadcrumbs={breadcrumbs}
@@ -153,6 +161,14 @@ export default async function DestinationPage({ params }: Props) {
           <ButtonLink href="#enquire" variant="light" size="lg">
             Enquire about {destination.shortName}
           </ButtonLink>
+          {destination.scheduleLinkText ? (
+            <Link
+              href={`/destinations/${destination.slug}/schedule`}
+              className="self-center px-2 font-semibold text-sand-50 underline decoration-ochre-300 underline-offset-4 transition-colors hover:text-ochre-200"
+            >
+              {destination.scheduleLinkText}
+            </Link>
+          ) : null}
         </div>
       </PageHero>
 
@@ -317,6 +333,11 @@ export default async function DestinationPage({ params }: Props) {
             <div className="mt-10">
               <BestTime seasons={destination.bestTime} />
             </div>
+            {destination.bestTimeNote ? (
+              <p className="mt-8 max-w-3xl text-lg leading-relaxed text-ink-600 [&_a]:font-semibold [&_a]:text-forest-700 [&_a]:underline [&_a]:underline-offset-4 hover:[&_a]:text-ochre-700">
+                <RichText text={destination.bestTimeNote} />
+              </p>
+            ) : null}
           </Container>
         </section>
       ) : null}
@@ -405,7 +426,18 @@ export default async function DestinationPage({ params }: Props) {
 
       <section aria-labelledby="related-title" className="py-20 sm:py-24">
         <Container>
-          <SectionHeading id="related-title" eyebrow="Keep exploring" title="More wild places" />
+          <SectionHeading
+            id="related-title"
+            eyebrow="Keep exploring"
+            title="More wild places"
+            intro={
+              destination.relatedIntro ? (
+                <p className="text-lg [&_a]:font-semibold [&_a]:text-forest-700 [&_a]:underline [&_a]:underline-offset-4 hover:[&_a]:text-ochre-700">
+                  <RichText text={destination.relatedIntro} />
+                </p>
+              ) : undefined
+            }
+          />
           <div className="mt-10">
             <DestinationGrid destinations={related} />
           </div>
@@ -419,12 +451,20 @@ export default async function DestinationPage({ params }: Props) {
       />
 
       <JsonLd
-        data={[
-          breadcrumbJsonLd(breadcrumbs),
-          destinationJsonLd(destination, images[heroKey].src),
-          ...(service ? [service] : []),
-          ...(destination.faqs?.length ? [faqJsonLd(destination.faqs)] : []),
-        ]}
+        data={
+          suppliedJsonLd
+            ? [
+                suppliedJsonLd,
+                // The SEO pack only has FAQ markup for parks whose FAQs existed when it was written.
+                ...(destination.faqs?.length && !hasSchemaType(suppliedJsonLd, "FAQPage") ? [faqJsonLd(destination.faqs)] : []),
+              ]
+            : [
+                breadcrumbJsonLd(breadcrumbs),
+                destinationJsonLd(destination, images[heroKey].src),
+                ...(service ? [service] : []),
+                ...(destination.faqs?.length ? [faqJsonLd(destination.faqs)] : []),
+              ]
+        }
       />
     </>
   );

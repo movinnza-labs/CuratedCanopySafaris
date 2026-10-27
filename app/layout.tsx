@@ -4,9 +4,8 @@ import { AskUsWidget } from "@/components/layout/ask-us-widget";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SkipLink } from "@/components/layout/skip-link";
-import { JsonLd } from "@/components/ui/json-ld";
+import { WhatsAppButton } from "@/components/layout/whatsapp-button";
 import { site } from "@/lib/data/site";
-import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/json-ld";
 import "./globals.css";
 
 // Headings. (Replaced Fraunces, whose capital J is drawn short and drops below the baseline at display sizes.)
@@ -56,8 +55,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           {children}
         </main>
         <SiteFooter />
+        <WhatsAppButton />
         <AskUsWidget />
-        <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
       </body>
     </html>
   );

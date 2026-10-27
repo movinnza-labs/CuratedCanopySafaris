@@ -15,6 +15,12 @@ export const pench: Destination = {
       "Experience an unforgettable Pench Tiger Safari in Madhya Pradesh. Guided jeep safaris, diverse wildlife & curated packages. Book your Pench adventure now!",
   },
   imageKeys: ["penchTigress", "penchRaptor"],
+  scheduleLinkText: "Pench safari dates and price",
+  relatedSlugs: ["kanha-national-park", "tadoba-andhari-tiger-reserve"],
+  relatedIntro:
+    "Extend your Pench trip with [Kanha National Park Safari](/destinations/kanha-national-park) or [Tadoba Safari Booking](/destinations/tadoba-andhari-tiger-reserve).",
+  bestTimeNote:
+    "For a month-by-month view across India’s parks, read our guide to the [best time for a tiger safari in India](/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide).",
   intro: [
     {
       heading: "In the Woodlands of Pench – Kipling’s Jungle",
@@ -38,13 +44,6 @@ export const pench: Destination = {
       ],
     },
   ],
-  about: {
-    heading: "About the Reserve",
-    paragraphs: [
-      "Pench National Park lies in the southern part of Madhya Pradesh, along the Maharashtra border, and is part of a larger protected forest area. Though not very big, the park has a well-balanced ecosystem that makes every safari here interesting and worthwhile.",
-      "The landscape is gently rolling, with open woodlands, grassy clearings, and seasonal streams. Most of the forest is made up of teak and mixed deciduous trees, giving the area a distinct look. The Pench River and its reservoirs play a key role here, especially during the dry months, supporting both wildlife and the overall ecosystem.",
-    ],
-  },
   wildlife: {
     heading: "Wildlife in Pench National Park",
     paragraphs: [
@@ -93,6 +92,24 @@ export const pench: Destination = {
       },
     ],
   },
+  // Seasons follow the central India pattern given in the month-by-month best-time blog post; Pench itself gives no months.
+  bestTime: [
+    {
+      name: "Winter",
+      months: "October – February",
+      notes: ["Pleasant weather for long safari drives, and birdwatching is at its best as migratory species arrive."],
+    },
+    {
+      name: "Summer",
+      months: "March – June",
+      notes: ["Best chances of tiger sightings, as the Pench River and its reservoirs draw wildlife through the drier months."],
+    },
+    {
+      name: "Monsoon",
+      months: "July – September",
+      notes: ["Core zones are closed. Limited buffer zone safaris are allowed."],
+    },
+  ],
   howToReach: {
     intro: "There are many ways to get to Pench by air, rail, and road.",
     byAir: "The nearest airport is Nagpur, well connected to major cities",
@@ -114,6 +131,38 @@ export const pench: Destination = {
     },
   ],
   faqHeading: "Pench Safari Booking: Your Questions Answered",
+  faqs: [
+    {
+      question: "Where is Pench National Park?",
+      answer:
+        "Pench National Park lies in the southern part of Madhya Pradesh, along the Maharashtra border. It is part of a larger protected landscape, shaped by the Pench River, that spreads across both states.",
+    },
+    {
+      question: "Which safari zones can I visit in Pench?",
+      answer:
+        "Pench has core and buffer zones. Turia on the Madhya Pradesh side is the most popular gate, with strong tiger sighting chances, and includes areas such as Karmajhiri. Jamtara is quieter, with open views. Buffer zones such as Teliya and Khursapar have fewer vehicles.",
+    },
+    {
+      question: "Can I see the black panther in Pench?",
+      answer:
+        "A black panther is being sighted regularly in the area around Mogarkasa Gate in the buffer zone. Our [Bagheera (Black Panther) Safari](/destinations/pench-national-park/schedule) is planned around this gate.",
+    },
+    {
+      question: "What wildlife can I see in Pench besides tigers?",
+      answer:
+        "Pench is home to leopards, sloth bears, wild dogs, jungle cats and gaur, along with chital, sambar, nilgai and wild boar. It also has rich birdlife, with both woodland and water birds.",
+    },
+    {
+      question: "What is the best time to visit Pench National Park?",
+      answer:
+        "Summer (March to June) gives the best chances of tiger sightings, as wildlife gathers near the Pench River and its reservoirs. Winter (October to February) is pleasant and good for birdwatching. Core zones close during the monsoon.",
+    },
+    {
+      question: "How do I reach Pench National Park?",
+      answer:
+        "The nearest airport and railway station are both in Nagpur. Pench is about a 2–3 hour drive from Nagpur and is also connected by road to Jabalpur.",
+    },
+  ],
   schema: {
     service: {
       name: "Pench National Park Safari Booking",

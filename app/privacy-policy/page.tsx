@@ -1,16 +1,17 @@
 import { PageHero } from "@/components/sections/page-hero";
 import { BlogBody } from "@/components/sections/blog-body";
 import { Container } from "@/components/ui/container";
+import { JsonLd } from "@/components/ui/json-ld";
 import { privacyPolicy } from "@/lib/data/content";
 import { site } from "@/lib/data/site";
-import { buildMetadata } from "@/lib/seo/metadata";
+import { pageJsonLd } from "@/lib/seo/json-ld";
+import { pageH1, pageMetadata } from "@/lib/seo/metadata";
 import { formatDate } from "@/lib/utils";
 
-export const metadata = buildMetadata({
+export const metadata = pageMetadata("/privacy-policy", {
   title: "Privacy Policy",
   description:
     "How Curated Canopy Safaris (operated by Pugmark Safaris LLP) collects, uses, shares and protects personal information, and how to request access, correction or deletion.",
-  path: "/privacy-policy",
 });
 
 export default function PrivacyPolicyPage() {
@@ -18,7 +19,7 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       <PageHero
-        title="Privacy Policy"
+        title={pageH1("/privacy-policy", "Privacy Policy")}
         breadcrumbs={[
           { name: "Home", path: "/" },
           { name: "Privacy Policy", path: "/privacy-policy" },
@@ -53,8 +54,6 @@ export default function PrivacyPolicyPage() {
               </li>
               <li>
                 <strong>Email:</strong> <a href={`mailto:${contact.email}`}>{contact.email}</a>
-                {" or "}
-                <a href={`mailto:${contact.secondaryEmail}`}>{contact.secondaryEmail}</a>
               </li>
               <li>
                 <strong>Contact number:</strong> <a href={contact.phoneHref}>{contact.phone}</a>
@@ -65,10 +64,11 @@ export default function PrivacyPolicyPage() {
               correction requests or deletion requests. We will review and respond in accordance with applicable law.
             </p>
             <h2>Governing law</h2>
-            <p>{site.legal.jurisdiction}</p>
+            <p>{privacyPolicy.governingLaw}</p>
           </div>
         </Container>
       </section>
+      <JsonLd data={pageJsonLd("/privacy-policy") ?? []} />
     </>
   );
 }

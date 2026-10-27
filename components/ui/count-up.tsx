@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { cn } from "@/lib/utils";
 
 type CountUpProps = {
   start: number;
@@ -59,16 +60,11 @@ export function CountUp({ start, end, durationMs, suffix = "", className }: Coun
     };
   }, [start, end, durationMs]);
 
+  // The number is rendered once (no separate screen-reader copy), so copied or crawled text reads "200+", not "200+200+".
   return (
-    <span ref={ref} className={className}>
-      <span aria-hidden className="tabular-nums">
-        {format(value)}
-        {suffix ? <span className="ml-1">{suffix}</span> : null}
-      </span>
-      <span className="sr-only">
-        {format(end)}
-        {suffix}
-      </span>
+    <span ref={ref} className={cn("tabular-nums", className)}>
+      {format(value)}
+      {suffix ? <span className="ml-1">{suffix}</span> : null}
     </span>
   );
 }

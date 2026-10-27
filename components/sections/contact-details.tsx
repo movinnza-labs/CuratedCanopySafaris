@@ -10,7 +10,6 @@ export function ContactDetails({ tone = "light", showAddress = true }: { tone?: 
     { icon: "phone", label: "Call us", value: site.contact.phone, href: site.contact.phoneHref },
     { icon: "whatsapp", label: "WhatsApp", value: site.contact.phone, href: site.contact.whatsappHref, external: true },
     { icon: "mail", label: "Enquiries", value: site.contact.email, href: `mailto:${site.contact.email}` },
-    { icon: "mail", label: "Also reach us at", value: site.contact.secondaryEmail, href: `mailto:${site.contact.secondaryEmail}` },
   ];
   if (showAddress) {
     items.push({

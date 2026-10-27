@@ -1,4 +1,5 @@
 import { Container } from "@/components/ui/container";
+import { RichText } from "@/components/ui/rich-text";
 import { SafariImage, isImageKey } from "@/components/ui/safari-image";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { team, teamIntro } from "@/lib/data/team";
@@ -24,7 +25,13 @@ export function TeamGrid() {
               <div className="flex flex-1 flex-col p-7">
                 <h3 className="text-2xl font-semibold text-forest-900">{member.name}</h3>
                 <p className="mt-1 text-sm font-bold tracking-wide text-ochre-700">{member.role}</p>
-                <p className="mt-4 leading-relaxed text-ink-600">{member.bio}</p>
+                <div className="mt-4 grid gap-3 leading-relaxed text-ink-600 [&_a]:font-semibold [&_a]:text-ochre-700 [&_a]:underline [&_a]:underline-offset-4">
+                  {member.bio.split(/\n{2,}/).map((paragraph) => (
+                    <p key={paragraph.slice(0, 40)}>
+                      <RichText text={paragraph} />
+                    </p>
+                  ))}
+                </div>
               </div>
             </li>
           ))}

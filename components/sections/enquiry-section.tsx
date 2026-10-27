@@ -37,7 +37,7 @@ export function EnquirySection({
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 sm:p-10 lg:col-span-3">
           <EnquiryForm
             tone="dark"
-            destinations={[...destinations.map((d) => d.name), "Velavadar National Park"]}
+            destinations={destinations.map((d) => d.name)}
             defaultDestination={defaultDestination}
           />
         </div>

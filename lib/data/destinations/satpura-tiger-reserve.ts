@@ -5,7 +5,7 @@ export const satpura: Destination = {
   name: "Satpura Tiger Reserve",
   pageTitle: "Satpura Tiger Reserve Safari Booking, International Wildlife Tour Operator",
   heroIntro:
-    "Jeep safaris, walking trails, canoe expeditions, and night drives through Pachmarhi Biosphere Reserve. MP Forest Department permits secured. Bengal tiger sightings, Denwa River trails, Madhai Gate access. Curated packages in USD/EUR for travellers from UK, Australia, Germany, France, United States.",
+    "Jeep safaris, walking trails, canoe expeditions, and night drives through Pachmarhi Biosphere Reserve. MP Forest Department permits secured. Bengal tiger sightings, Denwa River trails, Madhai Gate access. Curated packages for travellers from the UK, Australia, Germany, France and the United States.",
   shortName: "Satpura",
   state: "Madhya Pradesh",
   summary:
@@ -16,6 +16,12 @@ export const satpura: Destination = {
       "Book Satpura safari in India’s most scenic tiger reserve. Enjoy canoe rides, night safaris & unique wildlife encounters. Secure your Satpura booking today!",
   },
   imageKeys: ["satpuraTiger", "satpuraDeer"],
+  scheduleLinkText: "Satpura safari dates and price",
+  relatedSlugs: ["pench-national-park", "panna-national-park"],
+  relatedIntro:
+    "Extend your Satpura trip with [Pench safari booking](/destinations/pench-national-park) or [Panna safari booking](/destinations/panna-national-park).",
+  bestTimeNote:
+    "For a month-by-month view across India’s parks, read our guide to the [best time for a tiger safari in India](/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide).",
   intro: [
     {
       heading: "Into the Wild Heart of Satpura Tiger Reserve",
@@ -98,21 +104,55 @@ export const satpura: Destination = {
   howToReach: {
     intro: "There are many ways to get to Satpura by air, rail, and road.",
     byAir: "The nearest airport is Bhopal.",
+    byTrain: "The closest railway stations are Pipariya and Itarsi.",
     byRoad:
       "Satpura (via Madhai gate) is well connected to Bhopal and Pipariya. The drive from Bhopal takes about 4–5 hours.",
   },
   booking: [
     {
-      heading: "Why Satpura Safari Booking Breaks Down for International Travelers",
+      heading: "Why Satpura Safari Booking Breaks Down for International Travellers",
       paragraphs: [
         "Safari planning in Satpura can be challenging for international travellers because permits, safari availability, accommodation, and transport often need to be coordinated well in advance. During peak periods, popular gates such as Madhai can have limited jeep availability, while access to buffer zones, canoe safaris, and walking trails may involve separate booking requirements.",
         "Travellers may also encounter unofficial operators offering guaranteed tiger sightings without clearly explaining permit availability, naturalist credentials, or safari-zone access. Accommodation near Pachmarhi and Satpura's key entry points can become limited during peak season, while additional costs for activities such as canoe safaris, walking trails, and transfers may not always be clear at the initial enquiry stage.",
         "For international families, photographers, and small groups, these gaps can result in missed safari slots, fragmented accommodation, or poorly coordinated itineraries. Photographers may lose access to preferred experiences such as Denwa River activities, while groups may be split across different properties when accommodation is not secured together.",
         "The key requirement is therefore not simply booking a safari, but ensuring permit certainty, suitable naturalist expertise, accommodation availability, and seamless coordination between safaris and other experiences before arrival in Madhya Pradesh.",
+        "For permits, gates and timings in one place, read our [Satpura safari booking guide](/blogs/satpura-safari-booking-guide-2026).",
       ],
     },
   ],
   faqHeading: "Satpura Tiger Reserve Safari Booking, Questions Answered",
+  faqs: [
+    {
+      question: "Where is Satpura Tiger Reserve and how big is it?",
+      answer:
+        "Satpura Tiger Reserve lies in the Satpura Range across the Narmadapuram (Hoshangabad) and Betul districts of Madhya Pradesh. It spans more than 2,100 square kilometres, with a core area of about 1,300 square kilometres surrounded by a large buffer.",
+    },
+    {
+      question: "What kinds of safari can I do in Satpura?",
+      answer:
+        "Satpura is known for walking safaris, canoe safaris along the Denwa River and carefully regulated jeep drives, as well as night drives. Some of these, such as canoe safaris and walking trails, may involve separate bookings.",
+    },
+    {
+      question: "Which safari zone should I choose in Satpura?",
+      answer:
+        "Madhai is the most popular zone and the main entry point for safaris. Churna is quieter and more secluded, and Bori has a mix of woodland and diverse wildlife with fewer crowds.",
+    },
+    {
+      question: "What wildlife can I see in Satpura?",
+      answer:
+        "Satpura is home to tigers and leopards, and sloth bears, gaur and Indian wild dogs are often seen. Chital, sambar, barking deer and four-horned antelope form the prey base, and the reserve has over 300 species of birds.",
+    },
+    {
+      question: "When is the best time to visit Satpura?",
+      answer:
+        "Winter (October to February) is pleasant and ideal for wildlife sightings and birdwatching. Summer (March to June) gives better chances of sightings near water sources. The park remains mostly closed in the monsoon (July to September).",
+    },
+    {
+      question: "How do I reach Satpura Tiger Reserve?",
+      answer:
+        "The nearest airport is Bhopal, about a 4–5 hour drive from the Madhai gate. The closest railway stations are Pipariya and Itarsi.",
+    },
+  ],
   cta: { heading: "Book Your Satpura Tiger Reserve Safari Package Today" },
   schema: {
     service: {

@@ -7,13 +7,19 @@ export const dudhwa: Destination = {
   state: "Uttar Pradesh",
   tagline: "The Terai Haven",
   summary:
-    "Dudhwa is located in Lakhimpur Kheri district of Uttar Pradesh, spread over 490 sq km. The sanctuary functions as a vital piece of the larger Dudhwa landscape, offering continuity of habitat rather than spectacle.",
+    "Dudhwa is located in Lakhimpur Kheri district of Uttar Pradesh, spread over 490 sq km.",
   seo: {
     title: "Dudhwa National Park Safari Booking | Expert Terai Tours",
     description:
       "Book Dudhwa National Park safari and explore Terai wilderness. Spot tigers, rhinos & barasingha on guided tours. Reserve your Dudhwa experience today!",
   },
   imageKeys: ["dudhwaTiger", "dudhwaVulture", "dudhwaTiger2"],
+  scheduleLinkText: "Dudhwa safari dates and price",
+  relatedSlugs: ["pilibhit-tiger-reserve", "jim-corbett-national-park"],
+  relatedIntro:
+    "Extend your Dudhwa trip with [Pilibhit Tiger Reserve booking](/destinations/pilibhit-tiger-reserve) or [Jim Corbett safari booking](/destinations/jim-corbett-national-park).",
+  bestTimeNote:
+    "For a month-by-month view across India’s parks, read our guide to the [best time for a tiger safari in India](/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide).",
   intro: [
     {
       heading: "Dudhwa National Park & Kishanpur Wildlife Sanctuary – The Terai Haven",
@@ -108,7 +114,7 @@ export const dudhwa: Destination = {
       heading: "How Curated Canopy Delivers Confirmed Dudhwa Safari Experiences",
       subsections: [
         {
-          heading: "Pillar 1: Wildlife-First Safari Zone Selection & Ecosystem Expertise",
+          heading: "Wildlife-First Safari Zone Selection & Ecosystem Expertise",
           items: [
             "[Dudhwa Safari Zone](/destinations/dudhwa-national-park/schedule)",
             "[Kishanpur Wildlife Sanctuary Zone](/destinations/dudhwa-national-park/schedule)",
@@ -117,13 +123,13 @@ export const dudhwa: Destination = {
             "Salukapur Zone",
           ],
           closing: [
-            "We assess your target species list, travel dates, since winter versus summer shifts affect animal activity, and group size, then recommend the zone and shift combination that maximizes sighting probability.",
+            "We assess your target species list, travel dates, since winter versus summer shifts affect animal activity, and group size, then recommend the zone and shift combination that maximises sighting probability.",
           ],
         },
       ],
     },
     {
-      heading: "Why International Wildlife Travelers Trust Curated Canopy Safaris",
+      heading: "Why International Wildlife Travellers Trust Curated Canopy Safaris",
       subsections: [
         {
           heading: "Our Experience & Approach",
@@ -140,24 +146,24 @@ export const dudhwa: Destination = {
   faqs: [
     {
       question:
-        "When should I book my Dudhwa safari permit if I'm traveling from the UK, Australia, Germany, France, or the United States?",
+        "When should I book my Dudhwa safari permit if I'm travelling from the UK, Australia, Germany, France, or the United States?",
       answer:
-        "Safari permits open 90 days before your travel date on the UP Eco-Tourism Development Board portal, upecotourism.in. For international travelers targeting high demand zones like Dudhwa and Kishanpur during peak tiger season, November to March, booking on the first day of the 90 day window is essential. We recommend contacting us at least 120 days before your planned travel date so we can prepare your passport documentation, verify formatting for the portal, and submit your permit application immediately when booking opens. Day visit permits and night stay permits have separate allocation quotas; we coordinate both based on your itinerary. Last minute availability exists for buffer zones like Salukapur during off peak months, July to September, but core zones sell out quickly.",
+        "Safari permits open 90 days before your travel date on the UP Eco-Tourism Development Board portal, upecotourism.in. For international travellers targeting high demand zones like Dudhwa and Kishanpur during peak tiger season, November to March, booking on the first day of the 90 day window is essential. We recommend contacting us at least 120 days before your planned travel date so we can prepare your passport documentation, verify formatting for the portal, and submit your permit application immediately when booking opens. Day visit permits and night stay permits have separate allocation quotas; we coordinate both based on your itinerary. Last minute availability exists for buffer zones like Salukapur during off peak months, July to September, but core zones sell out quickly.",
     },
     {
       question: "Which Dudhwa safari zone is best for Royal Bengal Tiger and barasingha sightings?",
       answer:
-        "Dudhwa zone, the core area, offers the highest probability for Royal Bengal Tiger sightings and barasingha herds, especially during morning safaris when swamp deer graze in Terai-Duar grasslands. This zone also includes Indian one horned rhinoceros reintroduction sites, making it the most species diverse choice, though permits sell out earliest. Kishanpur zone provides excellent tiger tracking in dense sal forest and offers elephant safari access, morning shift only, which allows closer approach to wildlife in specific forest blocks. For photographers seeking solitude and barasingha close ups without jeep crowds, Sonaripur zone delivers comparable sightings with lower visitor density. We assess your travel dates, target species priority, and tolerance for crowds, then recommend the zone combination that maximizes your wildlife experience. Many serious wildlife travelers book multi day itineraries covering Dudhwa, Kishanpur, and Sonaripur across consecutive safaris.",
+        "Dudhwa zone, the core area, offers the highest probability for Royal Bengal Tiger sightings and barasingha herds, especially during morning safaris when swamp deer graze in Terai-Duar grasslands. This zone also includes Indian one horned rhinoceros reintroduction sites, making it the most species diverse choice, though permits sell out earliest. Kishanpur zone provides excellent tiger tracking in dense sal forest and offers elephant safari access, morning shift only, which allows closer approach to wildlife in specific forest blocks. For photographers seeking solitude and barasingha close ups without jeep crowds, Sonaripur zone delivers comparable sightings with lower visitor density. We assess your travel dates, target species priority, and tolerance for crowds, then recommend the zone combination that maximises your wildlife experience. Many serious wildlife travellers book multi day itineraries covering Dudhwa, Kishanpur, and Sonaripur across consecutive safaris.",
     },
     {
       question: "Do I need a day-visit permit or night-stay permit, and what is the difference?",
       answer:
-        "A day visit permit grants access to one jeep safari shift, morning or afternoon/evening, in your selected zone, but you must arrange accommodation outside the park in nearby towns like Dudhwa Nagar or Palia Kalan. A night stay permit includes safari access plus accommodation inside forest rest houses or eco-lodges within the reserve boundary, allowing you to experience dawn and dusk safaris without long transit times. Night stay permits are limited and book out faster than day visit permits. For international travelers on tight schedules flying into Delhi or Lucknow, we typically recommend night stay permits to minimize travel fatigue and maximize safari time. Both permit types require passport documentation for international guests, and elephant safari access, morning shift only in Kishanpur zone, requires a separate add on booking coordinated with your jeep permit.",
+        "A day visit permit grants access to one jeep safari shift, morning or afternoon/evening, in your selected zone, but you must arrange accommodation outside the park in nearby towns like Dudhwa Nagar or Palia Kalan. A night stay permit includes safari access plus accommodation inside forest rest houses or eco-lodges within the reserve boundary, allowing you to experience dawn and dusk safaris without long transit times. Night stay permits are limited and book out faster than day visit permits. For international travellers on tight schedules flying into Delhi or Lucknow, we typically recommend night stay permits to minimise travel fatigue and maximise safari time. Both permit types require passport documentation for international guests, and elephant safari access, morning shift only in Kishanpur zone, requires a separate add on booking coordinated with your jeep permit.",
     },
     {
       question: "Can I combine Dudhwa with other tiger reserves in a single trip, and is this worth the extra travel time?",
       answer:
-        "Dudhwa pairs naturally with Pilibhit Tiger Reserve, located four hours northeast. Both reserves protect Terai-Duar savanna and grassland ecosystems with similar species, Royal Bengal Tiger, barasingha, Bengal florican, but Pilibhit offers quieter safari experiences and different forest composition. A bespoke Dudhwa plus Pilibhit package typically spans five to seven days, allowing two safaris per reserve with transit and rest days. This combination appeals to serious wildlife photographers, conservation travelers, and repeat safari goers who have already visited Corbett or Ranthambore and want deeper immersion in Terai ecology. We also design longer itineraries adding Katarniaghat Wildlife Sanctuary, riverine species such as gharial and Gangetic dolphin, or Corbett Tiger Reserve, six hours south. A multi reserve itinerary significantly increases tiger sighting attempts across varied terrain compared to a single location visit.",
+        "Dudhwa pairs naturally with Pilibhit Tiger Reserve, located four hours northeast. Both reserves protect Terai-Duar savanna and grassland ecosystems with similar species, Royal Bengal Tiger, barasingha, Bengal florican, but Pilibhit offers quieter safari experiences and different forest composition. A bespoke Dudhwa plus Pilibhit package typically spans five to seven days, allowing two safaris per reserve with transit and rest days. This combination appeals to serious wildlife photographers, conservation travellers, and repeat safari goers who have already visited Corbett or Ranthambore and want deeper immersion in Terai ecology. We also design longer itineraries adding Katarniaghat Wildlife Sanctuary, riverine species such as gharial and Gangetic dolphin, or Corbett Tiger Reserve, six hours south. A multi reserve itinerary significantly increases tiger sighting attempts across varied terrain compared to a single location visit.",
     },
   ],
   schema: {

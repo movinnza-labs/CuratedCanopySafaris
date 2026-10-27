@@ -10,7 +10,7 @@ export const testimonials: Testimonial[] = [
     destinationSlug: "kanha-national-park",
     imageKey: "guestSuneetRaut",
     quote: [
-      "Namaskar, I am Dr Suneet Raut. Myself and my wife, Dr Sushila visited Kanha National Park, last year, by April 2025. Our close friend, Dr Prakash Babu, called me whether we were interested in doing this safari trip. As we both are nature lovers, and having visited Tadoba and other sanctuaries, were delighted by this call. It was the last week of April. We flew from Mumbai to Jabalpur, then to Kanha sanctuary. I must say, the total experience of those 4 days was WONDERFUL.",
+      "Namaskar, I am Dr Suneet Raut. Myself and my wife, Dr Susheela visited Kanha National Park, last year, by April 2025. Our close friend, Dr Prakash Babu, called me whether we were interested in doing this safari trip. As we both are nature lovers, and having visited Tadoba and other sanctuaries, were delighted by this call. It was the last week of April. We flew from Mumbai to Jabalpur, then to Kanha sanctuary. I must say, the total experience of those 4 days was WONDERFUL.",
       "The flights, transportation to and fro by road, the accommodation, food, overall comforts and personal attention and care of Curated Canopy Safaris was exceptional. One thing I would like to mention, that, Dr Prakash himself is a wildlife enthusiast, has a deep knowledge of birds and animals, has good knowledge of flora and fauna. His planning is meticulous and punctual. His venture Curated Canopy Safaris is a dependable service. We both look forward to joining his safaris in future also.",
     ],
   },

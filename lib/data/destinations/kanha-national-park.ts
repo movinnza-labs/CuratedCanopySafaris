@@ -16,13 +16,19 @@ export const kanha: Destination = {
       "Book your Kanha Tiger Safari with expert guides. Explore rich wildlife, meadow jeep rides & curated Kanha National Park tour packages. Reserve your spot today!",
   },
   imageKeys: ["kanhaTiger", "kanhaDeer", "kanhaBarasingha"],
+  scheduleLinkText: "Kanha National Park Tour Package",
+  relatedSlugs: ["bandhavgarh-national-park", "pench-national-park"],
+  relatedIntro:
+    "Extend your Kanha trip with [Bandhavgarh National Park Safari](/destinations/bandhavgarh-national-park) or [Pench safari booking](/destinations/pench-national-park).",
+  bestTimeNote:
+    "For a month-by-month view across India’s parks, read our guide to the [best time for a tiger safari in India](/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide).",
   intro: [
     {
       heading: "Kanha National Park",
       paragraphs: [
         "Kanha National Park, located in the Mandla and Balaghat districts of Madhya Pradesh, spans nearly 2,000 square kilometres—of which about 940 square kilometres form the core area, surrounded by a buffer of over 1,000 square kilometres. It is an eden beyond compare.",
         "The park has four core tourism zones—Kisli, Kanha, Mukki, and Sarhi—along with several buffer zones that extend its wild embrace. Vast stretches of dense sal forests are interspersed with sweeping meadows, creating a landscape of rare beauty and ecological balance.",
-        "Kanha is home to a healthy tiger population, while its meadows teem with herbivores. Among them is the hard-ground Barasingha—once on the brink of extinction and now a symbol of conservation success—along with chital, sambar, barking deer, and other ungulates. According to agency estimates, chital population in Kanha is around 40,000.",
+        "Kanha is home to a healthy tiger population, while its meadows teem with herbivores. Among them is the hard-ground Barasingha—once on the brink of extinction and now a symbol of conservation success—along with chital, sambar, barking deer, and other ungulates.",
         "The park also boasts rich avifauna, with around 300 species of birds adding colour and song to its forests and wetlands. Dense sal woods, sprawling grasslands, and numerous water bodies alive with wild denizens together make Kanha a true eden—timeless, thriving, and unforgettable.",
       ],
     },
@@ -43,7 +49,7 @@ export const kanha: Destination = {
     ],
     highlights: [
       "Wild Dogs (Dhole)",
-      "Chital (~40,000)",
+      "Chital",
       "Sambar",
       "Barking Deer",
       "300+ Bird Species",
@@ -124,6 +130,9 @@ export const kanha: Destination = {
         "**Permit availability:** High demand Core zone permits are limited and can sell out quickly, making last-minute booking difficult for international travellers.",
         "**Timezone chaos:** Booking windows open at Indian Standard Time, which can mean midnight or early morning for international travellers.",
         "**Documentation confusion:** International visitors require passport scans, specific ID formats, and India mobile numbers for OTP verification.",
+      ],
+      closing: [
+        "Planning around the start of the season? Read our guide to [Kanha safari opening dates 2026](/blogs/kanha-national-park-safari-open-2026).",
       ],
     },
     {

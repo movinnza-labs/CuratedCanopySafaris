@@ -1,5 +1,7 @@
+import { ButtonLink } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
 import { RichText } from "@/components/ui/rich-text";
+import { site } from "@/lib/data/site";
 import type { BlogBlock } from "@/lib/data/types";
 
 export function BlogBody({ blocks }: { blocks: BlogBlock[] }) {
@@ -64,6 +66,43 @@ export function BlogBody({ blocks }: { blocks: BlogBlock[] }) {
                   <p className={block.title ? "mt-1" : undefined}>
                     <RichText text={block.text} />
                   </p>
+                </div>
+              </aside>
+            );
+          case "faq":
+            return (
+              <section key={key} aria-labelledby={`${key}-title`} className="space-y-5">
+                <h2 id={`${key}-title`}>{block.title ?? "Frequently asked questions"}</h2>
+                {block.items.map((faq) => (
+                  <div key={faq.question} className="space-y-2">
+                    <h3>{faq.question}</h3>
+                    <p>
+                      <RichText text={faq.answer} />
+                    </p>
+                  </div>
+                ))}
+              </section>
+            );
+          case "cta":
+            return (
+              <aside key={key} className="flex gap-4 rounded-2xl border border-forest-200 bg-forest-50 p-5 sm:p-6">
+                <Icon name="whatsapp" className="mt-0.5 size-5 shrink-0 text-forest-700" />
+                <div>
+                  <p className="font-semibold text-forest-900">{block.title}</p>
+                  <p className="mt-1">
+                    <RichText text={block.text} />
+                  </p>
+                  <ButtonLink
+                    href={site.contact.whatsappHref}
+                    external
+                    variant="secondary"
+                    size="sm"
+                    icon="whatsapp"
+                    iconPosition="start"
+                    className="mt-4 no-underline"
+                  >
+                    {block.buttonLabel ?? "Chat on WhatsApp"}
+                  </ButtonLink>
                 </div>
               </aside>
             );

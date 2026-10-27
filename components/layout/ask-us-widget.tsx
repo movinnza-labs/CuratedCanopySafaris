@@ -130,7 +130,7 @@ export function AskUsWidget() {
         className={cn(
           "fixed z-40 bg-[#2d5a27] font-semibold text-white shadow-xl transition-all duration-300 hover:bg-[#3d7a35]",
           // Right-edge vertical tab on desktop, pill at bottom-right on phones — as on the live site.
-          "right-3.5 bottom-4 rounded-full px-5 py-3 text-sm",
+          "right-3.5 bottom-[calc(1rem+env(safe-area-inset-bottom))] rounded-full px-5 py-3 text-sm",
           "sm:top-1/2 sm:right-0 sm:bottom-auto sm:-translate-y-1/2 sm:rounded-l-2xl sm:rounded-r-none sm:px-3 sm:py-5 sm:[writing-mode:vertical-rl] sm:hover:pr-4",
         )}
       >
@@ -180,10 +180,11 @@ export function AskUsWidget() {
           }}
         >
           <label htmlFor="ask-us-input" className="sr-only">
-            {askUs.panelTitle}
+            {askUs.inputLabel}
           </label>
           <input
             id="ask-us-input"
+            aria-label={askUs.inputLabel}
             ref={inputRef}
             type="text"
             autoComplete="off"

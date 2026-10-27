@@ -12,7 +12,10 @@ export function AboutSection() {
         <Reveal from="left" className="lg:col-span-7">
           <HomeHeading id="about-title" eyebrow={about.eyebrow} kicker={about.kicker} title={about.title} />
           <div className="mt-8 space-y-5 text-[1.0625rem] leading-[1.8] text-ink-700 [&_strong]:font-semibold [&_strong]:text-forest-900">
-            <RichBlocks blocks={about.body} />
+            <RichBlocks
+              blocks={about.body}
+              linkClassName="font-semibold text-ochre-600 underline decoration-ochre-300 underline-offset-4 transition-colors hover:text-ochre-800"
+            />
           </div>
         </Reveal>
 

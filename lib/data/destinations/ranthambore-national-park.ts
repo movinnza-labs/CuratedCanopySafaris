@@ -15,6 +15,13 @@ export const ranthambore: Destination = {
       "Book Ranthambore National Park safari and spot tigers near ancient ruins. Expert guides & curated jeep safaris await. Plan your Ranthambore trip today!",
   },
   imageKeys: ["ranthamboreTiger", "ranthamboreChital"],
+  heroImageKey: "ranthamboreTiger",
+  scheduleLinkText: "Ranthambore safari packages",
+  relatedSlugs: ["gir-national-park", "bandhavgarh-national-park"],
+  relatedIntro:
+    "Extend your Ranthambore trip with [Gir lion safari booking](/destinations/gir-national-park) or [Bandhavgarh National Park Safari](/destinations/bandhavgarh-national-park).",
+  bestTimeNote:
+    "For a month-by-month view across India’s parks, read our guide to the [best time for a tiger safari in India](/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide).",
   intro: [
     {
       heading: "Ranthambore National Park",
@@ -57,7 +64,7 @@ export const ranthambore: Destination = {
   safariExperience: {
     heading: "Ranthambore Safari Timings",
     intro:
-      "Jeep safaris in Ranthambore National Park are conducted with trained drivers and experienced naturalists. They help visitors explore different areas of the park and better understand animal behaviour.",
+      "Safaris in Ranthambore National Park are conducted with trained drivers and experienced naturalists, who help visitors explore different areas of the park and better understand animal behaviour. Our scheduled Ranthambore package uses Canter safaris: five Canter safaris, from Sawai Madhopur Railway Station and back.",
     items: [
       { name: "Morning Safari", description: "Early morning safaris offer the best chances of spotting wildlife." },
       { name: "Evening Safari", description: "A good time to see animal movement and enjoy the landscape." },
@@ -89,6 +96,38 @@ export const ranthambore: Destination = {
       "Ranthambore is well connected by road to Jaipur, Delhi, and Kota. The drive takes about 3–4 hours from Jaipur and 5–6 hours from Delhi.",
   },
   faqHeading: "Ranthambore Safari Booking Questions Answered",
+  faqs: [
+    {
+      question: "Which vehicle does the Ranthambore safari package use?",
+      answer:
+        "Our scheduled [Ranthambore package](/destinations/ranthambore-national-park/schedule) includes five Canter safaris, with morning and afternoon drives. The tour runs from Sawai Madhopur Railway Station and back.",
+    },
+    {
+      question: "Where are tigers usually seen in Ranthambore?",
+      answer:
+        "Tigers are often seen walking along forest tracks, resting near water bodies such as Padam Talao and Malik Talao, or moving through the ruins inside the park. The open terrain lets you watch them clearly.",
+    },
+    {
+      question: "Which safari zone should I choose in Ranthambore?",
+      answer:
+        "Zone 5 is well known for frequent tiger sightings and easy access. Zone 3 is famous for its scenic lakes, Zone 2 mixes open areas and water bodies, and Zones 6 to 10 are less crowded, with varied terrain.",
+    },
+    {
+      question: "What wildlife can I see in Ranthambore besides tigers?",
+      answer:
+        "Ranthambore is home to leopards, sloth bears, hyenas, crocodiles and several species of deer and antelope. Birds are commonly seen around the lakes.",
+    },
+    {
+      question: "When is the best time to visit Ranthambore?",
+      answer:
+        "Winter (October to February) is pleasant and great for wildlife and birdwatching. Summer (March to June) is the best time to see tigers near water sources. The park is closed in the monsoon (July to September).",
+    },
+    {
+      question: "How do I reach Ranthambore National Park?",
+      answer:
+        "The nearest airport is Jaipur. The closest railway station is Sawai Madhopur, 10–15 km from the park, with direct trains from Delhi, Mumbai and Jaipur. By road, it is about 3–4 hours from Jaipur and 5–6 hours from Delhi.",
+    },
+  ],
   cta: { heading: "Secure Your Ranthambore Tiger Safari Package, Limited Core Zone Permits" },
   schema: {
     service: {

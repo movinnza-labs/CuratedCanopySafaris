@@ -1,10 +1,13 @@
 import Image from "next/image";
 import { HomeImage } from "@/components/ui/home-image";
 import { hero } from "@/lib/data/home";
+import { pageH1 } from "@/lib/seo/metadata";
 import { HeroVideo } from "./hero-video";
 
 export function HeroSection() {
-  const words = hero.title.split(" ");
+  // Keyword H1 from the launch SEO pack; the "We curate, you discover." slogan stays as the line below it.
+  const title = pageH1("/", hero.title);
+  const words = title.split(" ");
   return (
     <section aria-labelledby="hero-title" className="relative isolate flex min-h-[100svh] items-center justify-center overflow-hidden bg-forest-950">
       {/* Media layer: poster (first video frame, LCP) + the background video, with a slow parallax on scroll. */}
@@ -30,7 +33,7 @@ export function HeroSection() {
         </div>
         <h1
           id="hero-title"
-          aria-label={hero.title}
+          aria-label={title}
           className="mt-10 font-sans text-2xl font-light tracking-[0.18em] text-white uppercase sm:text-3xl lg:text-[2.6rem]"
         >
           {words.map((word, i) => (
@@ -41,11 +44,24 @@ export function HeroSection() {
           ))}
         </h1>
         <p className="mt-5 animate-fade-up text-sm font-semibold tracking-[0.22em] text-sand-200 uppercase [animation-delay:950ms] sm:text-base lg:text-lg">
-          {hero.subtitle}
+          {hero.title}
         </p>
+        <ul className="mt-8 flex animate-fade-up flex-wrap justify-center gap-2.5 [animation-delay:1100ms] sm:gap-3">
+          {hero.highlights.map((highlight) => (
+            <li
+              key={highlight}
+              className="flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-semibold tracking-[0.08em] text-white backdrop-blur-sm sm:text-sm"
+            >
+              <svg aria-hidden viewBox="0 0 24 24" className="size-4 text-sand-200" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="m5 12.5 4.5 4.5L19 7.5" />
+              </svg>
+              {highlight}
+            </li>
+          ))}
+        </ul>
         <a
           href={hero.scrollTarget}
-          className="group mt-12 grid size-16 animate-fade-in place-items-center rounded-full border border-white/40 text-white backdrop-blur-sm transition-colors duration-300 [animation-delay:1300ms] hover:border-sand-200 hover:bg-sand-200 hover:text-ochre-700"
+          className="group mt-10 grid size-16 animate-fade-in place-items-center rounded-full border border-white/40 text-white backdrop-blur-sm transition-colors duration-300 [animation-delay:1300ms] hover:border-sand-200 hover:bg-sand-200 hover:text-ochre-700"
         >
           <span className="sr-only">Scroll down to About us</span>
           {/* Same "download" arrow symbol as the live site's scroll button. */}

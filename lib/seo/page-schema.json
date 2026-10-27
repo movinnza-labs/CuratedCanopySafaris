@@ -1,0 +1,2504 @@
+{
+  "/": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://curatedcanopysafaris.com/#organization",
+        "name": "Curated Canopy Safaris",
+        "url": "https://curatedcanopysafaris.com/",
+        "logo": "https://curatedcanopysafaris.com/images/home/curated-canopy-safaris-logo.png",
+        "image": "https://curatedcanopysafaris.com/images/hero/tiger-at-forest-pool.jpg",
+        "description": "Curated tiger and wildlife safaris in India's national parks, with only 4 guests per safari jeep, expert naturalists and comfortable stays.",
+        "telephone": "+91-9172036513",
+        "email": "enquiries@curatedcanopysafaris.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "No 3, Chandan Apartment, Dhodipuja, Navapur Road, Boisar (W)",
+          "addressLocality": "Boisar",
+          "addressRegion": "Maharashtra",
+          "postalCode": "401501",
+          "addressCountry": "IN"
+        },
+        "taxID": "27ABIFP7813R1ZD",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Pugmark Safaris LLP"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-9172036513",
+          "email": "enquiries@curatedcanopysafaris.com",
+          "contactType": "reservations",
+          "availableLanguage": [
+            "English",
+            "Hindi"
+          ]
+        },
+        "areaServed": "Worldwide",
+        "employee": [
+          {
+            "@type": "Person",
+            "name": "Dr. Prakash Babu",
+            "jobTitle": "Director, Operations"
+          },
+          {
+            "@type": "Person",
+            "name": "Salonii Prakash Babu",
+            "jobTitle": "Director, Finance, Communications and Quality Control"
+          },
+          {
+            "@type": "Person",
+            "name": "Suhani Prakash Babu",
+            "jobTitle": "Director, Legal and Compliance"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://curatedcanopysafaris.com/#website",
+        "url": "https://curatedcanopysafaris.com/",
+        "name": "Curated Canopy Safaris",
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/#webpage",
+        "url": "https://curatedcanopysafaris.com/",
+        "name": "Wildlife Safari in India 2026-27 | Only 4 Guests per Jeep",
+        "description": "Book a wildlife safari in India with expert naturalists. Tiger safaris in 12 top parks, only 4 guests per jeep, good stays and all meals. Get dates today.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        }
+      }
+    ]
+  },
+  "/about": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": "https://curatedcanopysafaris.com/about#webpage",
+        "url": "https://curatedcanopysafaris.com/about",
+        "name": "About Us | Wildlife Safari Experts in India | Curated Canopy",
+        "description": "Meet the naturalist-led team behind Curated Canopy Safaris. We plan fair-priced tiger safaris in India with only 4 guests per jeep and good, comfortable stays.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "mainEntity": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About Us",
+            "item": "https://curatedcanopysafaris.com/about"
+          }
+        ]
+      }
+    ]
+  },
+  "/team": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": "https://curatedcanopysafaris.com/team#webpage",
+        "url": "https://curatedcanopysafaris.com/team",
+        "name": "Our Team | Safari Experts and Naturalists | Curated Canopy",
+        "description": "Meet the team behind Curated Canopy Safaris, led by naturalist and wildlife photographer Dr. Prakash Babu. Real people who plan every safari with care.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "Person",
+                "name": "Dr. Prakash Babu",
+                "jobTitle": "Director, Operations",
+                "worksFor": {
+                  "@id": "https://curatedcanopysafaris.com/#organization"
+                },
+                "description": "Medical professional and wildlife photographer since 2006 who leads safari operations."
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "Person",
+                "name": "Salonii Prakash Babu",
+                "jobTitle": "Director, Finance, Communications and Quality Control",
+                "worksFor": {
+                  "@id": "https://curatedcanopysafaris.com/#organization"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "Person",
+                "name": "Suhani Prakash Babu",
+                "jobTitle": "Director, Legal and Compliance",
+                "worksFor": {
+                  "@id": "https://curatedcanopysafaris.com/#organization"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Our Team",
+            "item": "https://curatedcanopysafaris.com/team"
+          }
+        ]
+      }
+    ]
+  },
+  "/safari-packages": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://curatedcanopysafaris.com/safari-packages#webpage",
+        "url": "https://curatedcanopysafaris.com/safari-packages",
+        "name": "Wildlife Safari Packages in India 2026-27 | 12 Tiger Parks",
+        "description": "Compare wildlife safari packages in 12 top Indian parks: Kanha, Tadoba, Ranthambore, Corbett and more. Stay, meals, permits and safaris in one price.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "mainEntity": {
+          "@type": "ItemList",
+          "name": "Safari destinations",
+          "numberOfItems": 12,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Kanha National Park",
+              "url": "https://curatedcanopysafaris.com/destinations/kanha-national-park"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Bandhavgarh National Park",
+              "url": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Pench National Park",
+              "url": "https://curatedcanopysafaris.com/destinations/pench-national-park"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Panna National Park",
+              "url": "https://curatedcanopysafaris.com/destinations/panna-national-park"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Satpura Tiger Reserve",
+              "url": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Tadoba Andhari Tiger Reserve",
+              "url": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Dudhwa National Park and Kishanpur Wildlife Sanctuary",
+              "url": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Pilibhit Tiger Reserve",
+              "url": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Jim Corbett National Park",
+              "url": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "Kaziranga National Park",
+              "url": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "Ranthambore National Park",
+              "url": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "Gir National Park",
+              "url": "https://curatedcanopysafaris.com/destinations/gir-national-park"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          }
+        ]
+      }
+    ]
+  },
+  "/contact": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "@id": "https://curatedcanopysafaris.com/contact#webpage",
+        "url": "https://curatedcanopysafaris.com/contact",
+        "name": "Contact Us | Plan Your Tiger Safari | Curated Canopy Safaris",
+        "description": "Plan your tiger safari in India with us. Call or WhatsApp +91 9172036513 or email enquiries@curatedcanopysafaris.com. We reply with dates and a full quote.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "mainEntity": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact Us",
+            "item": "https://curatedcanopysafaris.com/contact"
+          }
+        ]
+      }
+    ]
+  },
+  "/blogs": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://curatedcanopysafaris.com/blogs#webpage",
+        "url": "https://curatedcanopysafaris.com/blogs",
+        "name": "Safari Guides and Tiger Safari Blog | Curated Canopy Safaris",
+        "description": "Simple guides for tiger safaris in India: how to book permits, best time to visit, park zones and tips from our naturalists. Read before you plan.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "url": "https://curatedcanopysafaris.com/blogs/kanha-national-park-safari-open-2026",
+              "name": "Kanha National Park Safari Opening 2026: Dates and Booking"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "url": "https://curatedcanopysafaris.com/blogs/how-to-book-panna-safari-online",
+              "name": "How to Book Panna Safari Online: Step-by-Step Guide 2026"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "url": "https://curatedcanopysafaris.com/blogs/satpura-safari-booking-guide-2026",
+              "name": "Satpura Safari Booking Guide 2026: Permits, Zones and Tips"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "url": "https://curatedcanopysafaris.com/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide",
+              "name": "Best Time for a Tiger Safari in India: Month by Month"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "url": "https://curatedcanopysafaris.com/blogs/best-time-for-tiger-safari-in-india-season-by-season-guide",
+              "name": "Tiger Safari Seasons in India: Winter, Summer or Monsoon?"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogs",
+            "item": "https://curatedcanopysafaris.com/blogs"
+          }
+        ]
+      }
+    ]
+  },
+  "/privacy-policy": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/privacy-policy#webpage",
+        "url": "https://curatedcanopysafaris.com/privacy-policy",
+        "name": "Privacy Policy | Curated Canopy Safaris",
+        "description": "How Curated Canopy Safaris collects, uses and protects your personal details when you enquire or book a safari with us.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Privacy Policy",
+            "item": "https://curatedcanopysafaris.com/privacy-policy"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/kanha-national-park": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/kanha-national-park#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/kanha-national-park",
+        "name": "Kanha National Park Safari 2026-27 | Book Core Zone Jeeps",
+        "description": "Plan your Kanha National Park safari with core zone jeep permits, expert naturalists and only 4 guests per jeep. See 2026-27 dates and book on WhatsApp.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/kanha-national-park#place"
+        }
+      },
+      {
+        "@type": [
+          "TouristAttraction",
+          "Park"
+        ],
+        "@id": "https://curatedcanopysafaris.com/destinations/kanha-national-park#place",
+        "name": "Kanha National Park",
+        "description": "Tiger reserve of about 2,000 sq km in Mandla and Balaghat districts of Madhya Pradesh, home to the Bengal tiger and the hard-ground barasingha. Core zones: Kisli, Kanha, Mukki and Sarhi.",
+        "url": "https://curatedcanopysafaris.com/destinations/kanha-national-park",
+        "image": "https://curatedcanopysafaris.com/images/home/kanha-thumb.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Madhya Pradesh",
+          "addressCountry": "IN",
+          "addressLocality": "Mandla and Balaghat districts"
+        },
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers",
+          "Families"
+        ],
+        "isAccessibleForFree": false,
+        "publicAccess": true
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Kanha National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/kanha-national-park"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the location of Kanha National Park?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Madhya Pradesh's Mandla and Balaghat districts are home to Kanha National Park."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What kinds of animals live in Kanha National Park?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can witness a number of birds, as well as Bengal tigers, barasingha, leopards, sloth bears, gaur, and wild dogs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best time of year to go to Kanha National Park?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The optimum time to go is from October to June, and summer is the best time to see tigers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I make a reservation for a safari in Kanha National Park?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can book through safari operators who arrange permits, jeep safaris, guides, and accommodation"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/kanha-national-park/schedule": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/kanha-national-park/schedule#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/kanha-national-park/schedule",
+        "name": "Kanha National Park Tour Package 3N/4D | From INR 32,000",
+        "description": "Kanha National Park tour package, 3N/4D, from INR 32,000 plus 5% GST. Stay, meals, permits and 5 jeep safaris included. See dates and book on WhatsApp.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/kanha-national-park/schedule#trip"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://curatedcanopysafaris.com/destinations/kanha-national-park/schedule#trip",
+        "name": "Kanha National Park Safari 3N/4D",
+        "description": "Small group wildlife safari to Kanha National Park with stay, meals, park permits, naturalist and jeep safaris included.",
+        "url": "https://curatedcanopysafaris.com/destinations/kanha-national-park/schedule",
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers"
+        ],
+        "itinerary": {
+          "@id": "https://curatedcanopysafaris.com/destinations/kanha-national-park#place"
+        },
+        "provider": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "32000",
+          "priceCurrency": "INR",
+          "url": "https://curatedcanopysafaris.com/destinations/kanha-national-park/schedule",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "32000",
+            "priceCurrency": "INR",
+            "valueAddedTaxIncluded": false
+          },
+          "seller": {
+            "@id": "https://curatedcanopysafaris.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Kanha National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/kanha-national-park"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Schedule",
+            "item": "https://curatedcanopysafaris.com/destinations/kanha-national-park/schedule"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/bandhavgarh-national-park": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park",
+        "name": "Bandhavgarh National Park Safari: Tiger Safari Booking 2026",
+        "description": "Book a Bandhavgarh National Park safari in Tala, Magadhi and Khitauli zones. India's best tiger density, expert naturalists and 4 guests per jeep.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park#place"
+        }
+      },
+      {
+        "@type": [
+          "TouristAttraction",
+          "Park"
+        ],
+        "@id": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park#place",
+        "name": "Bandhavgarh National Park",
+        "description": "Compact tiger reserve of over 1,500 sq km in Umaria district of Madhya Pradesh, known for high tiger density. Core zones: Tala, Magadhi and Khitauli.",
+        "url": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park",
+        "image": "https://curatedcanopysafaris.com/images/home/bandhavgarh-tigress-on-river-bed.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Madhya Pradesh",
+          "addressCountry": "IN",
+          "addressLocality": "Umaria district"
+        },
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers",
+          "Families"
+        ],
+        "isAccessibleForFree": false,
+        "publicAccess": true
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Bandhavgarh National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/bandhavgarh-national-park/schedule": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park/schedule#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park/schedule",
+        "name": "Bandhavgarh National Park Tour Package 3N/4D | INR 32,000",
+        "description": "Bandhavgarh National Park tour package, 3N/4D, from INR 32,000 plus 5% GST. Stay, meals, permits and 5 safaris included. See dates and book today.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park/schedule#trip"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park/schedule#trip",
+        "name": "Bandhavgarh National Park Safari 3N/4D",
+        "description": "Small group wildlife safari to Bandhavgarh National Park with stay, meals, park permits, naturalist and jeep safaris included.",
+        "url": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park/schedule",
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers"
+        ],
+        "itinerary": {
+          "@id": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park#place"
+        },
+        "provider": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "32000",
+          "priceCurrency": "INR",
+          "url": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park/schedule",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "32000",
+            "priceCurrency": "INR",
+            "valueAddedTaxIncluded": false
+          },
+          "seller": {
+            "@id": "https://curatedcanopysafaris.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Bandhavgarh National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Schedule",
+            "item": "https://curatedcanopysafaris.com/destinations/bandhavgarh-national-park/schedule"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/pench-national-park": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/pench-national-park#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/pench-national-park",
+        "name": "Pench Safari Booking 2026-27 | Pench Tiger Safari Tours",
+        "description": "Pench safari booking made easy. Turia and Jamtara gates, just 2 to 3 hours from Nagpur. Expert naturalists, 4 guests per jeep, stay and meals included.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/pench-national-park#place"
+        }
+      },
+      {
+        "@type": [
+          "TouristAttraction",
+          "Park"
+        ],
+        "@id": "https://curatedcanopysafaris.com/destinations/pench-national-park#place",
+        "name": "Pench National Park",
+        "description": "Tiger reserve in southern Madhya Pradesh on the Maharashtra border, shaped by the Pench River. Safari gates include Turia, Karmajhiri and Jamtara.",
+        "url": "https://curatedcanopysafaris.com/destinations/pench-national-park",
+        "image": "https://curatedcanopysafaris.com/images/home/pench-crouching-tigress.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Madhya Pradesh",
+          "addressCountry": "IN"
+        },
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers",
+          "Families"
+        ],
+        "isAccessibleForFree": false,
+        "publicAccess": true
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Pench National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/pench-national-park"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/pench-national-park/schedule": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/pench-national-park/schedule#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/pench-national-park/schedule",
+        "name": "Pench Safari Package 2026-27 | Dates, Price, Inclusions",
+        "description": "Pench safari package for 2026-27 with stay, meals, permits and jeep safaris in one simple plan. See upcoming dates and price, then book on WhatsApp.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/pench-national-park/schedule#trip"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://curatedcanopysafaris.com/destinations/pench-national-park/schedule#trip",
+        "name": "Pench National Park Safari",
+        "description": "Small group wildlife safari to Pench National Park with stay, meals, park permits, naturalist and jeep safaris included.",
+        "url": "https://curatedcanopysafaris.com/destinations/pench-national-park/schedule",
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers"
+        ],
+        "itinerary": {
+          "@id": "https://curatedcanopysafaris.com/destinations/pench-national-park#place"
+        },
+        "provider": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Pench National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/pench-national-park"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Schedule",
+            "item": "https://curatedcanopysafaris.com/destinations/pench-national-park/schedule"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/panna-national-park": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/panna-national-park#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/panna-national-park",
+        "name": "Panna Safari Booking 2026-27 | Tiger Safari near Khajuraho",
+        "description": "Panna safari booking for 2026-27. Tiger safaris in Hinouta and Madla zones, only 25 km from Khajuraho. Expert naturalists and 4 guests per jeep.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/panna-national-park#place"
+        }
+      },
+      {
+        "@type": [
+          "TouristAttraction",
+          "Park"
+        ],
+        "@id": "https://curatedcanopysafaris.com/destinations/panna-national-park#place",
+        "name": "Panna National Park",
+        "description": "Tiger reserve in the Vindhyan ranges of Madhya Pradesh along the Ken River, about 25 km from Khajuraho. Core zones: Hinouta and Madla.",
+        "url": "https://curatedcanopysafaris.com/destinations/panna-national-park",
+        "image": "https://curatedcanopysafaris.com/images/home/panna-thumb.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Madhya Pradesh",
+          "addressCountry": "IN"
+        },
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers",
+          "Families"
+        ],
+        "isAccessibleForFree": false,
+        "publicAccess": true
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Panna National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/panna-national-park"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/panna-national-park/schedule": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/panna-national-park/schedule#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/panna-national-park/schedule",
+        "name": "Panna Safari Package 2026-27 | Dates, Price, Inclusions",
+        "description": "Panna safari package for 2026-27 with stay, meals, permits and jeep safaris in one simple plan. See upcoming dates and price, then book on WhatsApp.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/panna-national-park/schedule#trip"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://curatedcanopysafaris.com/destinations/panna-national-park/schedule#trip",
+        "name": "Panna National Park Safari",
+        "description": "Small group wildlife safari to Panna National Park with stay, meals, park permits, naturalist and jeep safaris included.",
+        "url": "https://curatedcanopysafaris.com/destinations/panna-national-park/schedule",
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers"
+        ],
+        "itinerary": {
+          "@id": "https://curatedcanopysafaris.com/destinations/panna-national-park#place"
+        },
+        "provider": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Panna National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/panna-national-park"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Schedule",
+            "item": "https://curatedcanopysafaris.com/destinations/panna-national-park/schedule"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/satpura-tiger-reserve": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve",
+        "name": "Satpura Safari Booking 2026-27 | Tiger and Jungle Safari",
+        "description": "Satpura safari booking with jeep safaris, walks and canoe rides in quiet Madhai zone. Tiger and jungle safaris with expert naturalists. See dates now.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve#place"
+        }
+      },
+      {
+        "@type": [
+          "TouristAttraction",
+          "Park"
+        ],
+        "@id": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve#place",
+        "name": "Satpura Tiger Reserve",
+        "description": "Tiger reserve of more than 2,100 sq km in the Satpura Range of Madhya Pradesh, known for walking safaris, canoe rides and quiet zones like Madhai.",
+        "url": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve",
+        "image": "https://curatedcanopysafaris.com/images/home/satpura-thumb.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Madhya Pradesh",
+          "addressCountry": "IN",
+          "addressLocality": "Narmadapuram (Hoshangabad) and Betul districts"
+        },
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers",
+          "Families"
+        ],
+        "isAccessibleForFree": false,
+        "publicAccess": true
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Satpura Tiger Reserve",
+            "item": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/satpura-tiger-reserve/schedule": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve/schedule#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve/schedule",
+        "name": "Satpura Safari Package 2026-27 | Dates, Price, Inclusions",
+        "description": "Satpura safari package for 2026-27 with stay, meals, permits and jeep safaris in one simple plan. See upcoming dates and price, then book on WhatsApp.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve/schedule#trip"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve/schedule#trip",
+        "name": "Satpura Tiger Reserve Safari",
+        "description": "Small group wildlife safari to Satpura Tiger Reserve with stay, meals, park permits, naturalist and jeep safaris included.",
+        "url": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve/schedule",
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers"
+        ],
+        "itinerary": {
+          "@id": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve#place"
+        },
+        "provider": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Satpura Tiger Reserve",
+            "item": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Schedule",
+            "item": "https://curatedcanopysafaris.com/destinations/satpura-tiger-reserve/schedule"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/tadoba-andhari-tiger-reserve": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve",
+        "name": "Tadoba Safari Booking 2026-27 | Tiger Safari Near Nagpur",
+        "description": "Tadoba safari booking for 2026-27. The best wildlife safari in Maharashtra, with tiger safaris in Moharli, Kolara and Navegaon. Expert naturalists.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve#place"
+        }
+      },
+      {
+        "@type": [
+          "TouristAttraction",
+          "Park"
+        ],
+        "@id": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve#place",
+        "name": "Tadoba Andhari Tiger Reserve",
+        "description": "Old dry deciduous forest of about 1,700 sq km in eastern Maharashtra and one of India's best places to see wild tigers. Safari zones include Moharli, Kolara and Navegaon.",
+        "url": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve",
+        "image": "https://curatedcanopysafaris.com/images/home/tadoba-thumb.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "IN"
+        },
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers",
+          "Families"
+        ],
+        "isAccessibleForFree": false,
+        "publicAccess": true
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Tadoba Andhari Tiger Reserve",
+            "item": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/tadoba-andhari-tiger-reserve/schedule": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve/schedule#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve/schedule",
+        "name": "Tadoba Tiger Safari Booking: 2N/3D Package from INR 27,000",
+        "description": "Tadoba tiger safari booking, 2N/3D package from INR 27,000 plus 5% GST. Stay, meals, permits and 4 safaris included. See dates and book on WhatsApp.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve/schedule#trip"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve/schedule#trip",
+        "name": "Tadoba Andhari Tiger Reserve Safari 2N/3D",
+        "description": "Small group wildlife safari to Tadoba Andhari Tiger Reserve with stay, meals, park permits, naturalist and jeep safaris included.",
+        "url": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve/schedule",
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers"
+        ],
+        "itinerary": {
+          "@id": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve#place"
+        },
+        "provider": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "27000",
+          "priceCurrency": "INR",
+          "url": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve/schedule",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "27000",
+            "priceCurrency": "INR",
+            "valueAddedTaxIncluded": false
+          },
+          "seller": {
+            "@id": "https://curatedcanopysafaris.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Tadoba Andhari Tiger Reserve",
+            "item": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Schedule",
+            "item": "https://curatedcanopysafaris.com/destinations/tadoba-andhari-tiger-reserve/schedule"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/dudhwa-national-park": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park",
+        "name": "Dudhwa National Park Safari Booking 2026-27 | Tigers, Rhinos",
+        "description": "Dudhwa National Park safari booking for 2026-27. See tigers, one-horned rhinos and swamp deer in Dudhwa and Kishanpur with expert naturalists.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park#place"
+        }
+      },
+      {
+        "@type": [
+          "TouristAttraction",
+          "Park"
+        ],
+        "@id": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park#place",
+        "name": "Dudhwa National Park and Kishanpur Wildlife Sanctuary",
+        "description": "Terai grassland and sal forest of about 490 sq km in Lakhimpur Kheri district of Uttar Pradesh, home to tigers, one-horned rhinos and swamp deer.",
+        "url": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park",
+        "image": "https://curatedcanopysafaris.com/images/home/dudhwa-thumb.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Uttar Pradesh",
+          "addressCountry": "IN",
+          "addressLocality": "Lakhimpur Kheri district"
+        },
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers",
+          "Families"
+        ],
+        "isAccessibleForFree": false,
+        "publicAccess": true
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Dudhwa National Park and Kishanpur Wildlife Sanctuary",
+            "item": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/dudhwa-national-park/schedule": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park/schedule#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park/schedule",
+        "name": "Dudhwa Safari Package 2026-27 | Dates, Price, Inclusions",
+        "description": "Dudhwa safari package for 2026-27 with stay, meals, permits and jeep safaris in one simple plan. See upcoming dates and price, then book on WhatsApp.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park/schedule#trip"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park/schedule#trip",
+        "name": "Dudhwa National Park and Kishanpur Wildlife Sanctuary Safari",
+        "description": "Small group wildlife safari to Dudhwa National Park and Kishanpur Wildlife Sanctuary with stay, meals, park permits, naturalist and jeep safaris included.",
+        "url": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park/schedule",
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers"
+        ],
+        "itinerary": {
+          "@id": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park#place"
+        },
+        "provider": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Dudhwa National Park and Kishanpur Wildlife Sanctuary",
+            "item": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Schedule",
+            "item": "https://curatedcanopysafaris.com/destinations/dudhwa-national-park/schedule"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/pilibhit-tiger-reserve": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve",
+        "name": "Pilibhit Tiger Reserve Safari Booking | Jungle Safari 2026",
+        "description": "Pilibhit Tiger Reserve booking made simple. Jungle safaris in the Terai, 70 km from Bareilly, with great tiger sightings and only 4 guests per jeep.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve#place"
+        }
+      },
+      {
+        "@type": [
+          "TouristAttraction",
+          "Park"
+        ],
+        "@id": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve#place",
+        "name": "Pilibhit Tiger Reserve",
+        "description": "Terai tiger reserve in Uttar Pradesh, declared in 2014, with excellent tiger sightings along forest roads, grasslands and wetlands.",
+        "url": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve",
+        "image": "https://curatedcanopysafaris.com/images/home/pilibhit-thumb.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Uttar Pradesh",
+          "addressCountry": "IN"
+        },
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers",
+          "Families"
+        ],
+        "isAccessibleForFree": false,
+        "publicAccess": true
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Pilibhit Tiger Reserve",
+            "item": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How can I make a reservation for Pilibhit Tiger Reserve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can book through official websites or directly via our platform, Curated Canopy Safaris."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the ideal time to visit Pilibhit Tiger Reserve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "From November to June is a great time to watch wildlife in Pilibhit Tiger Reserve."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/pilibhit-tiger-reserve/schedule": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve/schedule#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve/schedule",
+        "name": "Pilibhit Safari Package 2026-27 | Dates, Price, Inclusions",
+        "description": "Pilibhit safari package for 2026-27 with stay, meals, permits and jeep safaris in one simple plan. See upcoming dates and price, then book on WhatsApp.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve/schedule#trip"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve/schedule#trip",
+        "name": "Pilibhit Tiger Reserve Safari",
+        "description": "Small group wildlife safari to Pilibhit Tiger Reserve with stay, meals, park permits, naturalist and jeep safaris included.",
+        "url": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve/schedule",
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers"
+        ],
+        "itinerary": {
+          "@id": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve#place"
+        },
+        "provider": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Pilibhit Tiger Reserve",
+            "item": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Schedule",
+            "item": "https://curatedcanopysafaris.com/destinations/pilibhit-tiger-reserve/schedule"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/jim-corbett-national-park": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park",
+        "name": "Jim Corbett Safari Booking 2026-27 | Dhikala and Bijrani",
+        "description": "Jim Corbett safari booking for 2026-27. Dhikala forest stays and Bijrani and Jhirna jeep safaris in India's oldest national park. Plan with experts.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park#place"
+        }
+      },
+      {
+        "@type": [
+          "TouristAttraction",
+          "Park"
+        ],
+        "@id": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park#place",
+        "name": "Jim Corbett National Park",
+        "description": "India's oldest national park, spread over more than 1,300 sq km in the Himalayan foothills of Uttarakhand. Zones include Dhikala, Bijrani, Jhirna, Dhela and Durga Devi.",
+        "url": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park",
+        "image": "https://curatedcanopysafaris.com/images/home/jim-corbett-thumb.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Uttarakhand",
+          "addressCountry": "IN",
+          "addressLocality": "Nainital and Pauri Garhwal districts"
+        },
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers",
+          "Families"
+        ],
+        "isAccessibleForFree": false,
+        "publicAccess": true
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Jim Corbett National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/jim-corbett-national-park/schedule": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park/schedule#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park/schedule",
+        "name": "Jim Corbett Safari Packages 2026-27 | Dhikala Stay and Jeep",
+        "description": "Compare Jim Corbett safari packages for 2026-27: Dhikala forest stay, Canter or jeep safaris, meals and permits. See dates and enquire on WhatsApp.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park/schedule#trip"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park/schedule#trip",
+        "name": "Jim Corbett National Park Safari",
+        "description": "Small group wildlife safari to Jim Corbett National Park with stay, meals, park permits, naturalist and jeep safaris included.",
+        "url": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park/schedule",
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers"
+        ],
+        "itinerary": {
+          "@id": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park#place"
+        },
+        "provider": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Jim Corbett National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Schedule",
+            "item": "https://curatedcanopysafaris.com/destinations/jim-corbett-national-park/schedule"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/kaziranga-national-park": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park",
+        "name": "Kaziranga Safari Booking 2026-27 | One-Horned Rhino Safari",
+        "description": "Kaziranga safari booking for 2026-27. See one-horned rhinos, wild buffalo and elephants in this UNESCO World Heritage park on jeep safaris.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park#place"
+        }
+      },
+      {
+        "@type": [
+          "TouristAttraction",
+          "Park"
+        ],
+        "@id": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park#place",
+        "name": "Kaziranga National Park",
+        "description": "UNESCO World Heritage floodplain of about 430 sq km on the Brahmaputra in Assam, home to the one-horned rhino, wild buffalo, elephants and tigers.",
+        "url": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park",
+        "image": "https://curatedcanopysafaris.com/images/home/kaziranga-thumb.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Assam",
+          "addressCountry": "IN",
+          "addressLocality": "Golaghat and Nagaon districts"
+        },
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers",
+          "Families"
+        ],
+        "isAccessibleForFree": false,
+        "publicAccess": true
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Kaziranga National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/kaziranga-national-park/schedule": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park/schedule#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park/schedule",
+        "name": "Kaziranga National Park Tour Packages 2026-27 | Dates, Price",
+        "description": "Kaziranga National Park tour packages for 2026-27 with stay, meals, permits and jeep safaris. See upcoming dates and what is included. Enquire today.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park/schedule#trip"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park/schedule#trip",
+        "name": "Kaziranga National Park Safari",
+        "description": "Small group wildlife safari to Kaziranga National Park with stay, meals, park permits, naturalist and jeep safaris included.",
+        "url": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park/schedule",
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers"
+        ],
+        "itinerary": {
+          "@id": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park#place"
+        },
+        "provider": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Kaziranga National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Schedule",
+            "item": "https://curatedcanopysafaris.com/destinations/kaziranga-national-park/schedule"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/ranthambore-national-park": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park",
+        "name": "Ranthambore Tiger Safari Booking 2026-27 | Expert Guides",
+        "description": "Ranthambore tiger safari booking for 2026-27. See tigers by old lakes and fort ruins near Sawai Madhopur with expert guides. Stay and meals included.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park#place"
+        }
+      },
+      {
+        "@type": [
+          "TouristAttraction",
+          "Park"
+        ],
+        "@id": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park#place",
+        "name": "Ranthambore National Park",
+        "description": "Iconic tiger reserve in eastern Rajasthan with rocky ridges, ancient lakes and fort ruins. Safaris run across zones 1 to 10 from Sawai Madhopur.",
+        "url": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park",
+        "image": "https://curatedcanopysafaris.com/images/home/ranthambore-thumb.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Rajasthan",
+          "addressCountry": "IN"
+        },
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers",
+          "Families"
+        ],
+        "isAccessibleForFree": false,
+        "publicAccess": true
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ranthambore National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/ranthambore-national-park/schedule": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park/schedule#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park/schedule",
+        "name": "Ranthambore Safari Packages 2026-27 | Canter Safari Dates",
+        "description": "Ranthambore safari packages for 2026-27 with 5 Canter safaris, stay, meals and permits. See upcoming dates and what is included. Book on WhatsApp.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park/schedule#trip"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park/schedule#trip",
+        "name": "Ranthambore National Park Safari",
+        "description": "Small group wildlife safari to Ranthambore National Park with stay, meals, park permits, naturalist and jeep safaris included.",
+        "url": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park/schedule",
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers"
+        ],
+        "itinerary": {
+          "@id": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park#place"
+        },
+        "provider": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ranthambore National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Schedule",
+            "item": "https://curatedcanopysafaris.com/destinations/ranthambore-national-park/schedule"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/gir-national-park": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/gir-national-park#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/gir-national-park",
+        "name": "Gir Lion Safari Booking 2026-27 | Gir Jungle Safari Tours",
+        "description": "Gir lion safari booking for 2026-27. Jungle safaris in the last wild home of the Asiatic lion, with expert naturalists, good stays and all meals.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/gir-national-park#place"
+        }
+      },
+      {
+        "@type": [
+          "TouristAttraction",
+          "Park"
+        ],
+        "@id": "https://curatedcanopysafaris.com/destinations/gir-national-park#place",
+        "name": "Gir National Park",
+        "description": "The last natural home of the Asiatic lion, a dry open forest in western Gujarat across Junagadh, Gir Somnath and Amreli districts.",
+        "url": "https://curatedcanopysafaris.com/destinations/gir-national-park",
+        "image": "https://curatedcanopysafaris.com/images/home/gir-lion-thumb.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Gujarat",
+          "addressCountry": "IN",
+          "addressLocality": "Junagadh, Gir Somnath and Amreli districts"
+        },
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers",
+          "Families"
+        ],
+        "isAccessibleForFree": false,
+        "publicAccess": true
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Gir National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/gir-national-park"
+          }
+        ]
+      }
+    ]
+  },
+  "/destinations/gir-national-park/schedule": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/destinations/gir-national-park/schedule#webpage",
+        "url": "https://curatedcanopysafaris.com/destinations/gir-national-park/schedule",
+        "name": "Gir National Park Tour Packages 2026-27 | Lion Safari Dates",
+        "description": "Gir National Park tour packages for 2026-27 with lion safaris, stay, meals and permits. Option to add Somnath Temple. See dates and enquire today.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN",
+        "about": {
+          "@id": "https://curatedcanopysafaris.com/destinations/gir-national-park/schedule#trip"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://curatedcanopysafaris.com/destinations/gir-national-park/schedule#trip",
+        "name": "Gir National Park Safari",
+        "description": "Small group wildlife safari to Gir National Park with stay, meals, park permits, naturalist and jeep safaris included.",
+        "url": "https://curatedcanopysafaris.com/destinations/gir-national-park/schedule",
+        "touristType": [
+          "Wildlife enthusiasts",
+          "Nature photographers"
+        ],
+        "itinerary": {
+          "@id": "https://curatedcanopysafaris.com/destinations/gir-national-park#place"
+        },
+        "provider": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Safari Packages",
+            "item": "https://curatedcanopysafaris.com/safari-packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Gir National Park",
+            "item": "https://curatedcanopysafaris.com/destinations/gir-national-park"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Schedule",
+            "item": "https://curatedcanopysafaris.com/destinations/gir-national-park/schedule"
+          }
+        ]
+      }
+    ]
+  },
+  "/blogs/kanha-national-park-safari-open-2026": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/blogs/kanha-national-park-safari-open-2026#webpage",
+        "url": "https://curatedcanopysafaris.com/blogs/kanha-national-park-safari-open-2026",
+        "name": "Kanha National Park Safari Open 2026: Dates and Booking Tips",
+        "description": "Kanha National Park is open for the 2026-27 season. See opening dates, how the 120 day booking window works and how to get core zone permits early.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://curatedcanopysafaris.com/blogs/kanha-national-park-safari-open-2026#article",
+        "headline": "Kanha National Park Safari Open 2026: Dates and Booking Tips",
+        "description": "Kanha National Park is open for the 2026-27 season. See opening dates, how the 120 day booking window works and how to get core zone permits early.",
+        "url": "https://curatedcanopysafaris.com/blogs/kanha-national-park-safari-open-2026",
+        "mainEntityOfPage": {
+          "@id": "https://curatedcanopysafaris.com/blogs/kanha-national-park-safari-open-2026#webpage"
+        },
+        "author": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogs",
+            "item": "https://curatedcanopysafaris.com/blogs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Kanha National Park Safari Open 2026",
+            "item": "https://curatedcanopysafaris.com/blogs/kanha-national-park-safari-open-2026"
+          }
+        ]
+      }
+    ]
+  },
+  "/blogs/how-to-book-panna-safari-online": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/blogs/how-to-book-panna-safari-online#webpage",
+        "url": "https://curatedcanopysafaris.com/blogs/how-to-book-panna-safari-online",
+        "name": "How to Book Panna Safari Online 2026: Step-by-Step Guide",
+        "description": "How to book a Panna safari online in simple steps: Panna Tiger Reserve permits, zones, ID, fees and Tatkal rules. Or let us book it for you.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://curatedcanopysafaris.com/blogs/how-to-book-panna-safari-online#article",
+        "headline": "How to Book Panna Safari Online 2026: Step-by-Step Guide",
+        "description": "How to book a Panna safari online in simple steps: Panna Tiger Reserve permits, zones, ID, fees and Tatkal rules. Or let us book it for you.",
+        "url": "https://curatedcanopysafaris.com/blogs/how-to-book-panna-safari-online",
+        "mainEntityOfPage": {
+          "@id": "https://curatedcanopysafaris.com/blogs/how-to-book-panna-safari-online#webpage"
+        },
+        "author": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogs",
+            "item": "https://curatedcanopysafaris.com/blogs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "How to Book Safari in Panna: Complete Step-by-Step Booking Guide 2026",
+            "item": "https://curatedcanopysafaris.com/blogs/how-to-book-panna-safari-online"
+          }
+        ]
+      }
+    ]
+  },
+  "/blogs/satpura-safari-booking-guide-2026": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/blogs/satpura-safari-booking-guide-2026#webpage",
+        "url": "https://curatedcanopysafaris.com/blogs/satpura-safari-booking-guide-2026",
+        "name": "Satpura Safari Booking Guide 2026: Permits, Zones and Tips",
+        "description": "Our simple Satpura safari booking guide for 2026: how permits work, which zone to pick, when to book and naturalist tips to get the best dates.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://curatedcanopysafaris.com/blogs/satpura-safari-booking-guide-2026#article",
+        "headline": "Satpura Safari Booking Guide 2026: Permits, Zones and Tips",
+        "description": "Our simple Satpura safari booking guide for 2026: how permits work, which zone to pick, when to book and naturalist tips to get the best dates.",
+        "url": "https://curatedcanopysafaris.com/blogs/satpura-safari-booking-guide-2026",
+        "mainEntityOfPage": {
+          "@id": "https://curatedcanopysafaris.com/blogs/satpura-safari-booking-guide-2026#webpage"
+        },
+        "author": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogs",
+            "item": "https://curatedcanopysafaris.com/blogs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Satpura Safari Booking Guide: Expert Tips for 2026 Reservations",
+            "item": "https://curatedcanopysafaris.com/blogs/satpura-safari-booking-guide-2026"
+          }
+        ]
+      }
+    ]
+  },
+  "/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide#webpage",
+        "url": "https://curatedcanopysafaris.com/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide",
+        "name": "Best Time for Tiger Safari in India: Month-by-Month 2026",
+        "description": "When is the best time to see tigers in India? Our month-by-month guide covers weather, park openings, sightings and crowds, so you pick the right dates.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://curatedcanopysafaris.com/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide#article",
+        "headline": "Best Time for Tiger Safari in India: Month-by-Month 2026",
+        "description": "When is the best time to see tigers in India? Our month-by-month guide covers weather, park openings, sightings and crowds, so you pick the right dates.",
+        "url": "https://curatedcanopysafaris.com/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide",
+        "mainEntityOfPage": {
+          "@id": "https://curatedcanopysafaris.com/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide#webpage"
+        },
+        "author": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogs",
+            "item": "https://curatedcanopysafaris.com/blogs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Best Time to Visit India for a Tiger Safari",
+            "item": "https://curatedcanopysafaris.com/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide"
+          }
+        ]
+      }
+    ]
+  },
+  "/blogs/best-time-for-tiger-safari-in-india-season-by-season-guide": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://curatedcanopysafaris.com/blogs/best-time-for-tiger-safari-in-india-season-by-season-guide#webpage",
+        "url": "https://curatedcanopysafaris.com/blogs/best-time-for-tiger-safari-in-india-season-by-season-guide",
+        "name": "Winter, Summer or Monsoon? Best Tiger Safari Season in India",
+        "description": "Winter, summer or monsoon? Compare tiger safari seasons in India by weather, comfort and sighting chances, and choose the season that suits you.",
+        "isPartOf": {
+          "@id": "https://curatedcanopysafaris.com/#website"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://curatedcanopysafaris.com/blogs/best-time-for-tiger-safari-in-india-season-by-season-guide#article",
+        "headline": "Winter, Summer or Monsoon? Best Tiger Safari Season in India",
+        "description": "Winter, summer or monsoon? Compare tiger safari seasons in India by weather, comfort and sighting chances, and choose the season that suits you.",
+        "url": "https://curatedcanopysafaris.com/blogs/best-time-for-tiger-safari-in-india-season-by-season-guide",
+        "mainEntityOfPage": {
+          "@id": "https://curatedcanopysafaris.com/blogs/best-time-for-tiger-safari-in-india-season-by-season-guide#webpage"
+        },
+        "author": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://curatedcanopysafaris.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://curatedcanopysafaris.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogs",
+            "item": "https://curatedcanopysafaris.com/blogs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Best Time for Tiger Safari in India: Season-by-Season Guide",
+            "item": "https://curatedcanopysafaris.com/blogs/best-time-for-tiger-safari-in-india-season-by-season-guide"
+          }
+        ]
+      }
+    ]
+  }
+}

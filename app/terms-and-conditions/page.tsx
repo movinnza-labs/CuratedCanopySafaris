@@ -56,8 +56,6 @@ export default function TermsAndConditionsPage() {
               </li>
               <li>
                 <strong>Email:</strong> <a href={`mailto:${contact.email}`}>{contact.email}</a>
-                {" or "}
-                <a href={`mailto:${contact.secondaryEmail}`}>{contact.secondaryEmail}</a>
               </li>
               <li>
                 <strong>Contact number:</strong> <a href={contact.phoneHref}>{contact.phone}</a>

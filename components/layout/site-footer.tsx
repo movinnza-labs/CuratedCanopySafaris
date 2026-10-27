@@ -2,7 +2,6 @@ import Link from "next/link";
 import { HomeImage } from "@/components/ui/home-image";
 import { InlineText } from "@/components/ui/inline-text";
 import { footer } from "@/lib/data/home";
-import { ShareButtons } from "./share-buttons";
 
 const contactIcons = {
   phone: (
@@ -20,9 +19,10 @@ function FooterLinks({ id, title, links }: { id: string; title: string; links: r
   const className = "inline-block text-white/85 transition-[color,transform] duration-300 hover:translate-x-1 hover:text-white";
   return (
     <nav aria-labelledby={id}>
-      <h2 id={id} className="font-display text-xl font-semibold text-sand-100">
+      {/* Styled text, not a heading, so footer labels stay out of every page outline. */}
+      <p id={id} className="font-display text-xl font-semibold text-sand-100">
         {title}
-      </h2>
+      </p>
       <ul className="mt-5 space-y-3">
         {links.map((item) => (
           <li key={item.label}>
@@ -69,7 +69,7 @@ export function SiteFooter() {
           </div>
 
           <div className="lg:col-span-4">
-            <h2 className="font-display text-xl font-semibold text-sand-100">{footer.contactTitle}</h2>
+            <p className="font-display text-xl font-semibold text-sand-100">{footer.contactTitle}</p>
             <ul className="mt-5 space-y-3.5">
               {footer.contacts.map((contact) => (
                 <li key={contact.label}>
@@ -84,16 +84,10 @@ export function SiteFooter() {
                 </li>
               ))}
             </ul>
-            <div className="mt-6">
-              <ShareButtons items={footer.share} />
-            </div>
           </div>
         </div>
 
-        <div className="mt-14 space-y-3 border-t border-white/15 pt-8 text-sm leading-relaxed text-white/75">
-          <p>{footer.terms}</p>
-          <p className="font-semibold text-white/85">{footer.gstin}</p>
-        </div>
+        <p className="mt-14 border-t border-white/15 pt-8 text-sm leading-relaxed font-semibold text-white/85">{footer.gstin}</p>
         <p className="mt-8 border-t border-white/10 pt-6 text-center text-sm text-white/80">
           <InlineText parts={footer.copyright} linkClassName="font-semibold text-white underline-offset-4 hover:underline" />
         </p>

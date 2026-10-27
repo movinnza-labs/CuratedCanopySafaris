@@ -17,6 +17,12 @@ export const pilibhit: Destination = {
       "Book Pilibhit Tiger Reserve safari and explore UP’s hidden gem. Spot tigers, swamp deer & birds in pristine jungle. Secure your Pilibhit booking today!",
   },
   imageKeys: ["pilibhitTiger", "pilibhitRaptor"],
+  scheduleLinkText: "Pilibhit safari dates and price",
+  relatedSlugs: ["dudhwa-national-park", "jim-corbett-national-park"],
+  relatedIntro:
+    "Extend your Pilibhit trip with [Dudhwa National Park Safari Booking](/destinations/dudhwa-national-park) or [Jim Corbett safari booking](/destinations/jim-corbett-national-park).",
+  bestTimeNote:
+    "For a month-by-month view across India’s parks, read our guide to the [best time for a tiger safari in India](/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide).",
   intro: [
     {
       heading: "Pilibhit – The Emerging Tiger Reserve",
@@ -97,7 +103,7 @@ export const pilibhit: Destination = {
         "November to June is the ideal period to visit Pilibhit Tiger Reserve, as the [reserve remains closed](/destinations/pilibhit-tiger-reserve/schedule) during the monsoon season from July to October. November to February offers cooler temperatures and comfortable safari conditions, with good opportunities to observe tiger activity and other wildlife. As winter progresses, wildlife movement can be rewarding, making this period particularly suitable for families and couples.\n\nMarch to June is especially favourable for wildlife photography. As temperatures rise and vegetation becomes thinner, visibility improves, while animals are more likely to gather around water sources. April and May can offer excellent opportunities for clear sightings and photography, particularly during the early morning hours when the light is favourable.\n\nMay and June can be hot, with daytime temperatures reaching around 35 to 40 degrees C, so early-morning safaris and a midday rest are advisable. Curated Canopy can tailor itineraries according to your priorities, whether you are looking for comfortable weather, higher sighting opportunities, or the best photographic conditions.",
     },
   ],
-  cta: { heading: "Book Your Pilibhit Tiger Reserve Safari, Confirmed Permits, Expert Guides, Transparent USD Pricing" },
+  cta: { heading: "Book Your Pilibhit Tiger Reserve Safari, Confirmed Permits, Expert Guides, Transparent Pricing" },
   schema: {
     service: {
       name: "Pilibhit Tiger Reserve Jungle Safari Booking",

@@ -17,6 +17,12 @@ export const panna: Destination = {
       "Discover Panna Tiger Safari along Ken River – expert guides, thrilling jeep rides & tiger spotting in pristine forests. Book your Panna safari adventure today!",
   },
   imageKeys: ["pannaTiger", "pannaSpurfowl", "pannaEagle"],
+  scheduleLinkText: "Panna safari dates and price",
+  relatedSlugs: ["bandhavgarh-national-park", "satpura-tiger-reserve"],
+  relatedIntro:
+    "Extend your Panna trip with [Bandhavgarh National Park Safari](/destinations/bandhavgarh-national-park) or [Satpura safari booking](/destinations/satpura-tiger-reserve).",
+  bestTimeNote:
+    "For a month-by-month view across India’s parks, read our guide to the [best time for a tiger safari in India](/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide).",
   intro: [
     {
       heading: "Panna Tiger Reserve – Tigers of the Diamond country",
@@ -40,6 +46,7 @@ export const panna: Destination = {
     paragraphs: [
       "Panna National Park, situated in the Vindhyan hills of Madhya Pradesh, is a place where nature unfolds in a dramatic way. The park covers over 1500 square kilometres and is known for its rugged landscape of rocky plateaus, deep gorges, open grasslands, and dry deciduous forests. The Ken River flows through the park and plays an important role in sustaining wildlife.",
       "The park has two core zones, Hinouta and Madla, along with several buffer areas. The terrain is slightly rough but still accessible, making safaris here both scenic and rewarding.",
+      "Panna is also a UNESCO Biosphere Reserve, recognised under UNESCO’s Man and the Biosphere programme in 2020.",
     ],
   },
   wildlife: {
@@ -83,16 +90,19 @@ export const panna: Destination = {
     {
       heading: "What Curated Canopy Safaris Delivers for Panna National Park Expeditions",
       items: [
-        "**Panna Safari & Permit Assistance:** Curated Canopy Safaris assists travellers with Panna National Park jeep safari bookings, including Madla Gate and Hinauta Gate core-zone safaris, as well as Ken River boat safari bookings and Panna buffer-zone safari options. Safari permits and entry permissions are issued through the Madhya Pradesh Forest Department's official booking system.",
+        "**Panna Safari & Permit Assistance:** Curated Canopy Safaris assists travellers with Panna National Park jeep safari bookings, including Madla Gate and Hinouta Gate core-zone safaris, as well as Ken River boat safari bookings and Panna buffer-zone safari options. Safari permits and entry permissions are issued through the Madhya Pradesh Forest Department's official booking system.",
         "**Multiple Panna Safari Experiences:** Morning and evening jeep safaris, Ken River boat safaris for wildlife and birdwatching, and available Panna night safari experiences in designated buffer zones, depending on official Forest Department schedules and availability. Safari planning can be tailored for international travellers visiting from the UK, United States, Australia, Germany, France and other destinations.",
         "**End-to-End Panna Travel Coordination:** Coordinate the journey from Khajuraho Airport to Panna National Park, including airport transfers, accommodation near the park, safari booking assistance and pre-safari logistics. Curated Canopy Safaris helps international visitors navigate the practical arrangements required for a Panna Tiger Reserve wildlife experience.",
+      ],
+      closing: [
+        "Want to see each step first? Read our guide on [how to book a Panna safari online](/blogs/how-to-book-panna-safari-online).",
       ],
     },
     {
       heading: "How Curated Canopy Safaris Secures Your Panna Tiger Reserve Expedition",
       subsections: [
         {
-          heading: "Pillar 1: Panna Tiger Reserve, Destination Intelligence & Conservation Context",
+          heading: "Panna Tiger Reserve, Destination Intelligence & Conservation Context",
           paragraphs: [
             "**Ken River, Gharial & Vulture Conservation:** The Ken River forms a vital aquatic habitat within Panna Tiger Reserve, supporting wildlife including mugger crocodiles and the endangered gharial, as well as diverse waterbirds. Ken River boat safaris offer a distinctive perspective on Panna's riverine ecosystem, complementing jeep safaris with opportunities for wildlife, bird and landscape observation. Panna also supports diverse avifauna, including the critically endangered white-rumped vulture (Oriental white-backed vulture), with vulture nesting colonies in the region currently being monitored by the Bombay Natural History Society (BNHS). Together, these habitats and conservation efforts highlight Panna as a destination of significance not only for tiger sightings but also for riverine wildlife, birdwatching and broader wildlife conservation.",
           ],
@@ -105,8 +115,8 @@ export const panna: Destination = {
         head: ["", "Curated Canopy", "Self-booking via MPOnline"],
         rows: [
           [
-            "USD/EUR Cost Transparency",
-            "All-inclusive price (permit + transfer + guide + lodge coordination) quoted in USD/GBP/EUR, no hidden gate fees",
+            "Cost Transparency",
+            "All-inclusive price (permit + transfer + guide + lodge coordination), no hidden gate fees",
             "Permit base cost low but excludes: jeep rental, naturalist hire, entry taxes, tip expectations, final cost discovered on-site",
           ],
         ],
@@ -131,6 +141,38 @@ export const panna: Destination = {
     },
   ],
   faqHeading: "Panna National Park Safari Booking, What International Travellers Need to Know",
+  faqs: [
+    {
+      question: "Where is Panna National Park and how big is it?",
+      answer:
+        "Panna National Park lies in the Vindhyan hills of Madhya Pradesh and covers roughly 1,500 square kilometres of rocky plateaus, deep gorges, open grasslands and dry deciduous forest, with the Ken River flowing through it.",
+    },
+    {
+      question: "What are the core safari zones in Panna?",
+      answer:
+        "Panna has two core zones, Hinouta and Madla, along with several buffer areas. We assist with jeep safari bookings at both Madla Gate and Hinouta Gate.",
+    },
+    {
+      question: "What safaris are available in Panna besides jeep safaris?",
+      answer:
+        "Alongside morning and evening jeep safaris, you can take a Ken River boat safari for wildlife and birdwatching. Night safaris are available in designated buffer zones, depending on official Forest Department schedules and availability.",
+    },
+    {
+      question: "What wildlife can I see in Panna?",
+      answer:
+        "Apart from tigers, Panna has leopards, sloth bears, chital, sambar, nilgai and chinkara. Gharials and mugger crocodiles live along the Ken River, and the park has over 200 species of birds, including the critically endangered white-rumped vulture.",
+    },
+    {
+      question: "When is the best time to visit Panna National Park?",
+      answer:
+        "Winter (October to February) brings pleasant weather and good birdwatching. Summer (March to June) is the best time for tiger sightings, especially near water sources. The park is closed during the monsoon.",
+    },
+    {
+      question: "How do I get to Panna National Park?",
+      answer:
+        "The nearest airport is Khajuraho, around 25 km away, and the drive from Khajuraho takes about 30–40 minutes. The closest railway stations are Khajuraho and Satna. We can arrange your Khajuraho to Panna transfers.",
+    },
+  ],
   cta: {
     heading:
       "Book Your Madhya Pradesh Tiger Reserve Safari With Curated Canopy, Permits, Transfers, Naturalist Expertise Included",

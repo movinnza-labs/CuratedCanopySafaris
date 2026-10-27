@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { images, type ImageKey } from "@/lib/data/images";
 import { site } from "@/lib/data/site";
+import { pageSeo } from "./page-seo";
 
 type PageMetadataInput = {
   title: string;
@@ -53,4 +54,22 @@ export function buildMetadata({
       images: [image.src],
     },
   };
+}
+
+/**
+ * Metadata for a page covered by the launch SEO pack (lib/seo/page-seo.ts): its title (used as-is),
+ * description and canonical. Pages the pack doesn't cover use `fallback`.
+ */
+export function pageMetadata(path: string, fallback: Omit<PageMetadataInput, "path">): Metadata {
+  const seo = pageSeo[path];
+  return buildMetadata({
+    ...fallback,
+    path,
+    ...(seo ? { title: seo.title, description: seo.description, absoluteTitle: true } : {}),
+  });
+}
+
+/** The page's H1 from the launch SEO pack, or `fallback` when the pack doesn't cover it. */
+export function pageH1(path: string, fallback: string): string {
+  return pageSeo[path]?.h1 ?? fallback;
 }

@@ -2,6 +2,7 @@ import { images } from "@/lib/data/images";
 import { site } from "@/lib/data/site";
 import type { BlogPost, Destination, Faq } from "@/lib/data/types";
 import { absoluteUrl } from "./metadata";
+import pageSchema from "./page-schema.json";
 
 type JsonLd = Record<string, unknown>;
 
@@ -139,4 +140,18 @@ export function blogPostingJsonLd(post: BlogPost, imageSrc: string): JsonLd {
     author: { "@id": organizationId },
     publisher: { "@id": organizationId },
   };
+}
+
+/**
+ * The JSON-LD from the launch SEO pack ("Schema" tab, lib/seo/page-schema.json) for a canonical path,
+ * exactly as supplied. Undefined for pages the pack doesn't cover.
+ */
+export function pageJsonLd(path: string): JsonLd | undefined {
+  return (pageSchema as Record<string, JsonLd>)[path];
+}
+
+/** True when a page's supplied JSON-LD already includes an entity of `type`. */
+export function hasSchemaType(data: JsonLd | undefined, type: string): boolean {
+  const graph = (data?.["@graph"] as JsonLd[] | undefined) ?? (data ? [data] : []);
+  return graph.some((node) => node["@type"] === type);
 }

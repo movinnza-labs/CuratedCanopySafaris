@@ -1,3 +1,4 @@
+import { InlineText } from "@/components/ui/inline-text";
 import { Reveal } from "@/components/ui/reveal";
 import { expeditions, expeditionsIntro } from "@/lib/data/home";
 import { ExpeditionCard } from "./expedition-card";
@@ -20,6 +21,12 @@ export function ExpeditionsSection() {
             </Reveal>
           ))}
         </ol>
+        <p className="relative mx-auto mt-12 max-w-3xl px-4 text-center text-lg leading-relaxed text-white/90 sm:mt-16 sm:px-6">
+          <InlineText
+            parts={expeditionsIntro.outro}
+            linkClassName="font-semibold text-sand-100 underline decoration-sand-200/60 underline-offset-4 transition-colors hover:decoration-sand-100"
+          />
+        </p>
       </div>
     </section>
   );

@@ -3,7 +3,6 @@ import { bestTimeMonthByMonth } from "./best-time-to-visit-india-for-tiger-safar
 import { bestTimeSeasonBySeason } from "./best-time-for-tiger-safari-in-india-season-by-season-guide";
 import { bestTimeToVisitDudhwa } from "./best-time-to-visit-dudhwa-national-park";
 import { howToBookPannaSafariOnline } from "./how-to-book-panna-safari-online";
-import { pannaSafariBookingGuide2026 } from "./how-to-book-panna-safari-online-2";
 import { kanhaSafariOpen2026 } from "./kanha-national-park-safari-open-2026";
 import { satpuraSafariBookingGuide2026 } from "./satpura-safari-booking-guide-2026";
 import { tadobaSafariBookingGuide } from "./tadoba-safari-booking-guide";
@@ -12,7 +11,6 @@ import { tadobaSafariBookingGuide } from "./tadoba-safari-booking-guide";
 export const blogPosts: BlogPost[] = [
   tadobaSafariBookingGuide,
   bestTimeToVisitDudhwa,
-  pannaSafariBookingGuide2026,
   kanhaSafariOpen2026,
   howToBookPannaSafariOnline,
   satpuraSafariBookingGuide2026,

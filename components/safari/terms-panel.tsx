@@ -7,7 +7,7 @@ export function TermsPanel({ terms }: { terms: TermsPolicy }) {
     <div className="@container">
       <div className="grid gap-8 @lg:grid-cols-2">
       <div>
-        <h4 className="font-sans text-sm font-bold tracking-wide text-forest-900 uppercase">What is included</h4>
+        <h3 className="font-sans text-sm font-bold tracking-wide text-forest-900 uppercase">What is included</h3>
         <ul className="mt-3 space-y-2.5">
           {terms.included.map((item) => (
             <li key={item} className="flex gap-3 text-ink-700">
@@ -18,7 +18,7 @@ export function TermsPanel({ terms }: { terms: TermsPolicy }) {
         </ul>
       </div>
       <div>
-        <h4 className="font-sans text-sm font-bold tracking-wide text-forest-900 uppercase">What is not included</h4>
+        <h3 className="font-sans text-sm font-bold tracking-wide text-forest-900 uppercase">What is not included</h3>
         <ul className="mt-3 space-y-2.5">
           {terms.notIncluded.map((item) => (
             <li key={item} className="flex gap-3 text-ink-700">
@@ -29,7 +29,7 @@ export function TermsPanel({ terms }: { terms: TermsPolicy }) {
         </ul>
       </div>
       <div>
-        <h4 className="font-sans text-sm font-bold tracking-wide text-forest-900 uppercase">Payment terms</h4>
+        <h3 className="font-sans text-sm font-bold tracking-wide text-forest-900 uppercase">Payment terms</h3>
         <ul className="mt-3 space-y-2 text-ink-700">
           {terms.payment.map((item) => (
             <li key={item}>{item}</li>
@@ -37,7 +37,7 @@ export function TermsPanel({ terms }: { terms: TermsPolicy }) {
         </ul>
       </div>
       <div>
-        <h4 className="font-sans text-sm font-bold tracking-wide text-forest-900 uppercase">Cancellation terms</h4>
+        <h3 className="font-sans text-sm font-bold tracking-wide text-forest-900 uppercase">Cancellation terms</h3>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-ink-700 marker:text-ochre-500">
           {terms.cancellation.map((item) => (
             <li key={item}>{item}</li>

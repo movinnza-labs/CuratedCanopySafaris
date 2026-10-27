@@ -1,6 +1,6 @@
 // Site copy from curatedcanopysafaris.com (Home, About Us, and the blocks repeated on every destination page).
 // Wording is unchanged apart from spelling, spacing and punctuation fixes.
-import type { BlogBlock, ContentSection, NamedItem } from "./types";
+import type { BlogBlock, ContentSection, Faq, NamedItem } from "./types";
 
 export const aboutStory: ContentSection = {
   heading: "Curated Wildlife Safaris",
@@ -60,8 +60,44 @@ export const destinationPromises: NamedItem[] = [
 
 export const howToBook: string[] = [
   "You can book your complete package through Curated Canopy Safaris.",
-  "You will need to provide a valid ID (Aadhar card / PAN card / Driving Licence; passport for foreign nationals) for permit booking.",
+  "You will need to provide a valid ID (Aadhaar card / PAN card / Driving Licence; passport for foreign nationals) for permit booking.",
   "Safaris are limited and should be booked in advance.",
+];
+
+/**
+ * FAQs on the Safari Packages page. Every answer restates terms already on the site (terms.ts inclusions and payment,
+ * the four-per-gypsy promise, howToBook). Cancellation refunds are deliberately left to each park's schedule page.
+ */
+export const safariPackagesFaqs: Faq[] = [
+  {
+    question: "What is included in a safari package?",
+    answer:
+      "Every package includes twin-sharing accommodation in comfortable lodges (single occupancy is available at an additional cost), all meals except on Day 1, and all entry fees, forest permits, guide fees and safaris.\n\nAirfare, transfers from the nearest airport or railway station, drinks, insurance, camera fees, tips and personal expenses are not included.",
+  },
+  {
+    question: "How many guests share a safari vehicle?",
+    answer:
+      "Although the safari vehicles can seat six, we curate all our safaris with four safarists per gypsy, so the experience is more comfortable for every guest.",
+  },
+  {
+    question: "How do I book a safari package?",
+    answer:
+      "You can book your complete package through Curated Canopy Safaris. Choose a park and open its schedule with **Book Now**, or [send us an enquiry](/contact). You will need a valid ID (Aadhaar card, PAN card or driving licence; passport for foreign nationals) for permit booking. Safaris are limited, so book in advance.",
+  },
+  {
+    question: "How do I pay for my safari?",
+    answer: "100% of the tour fee must be paid in advance to confirm participation in the tour.",
+  },
+  {
+    question: "What is the cancellation policy?",
+    answer:
+      "Cancellation terms vary by package and are listed on each park’s schedule page. Please also read our [Refund and Cancellation Policy](/refund-cancellation-policy) before you confirm a booking.",
+  },
+  {
+    question: "When should I go on safari?",
+    answer:
+      "Seasons and sightings differ from park to park. Our guide will help you [choose the right safari season](/blogs/best-time-for-tiger-safari-in-india-season-by-season-guide), and our team is happy to suggest dates for the park you have in mind.",
+  },
 ];
 
 export const safariTips: NamedItem[] = [
@@ -73,7 +109,7 @@ export const safariTips: NamedItem[] = [
 
 /**
  * Homepage feature panels. Velavadar appears only here on the original site (its "Read more" link was broken),
- * so it links to the enquiry form rather than a destination page.
+ * so it links to the enquiry form rather than a destination page (Velavadar is not offered in the form's park list).
  */
 export const featuredLandscapes = [
   {
@@ -101,7 +137,7 @@ export const featuredLandscapes = [
     eyebrow: "In the Grasslands Heavens",
     title: "Velavadar",
     text: "Velavadar National Park, also known as Blackbuck National Park, home to around 2000 blackbucks, lies along the Gulf of Khambhat in Gujarat.",
-    href: "/contact?destination=Velavadar%20National%20Park",
+    href: "/contact",
     // No photo on the original site is attributed to Velavadar.
     imageKey: undefined,
   },
@@ -128,6 +164,9 @@ export const privacyPolicy = {
   operator: "PUGMARK SAFARIS LLP",
   effectiveDate: "2026-10-12",
   updatedDate: "2026-10-12",
+  // The site-wide clause (site.legal.jurisdiction) is worded for the Terms; this is the same clause for this Policy.
+  governingLaw:
+    "This Policy shall be governed by and construed in accordance with the laws of India. The Company has its registered office in Boisar, Maharashtra. Any dispute, claim or proceeding arising out of or relating to the use of this website, this Policy, or any services offered through this website shall be subject to the exclusive jurisdiction of the competent courts at Mumbai, Maharashtra, and users hereby irrevocably submit to such jurisdiction.",
   blocks: [
     {
       type: "paragraph",

@@ -17,7 +17,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         {rest.length > 0 ? (
           <details className="group mt-3">
             <summary className="inline-flex items-center gap-1 text-sm font-semibold text-ochre-700 hover:text-ochre-800">
-              <span className="group-open:hidden">Read the full review</span>
+              <span className="group-open:hidden">Read the full review</span>{" "}
               <span className="hidden group-open:inline">Show less</span>
               <Icon name="chevronDown" className="size-4 transition-transform group-open:rotate-180" />
             </summary>
@@ -33,7 +33,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         {isImageKey(testimonial.imageKey) ? (
           <SafariImage
             imageKey={testimonial.imageKey}
-            alt=""
+            alt={testimonial.author}
             sizes="56px"
             className="size-14 shrink-0 rounded-full object-cover object-top"
           />
@@ -58,7 +58,7 @@ export function Testimonials() {
         <SectionHeading
           id="testimonials-title"
           eyebrow="Testimonials"
-          title="Trusted by many, proven by results"
+          title="What our guests say"
           intro="In the words of guests who have travelled with us."
           align="center"
         />

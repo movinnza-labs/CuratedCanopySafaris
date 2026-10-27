@@ -7,18 +7,18 @@ import { LetUsKnowSection } from "@/components/home/let-us-know-section";
 import { TestimonialsSection } from "@/components/home/testimonials-section";
 import { WhyChooseSection } from "@/components/home/why-choose-section";
 import { YoungNaturalistSection } from "@/components/home/young-naturalist-section";
-import { buildMetadata } from "@/lib/seo/metadata";
+import { JsonLd } from "@/components/ui/json-ld";
+import { pageJsonLd } from "@/lib/seo/json-ld";
+import { pageMetadata } from "@/lib/seo/metadata";
 
-export const metadata = buildMetadata({
-  // Title and description as on the live homepage.
+export const metadata = pageMetadata("/", {
   title: "Best Wildlife Safari in India | Curated Canopy Safaris",
   description:
     "Discover top wildlife safari in India with expert-curated jungle tours, tiger reserves & national parks. Plan your dream safari adventure. Explore packages now!",
-  path: "/",
   absoluteTitle: true,
 });
 
-/** Section order matches the live homepage exactly. */
+/** Section order follows the live homepage, minus its duplicate second "Let Us Know" form. */
 export default function HomePage() {
   return (
     <>
@@ -31,7 +31,7 @@ export default function HomePage() {
       <LetUsKnowSection id="let-us-know" />
       <ExpeditionsSection />
       <TestimonialsSection />
-      <LetUsKnowSection id="let-us-know-2" />
+      <JsonLd data={pageJsonLd("/") ?? []} />
     </>
   );
 }

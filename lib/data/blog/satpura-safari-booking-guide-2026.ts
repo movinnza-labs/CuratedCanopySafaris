@@ -17,7 +17,7 @@ export const satpuraSafariBookingGuide2026: BlogPost = {
   body: [
     {
       type: "paragraph",
-      text: "Satpura safari booking guide success requires booking 120 days in advance through Madhya Pradesh Forest Department portals. Core zone permits for [Satpura National Park safari booking](/destinations/satpura-tiger-reserve) sell out 90 days before October-March peak season weekends. Morning slots deliver superior wildlife photography Satpura conditions compared to afternoon safaris, with tiger sighting probability highest in Madhai and Pachmarhi buffer zones.",
+      text: "Satpura safari booking guide success requires booking 120 days in advance through Madhya Pradesh Forest Department portals. Core zone permits for [Satpura Tiger Reserve](/destinations/satpura-tiger-reserve) sell out 90 days before October-March peak season weekends. Morning slots deliver superior wildlife photography Satpura conditions compared to afternoon safaris, with tiger sighting probability highest in Madhai and Pachmarhi buffer zones.",
     },
     {
       type: "paragraph",
@@ -27,7 +27,7 @@ export const satpuraSafariBookingGuide2026: BlogPost = {
       type: "list",
       items: [
         "Book exactly 120 days before your visit when online safari ticket booking India portals open at midnight",
-        "Morning safaris in Madhai zone offer 40% better tiger sighting rates than afternoon Pachmarhi slots",
+        "Morning safaris in Madhai zone usually offer better tiger sighting chances than afternoon Pachmarhi slots",
         "Group bookings (8+ people) bypass individual quotas through separate permit allocation systems",
       ],
     },
@@ -56,7 +56,7 @@ export const satpuraSafariBookingGuide2026: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Madhya Pradesh opens its booking system exactly 120 days prior to your desired date. This is not an estimate; it is a firm system limitation involving the Satpura tiger reserve tourism portal. It opens at midnight IST, and the best weekend bookings from October to March are taken by travelers before they finish their morning chai.",
+      text: "Madhya Pradesh opens its booking system exactly 120 days prior to your desired date. This is not an estimate; it is a firm system limitation involving the Satpura tiger reserve tourism portal. It opens at midnight IST, and the best weekend bookings from October to March are taken by travellers before they finish their morning chai.",
     },
     {
       type: "heading",
@@ -65,11 +65,16 @@ export const satpuraSafariBookingGuide2026: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Most guides don’t mention that Satpura works with three different quota pools. A public portal allows individual tourists to purchase 60% of the daily permits. Tour operators registered with Madhya Pradesh Tourism have 25% of this allocation. The last 15% is a discretionary pool overseen by the Forest Department allocated to VIP visits or emergency releases. When booking independently, you are only competing within 60% of this pool, which is approximately 18 permits per zone per safari session.",
+      text: "Most guides don’t mention that Satpura works with separate quota pools. Individual tourists buy their permits on the public portal. Tour operators registered with Madhya Pradesh Tourism have their own allocation, and the Forest Department oversees a discretionary pool for VIP visits or emergency releases. When booking independently, you are only competing for the public share of each zone’s permits per safari session.",
     },
     {
       type: "paragraph",
-      text: "Each core zone offers a total of 4 safari sessions: 2 in the morning and 2 in the afternoon. During the summer months of April to June, morning safaris begin at 6:30 AM, whereas during the winter months of October to March, morning safaris start at 7:00 AM. The afternoon safaris then commence at 3:00 PM, all year round. The important detail that everyone seems to overlook is that morning slots fill up an average of 11 days faster than afternoon slots. This is because wildlife tends to be more active before 9am, resulting in higher chances of predator sightings.",
+      text: "Each core zone offers a total of 4 safari sessions: 2 in the morning and 2 in the afternoon. During the summer months of April to June, morning safaris begin at 6:30 AM, whereas during the winter months of October to March, morning safaris start at 7:00 AM. The afternoon safaris then commence at 3:00 PM, all year round. The important detail that everyone seems to overlook is that morning slots fill up noticeably faster than afternoon slots. This is because wildlife tends to be more active before 9am, resulting in higher chances of predator sightings.",
+    },
+    {
+      type: "cta",
+      title: "Not sure which slot to go for?",
+      text: "Check [Satpura safari dates](/destinations/satpura-tiger-reserve/schedule), then message us on WhatsApp and we’ll handle the permit booking for you.",
     },
     {
       type: "heading",
@@ -78,7 +83,7 @@ export const satpuraSafariBookingGuide2026: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Despite a lack of a formal waitlist, cancellations create a sort of secondary market. Cancellations are randomly reflected in the portal, commonly within 15 to 30 days of the safari date as people finalize their plans or the weather changes. Based on reports from tour operators, checking the portal two times a day (8:00 AM and 6:00 PM) result in a release rate of 30% of the slots.",
+      text: "Despite a lack of a formal waitlist, cancellations create a sort of secondary market. Cancellations are randomly reflected in the portal, commonly within 15 to 30 days of the safari date as people finalise their plans or the weather changes. Tour operators find that checking the portal twice a day, once in the morning and once in the evening, is the most reliable way to catch these releases.",
     },
     {
       type: "paragraph",
@@ -91,11 +96,11 @@ export const satpuraSafariBookingGuide2026: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Three safari zones carry the Satpura name, but only one consistently delivers the tiger encounters that justify the 5:30 AM hotel departure and ₹4,000+ permit cost.",
+      text: "Several safari zones carry the Satpura name, but only one consistently delivers the tiger encounters that justify the 5:30 AM hotel departure and ₹4,000+ permit cost.",
     },
     {
       type: "paragraph",
-      text: "There are three different core zones in Satpura National Park, and there are also two other buffer zones. The Madhai core zone has an area of 352 square kilometers, where there are teak forests, and has the highest density of resident tigers. Although there are lower chances of encountering large cats, the Pachmarhi buffer zone offers a better experience for first time safari visitors, as the terrain is easier to navigate. The third zone, Jambu Dwip, is more suitable for bird watching, as there are few large mammals to see outside of the monsoon season.",
+      text: "Satpura National Park has both core and buffer safari zones. The Madhai core zone has an area of 352 square kilometres, where there are teak forests, and has the highest density of resident tigers. Although there are lower chances of encountering large cats, the Pachmarhi buffer zone offers a better experience for first time safari visitors, as the terrain is easier to navigate. The third zone, Jambu Dwip, is more suitable for bird watching, as there are few large mammals to see outside of the monsoon season.",
     },
     {
       type: "heading",
@@ -126,7 +131,7 @@ export const satpuraSafariBookingGuide2026: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Buffer zone safaris are 35% cheaper than core permits and also serve as great supplementary bookings when core slots are booked for your preferred dates. The terrain is more accessible as well. This is especially important for groups with travelers over 60 and anyone who may struggle with rough core zone jeep track.",
+      text: "Buffer zone safaris cost less than core permits and also serve as great supplementary bookings when core slots are booked for your preferred dates. The terrain is more accessible as well. This is especially important for groups with travellers over 60 and anyone who may struggle with rough core zone jeep track.",
     },
     {
       type: "callout",
@@ -135,7 +140,7 @@ export const satpuraSafariBookingGuide2026: BlogPost = {
     },
     {
       type: "heading",
-      level: 3,
+      level: 2,
       text: "Why Package Bookings Beat Piecemeal Permit Hunting",
     },
     {
@@ -162,7 +167,7 @@ export const satpuraSafariBookingGuide2026: BlogPost = {
     {
       type: "callout",
       title: "Strategic Tip",
-      text: "Calculate the true cost of independent booking: permits + far-flung hotel + guide + transport + your time managing five separate vendors. Most eco-tourism packages central India come in 15-20% cheaper when you factor in proximity and coordination value.",
+      text: "Calculate the true cost of independent booking: permits + far-flung hotel + guide + transport + your time managing five separate vendors. Eco-tourism packages in central India often work out cheaper once you factor in proximity and coordination value.",
     },
     {
       type: "heading",
@@ -171,11 +176,11 @@ export const satpuraSafariBookingGuide2026: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Groups of 8 or more travellers are eligible for their own dedicated permit allocations outside of the public quota. Tour operators who are authorized by the Forest Department submit group manifests that take from what is referred to the “25% operator pool.”",
+      text: "Groups of 8 or more travellers are eligible for their own dedicated permit allocations outside of the public quota. Tour operators who are authorized by the Forest Department submit group manifests that draw on the operator quota.",
     },
     {
       type: "paragraph",
-      text: "If you have a big group, you can customize your safari experience. Our standard safari jeeps have room for six passengers in addition to the driver and guide. If your group is larger than six, you can request several safari vehicles to be synchronized in order to view different safari zones at the same time, and then share notes about what you saw at lunch. If you have booked a single place in a jeep, you will be sharing the vehicle with other passengers, and their interests may, unfortunately, differ from yours.",
+      text: "If you have a big group, you can customise your safari experience. Our standard safari jeeps have room for six passengers in addition to the driver and guide. If your group is larger than six, you can request several safari vehicles to be synchronized in order to view different safari zones at the same time, and then share notes about what you saw at lunch. If you have booked a single place in a jeep, you will be sharing the vehicle with other passengers, and their interests may, unfortunately, differ from yours.",
     },
     {
       type: "heading",
@@ -188,7 +193,7 @@ export const satpuraSafariBookingGuide2026: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Simply having a booking confirmation with a Satpura Forest Adventure Tours permit number does not suffice. You need detailed information on the zone you will be entering, the vehicle assigned to you, the guide’s name, their language skills, as well as how communication will occur if there is a wildlife sighting in a different area of your zone during your safari.",
+      text: "Simply having a booking confirmation with a permit number does not suffice. You need detailed information on the zone you will be entering, the vehicle assigned to you, the guide’s name, their language skills, as well as how communication will occur if there is a wildlife sighting in a different area of your zone during your safari.",
     },
     {
       type: "heading",
@@ -197,7 +202,7 @@ export const satpuraSafariBookingGuide2026: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Safari guiding services vary in quality as guides are highly unregulated in the Satpura range. Some guides have been walking these forests for 15 years and can identify individual tigers based on their stripe patterns. Others have just completed a 90-day certification course and are reading their first animal behaviour cue for the first time. This difference is most evident in guides who are able to position their vehicles properly when a leopard kill is spotted 200 meters off the road, vs those who arrive 3 minutes after the animal has disappeared into the thick undergrowth.",
+      text: "Safari guiding services vary in quality as guides are highly unregulated in the Satpura range. Some guides have been walking these forests for 15 years and can identify individual tigers based on their stripe patterns. Others have just completed a 90-day certification course and are reading their first animal behaviour cue for the first time. This difference is most evident in guides who are able to position their vehicles properly when a leopard kill is spotted 200 metres off the road, vs those who arrive 3 minutes after the animal has disappeared into the thick undergrowth.",
     },
     {
       type: "paragraph",
@@ -239,9 +244,38 @@ export const satpuraSafariBookingGuide2026: BlogPost = {
       text: "Please figure out what kind of trip you want. If you want to do serious photography, you will need to book guides for the Madhai Core Zone 120 days in advance. However, if the entire family wants to experience a safari in Madhya Pradesh, you may want to book a package deal that includes the core zone safaris and the buffer zones. While permits are still available for the season, these are the best times to visit Satpura.",
     },
     {
+      type: "paragraph",
+      text: "Got more time? Satpura pairs well with other Madhya Pradesh parks, such as [Pench National Park](/destinations/pench-national-park), on a longer trip.",
+    },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "How far in advance can I book a Satpura safari?",
+          answer:
+            "Madhya Pradesh opens its booking system 120 days before your safari date, at midnight IST. The best October to March weekend slots go first.",
+        },
+        {
+          question: "Which Satpura zone is best for tigers?",
+          answer:
+            "The Madhai core zone has the highest density of resident tigers. The Pachmarhi buffer zone has lower chances of big cats but easier terrain for first-time visitors.",
+        },
+        {
+          question: "Is there a waitlist if Satpura permits sell out?",
+          answer:
+            "There is no formal waitlist. Cancellations reappear on the portal, commonly within 15 to 30 days of the safari date, but the portal doesn’t notify you, so keep checking.",
+        },
+        {
+          question: "Are Satpura safari permits refundable?",
+          answer:
+            "No. Madhya Pradesh Forest Department permits are non-refundable. If bad weather closes a zone, you get a credit rather than a cash refund, and it expires in 180 days.",
+        },
+      ],
+    },
+    {
       type: "callout",
       title: "Let Us Manage Your Satpura Safari Logistics",
-      text: "We organize your guides, permits, accommodation, and transport so that you can enjoy your forest time focusing on the wildlife instead of booking anxiety! We are available to individual travelers and corporate groups all over India. [Book Your Safari Experience](/contact)",
+      text: "We organise your guides, permits, accommodation, and transport so that you can enjoy your forest time focusing on the wildlife instead of booking anxiety! We are available to individual travellers and corporate groups all over India. [Book Your Safari Experience](/contact)",
     },
   ],
 };

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HomeImage } from "@/components/ui/home-image";
 import { RichBlocks } from "@/components/ui/inline-text";
 import { Reveal } from "@/components/ui/reveal";
@@ -39,6 +40,12 @@ export function CustomExpeditionsSection() {
             </ul>
             <p className="mt-6 border-t border-sand-200 pt-6 leading-relaxed text-ink-600">{customExpeditions.closing}</p>
           </div>
+          <Link
+            href={customExpeditions.button.href}
+            className="btn-sheen mt-8 inline-flex items-center gap-2 rounded-full bg-ochre-600 px-7 py-3.5 text-sm font-bold tracking-wide text-white shadow-md transition-[background-color,transform,box-shadow] duration-300 hover:-translate-y-0.5 hover:bg-ochre-700 hover:shadow-lg"
+          >
+            {customExpeditions.button.label}
+          </Link>
         </Reveal>
       </div>
     </section>

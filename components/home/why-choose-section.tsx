@@ -1,4 +1,5 @@
 import { HomeImage } from "@/components/ui/home-image";
+import { InlineText } from "@/components/ui/inline-text";
 import { Reveal } from "@/components/ui/reveal";
 import { whyChoose } from "@/lib/data/home";
 
@@ -17,8 +18,10 @@ export function WhyChooseSection() {
             {whyChoose.title}
           </h2>
           <div className="relative mt-7 space-y-4 leading-relaxed text-white/90 sm:text-lg">
-            {whyChoose.lines.map((line) => (
-              <p key={line.slice(0, 24)}>{line}</p>
+            {whyChoose.lines.map((line, i) => (
+              <p key={i}>
+                <InlineText parts={line} linkClassName="font-semibold text-white underline decoration-white/50 underline-offset-4 transition-colors hover:decoration-white" />
+              </p>
             ))}
           </div>
         </Reveal>

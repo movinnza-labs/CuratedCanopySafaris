@@ -1,6 +1,7 @@
 // Homepage media: the highest-resolution copy of each image served by curatedcanopysafaris.com
 // (the server's largest available size is 1600px wide). Images are not upscaled.
-// Alt text follows the live site's alt attributes; "" marks images the live site used decoratively.
+// Alt text follows the live site's alt attributes, with wrong park names fixed and guest names added for launch;
+// "" marks images the live site used decoratively.
 export type HomeImage = { src: string; alt: string; width: number; height: number; source: string };
 
 export const homeImages = {
@@ -76,14 +77,14 @@ export const homeImages = {
   },
   "kanhaBox": {
     "src": "/images/home/kanha-hardground-barahsingha.jpg",
-    "alt": "Hardground Barahsingha",
+    "alt": "Hard-ground barasingha in Kanha National Park",
     "width": 753,
     "height": 493,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/02/Hardground-Barahsingha-e1770615176107.jpg"
   },
   "bandhavgarhThumb": {
     "src": "/images/home/bandhavgarh-tigress-on-river-bed.jpg",
-    "alt": "tigress on river bed in bandhavgarh",
+    "alt": "Tigress on a riverbed in Bandhavgarh National Park",
     "width": 1600,
     "height": 1031,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/02/tigress-on-river-bed-in-bandhavgarh.jpg"
@@ -104,7 +105,7 @@ export const homeImages = {
   },
   "penchBox": {
     "src": "/images/home/pench-national-park.jpg",
-    "alt": "Pilibhit Tiger Reserve",
+    "alt": "Tigress in Pench National Park",
     "width": 1600,
     "height": 1067,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/02/IMG_0624-scaled.jpg"
@@ -146,7 +147,7 @@ export const homeImages = {
   },
   "tadobaBox": {
     "src": "/images/home/tadoba-national-park.jpg",
-    "alt": "Tadoba National Park",
+    "alt": "Tadoba Andhari Tiger Reserve",
     "width": 1600,
     "height": 2218,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/02/Tadoba-2-scaled.jpg"
@@ -174,7 +175,7 @@ export const homeImages = {
   },
   "pilibhitBox": {
     "src": "/images/home/pilibhit-national-park.jpg",
-    "alt": "Pilibhit National Park",
+    "alt": "Pilibhit Tiger Reserve",
     "width": 1600,
     "height": 1067,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/02/Pilibhit-scaled.jpg"
@@ -202,7 +203,7 @@ export const homeImages = {
   },
   "kazirangaBox": {
     "src": "/images/home/kaziranga-national-park.jpg",
-    "alt": "Kaziranga National park",
+    "alt": "Kaziranga National Park",
     "width": 555,
     "height": 659,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/02/gfe-e1770293050430.jpg"
@@ -216,56 +217,56 @@ export const homeImages = {
   },
   "ranthamboreBox": {
     "src": "/images/home/ranthambore-chital-stag-and-fawn.jpg",
-    "alt": "chital stag and fawn kanha NP",
+    "alt": "Chital deer in Ranthambore National Park",
     "width": 1600,
     "height": 1029,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/01/chital-stag-and-fawn-kanha-NP.jpg"
   },
   "girThumb": {
     "src": "/images/home/gir-lion-thumb.jpg",
-    "alt": "gir-lion - Gir National Park",
+    "alt": "Asiatic lion in Gir National Park",
     "width": 1600,
     "height": 1067,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/02/gir-lion.jpg"
   },
   "girBox": {
     "src": "/images/home/gir-lion.jpg",
-    "alt": "gir-lion - Gir National Park",
+    "alt": "Asiatic lion in Gir National Park",
     "width": 1600,
     "height": 1067,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/02/gir-lion-2-scaled.jpg"
   },
   "t1": {
     "src": "/images/home/testimonial-dr-suneet-raut.jpg",
-    "alt": "",
+    "alt": "Dr Suneet Raut",
     "width": 1080,
     "height": 1543,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-10-at-11.53.51.jpeg"
   },
   "t2": {
     "src": "/images/home/testimonial-dr-susheela-raut.jpg",
-    "alt": "",
+    "alt": "Dr. Susheela Raut",
     "width": 720,
     "height": 1280,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-10-at-11.53.52.jpeg"
   },
   "t3": {
     "src": "/images/home/testimonial-dr-geeta-raju.jpg",
-    "alt": "",
+    "alt": "Dr. Geeta Raju",
     "width": 583,
     "height": 644,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-10-at-11.54.15.jpeg"
   },
   "t4": {
     "src": "/images/home/testimonial-dr-surya-raju.jpg",
-    "alt": "",
+    "alt": "Dr. Surya Raju",
     "width": 806,
     "height": 1215,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-10-at-19.16.48.jpeg"
   },
   "t5": {
     "src": "/images/home/testimonial-dr-shobha-sankhe.jpg",
-    "alt": "",
+    "alt": "Dr. Shobha Sankhe",
     "width": 584,
     "height": 1145,
     "source": "https://curatedcanopysafaris.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-11-at-10.39.18.jpeg"

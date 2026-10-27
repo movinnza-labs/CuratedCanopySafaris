@@ -17,6 +17,12 @@ export const jimCorbett: Destination = {
       "Book your Jim Corbett safari with curated packages for India’s oldest national park. Spot tigers, elephants & exotic birds. Explore Corbett tours today!",
   },
   imageKeys: ["corbettTiger", "corbettOwl"],
+  scheduleLinkText: "Jim Corbett safari packages",
+  relatedSlugs: ["dudhwa-national-park", "pilibhit-tiger-reserve"],
+  relatedIntro:
+    "Extend your Corbett trip with [Dudhwa National Park Safari Booking](/destinations/dudhwa-national-park) or [Pilibhit Tiger Reserve booking](/destinations/pilibhit-tiger-reserve).",
+  bestTimeNote:
+    "For a month-by-month view across India’s parks, read our guide to the [best time for a tiger safari in India](/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide).",
   intro: [
     {
       heading: "Jim Corbett National Park – Carpet Sahib’s Jungle",
@@ -51,12 +57,13 @@ export const jimCorbett: Destination = {
   },
   zones: {
     heading: "Safari Zones in Jim Corbett National Park",
-    intro: "Corbett has multiple safari zones, each offering a different terrain and experience:",
+    intro:
+      "Corbett has multiple safari zones, each offering a different terrain and experience. Dhikala is visited by Canter only, while Bijrani, Jhirna and the other day zones are explored by Jeep (Gypsy).",
     items: [
       {
         name: "Dhikala Zone",
         description:
-          "The most famous and iconic zone of Jim Corbett, known for its picturesque beauty and immersive wildlife experience. It has vast grasslands and open areas offering greater chances of spotting tigers, elephants and other wildlife.",
+          "The most famous and iconic zone of Jim Corbett, known for its picturesque beauty and immersive wildlife experience. It has vast grasslands and open areas offering greater chances of spotting tigers, elephants and other wildlife. Safaris here are by Canter only; Jeep safaris are not available in this zone.",
       },
       {
         name: "Bijrani Zone",
@@ -141,10 +148,10 @@ export const jimCorbett: Destination = {
       ],
     },
     {
-      heading: "Our Three-Pillar Safari Booking System for Jim Corbett National Park",
+      heading: "Our Safari Booking System for Jim Corbett National Park",
       subsections: [
         {
-          heading: "Pillar 2: Curated Safari Packages, Transparent USD Pricing & Accommodation",
+          heading: "Curated Safari Packages, Transparent USD Pricing & Accommodation",
           items: [
             "**Bijrani Day Safari Package:** Two jeep safaris, naturalist guide, gate fees, hotel pickup in Ramnagar. Quoted in USD and EUR.",
             "**Dhikala Overnight Package:** One overnight Forest Rest House (FRH) stay, three safari drives (evening, early morning, departure), naturalist for full duration, all meals at FRH. Quoted in both USD and EUR.",
@@ -171,6 +178,38 @@ export const jimCorbett: Destination = {
         "**Experienced safari teams:** Our safaris work with experienced drivers and naturalist guides familiar with the parks and their wildlife.",
         "**Tailor-made itineraries:** We design private and customised wildlife journeys around guests' preferred parks, dates and interests.",
       ],
+    },
+  ],
+  faqs: [
+    {
+      question: "Where is Jim Corbett National Park?",
+      answer:
+        "Jim Corbett National Park is in the foothills of the Himalayas, in Uttarakhand’s Nainital and Pauri Garhwal districts. India’s oldest national park, it spreads across more than 1,300 square kilometres, with the Ramganga River flowing through it.",
+    },
+    {
+      question: "Which vehicle will I use on a Corbett safari?",
+      answer:
+        "It depends on the zone. Dhikala is visited by Canter only, as Jeep safaris are not available there. Bijrani, Jhirna and the other day zones are explored by Jeep (Gypsy).",
+    },
+    {
+      question: "Which safari zone should I choose in Corbett?",
+      answer:
+        "Dhikala is the most famous zone, with vast grasslands and greater chances of spotting tigers and elephants. Bijrani mixes forest and open areas with good tiger chances. Jhirna has frequent wildlife movement, including sloth bears and deer. Dhela is a newer, quieter zone, and Durga Devi suits birdwatching. We help you choose around your dates, group size and accommodation.",
+    },
+    {
+      question: "How far in advance should I book a Corbett safari?",
+      answer:
+        "The Corbett Tiger Reserve’s official booking system allows Jeep and Canter safari reservations up to 45 days in advance, with bookings opening progressively each day. Popular dates and zones fill quickly, so plan your dates and preferred zones early.",
+    },
+    {
+      question: "When is the best time to visit Jim Corbett National Park?",
+      answer:
+        "Winter (November to February) brings pleasant weather for wildlife and birdwatching. Summer (March to June) gives better chances of spotting tigers near water sources. The park is closed in the monsoon (July to September).",
+    },
+    {
+      question: "How do I reach Jim Corbett National Park?",
+      answer:
+        "The nearest airport is Pantnagar, with Delhi offering better connections. The closest railway station is Ramnagar, which is well connected to Delhi. Corbett is also well connected by road from Delhi, Nainital and Dehradun.",
     },
   ],
   cta: {

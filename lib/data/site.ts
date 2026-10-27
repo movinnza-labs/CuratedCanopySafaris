@@ -1,7 +1,8 @@
 // Business facts as published on curatedcanopysafaris.com (header, footer and Contact Us page).
 export const site = {
   name: "Curated Canopy Safaris",
-  url: process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? "https://curatedcanopysafaris.com",
+  // Always the live domain, with no trailing slash, so canonicals and the sitemap never point at staging.
+  url: "https://curatedcanopysafaris.com",
   tagline: "We curate, you discover.",
   description:
     "Curated wildlife and tiger safaris across India’s national parks and tiger reserves — economically priced expeditions with good resorts and four safarists per gypsy, plus mid-range, luxury and custom-designed journeys.",
@@ -13,7 +14,6 @@ export const site = {
     whatsappNumber: "919172036513",
     whatsappHref: "https://wa.me/919172036513",
     email: "enquiries@curatedcanopysafaris.com",
-    secondaryEmail: "pugmarktigersafaris@gmail.com",
     address: {
       lines: ["No 3, Chandan Apartment, Dhodipuja", "Navapur Road, Boisar (W)", "Maharashtra 401501"],
       locality: "Boisar",

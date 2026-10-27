@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { DestinationGrid } from "@/components/safari/destination-grid";
+import { FaqList } from "@/components/safari/faq-list";
 import { CustomExpeditions } from "@/components/sections/custom-expeditions";
 import { EnquirySection } from "@/components/sections/enquiry-section";
 import { PageHero } from "@/components/sections/page-hero";
@@ -6,10 +8,11 @@ import { Container } from "@/components/ui/container";
 import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/ui/json-ld";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { safariPackagesFaqs } from "@/lib/data/content";
 import { destinations } from "@/lib/data/destinations";
 import { termsPolicies } from "@/lib/data/terms";
-import { breadcrumbJsonLd } from "@/lib/seo/json-ld";
-import { absoluteUrl, buildMetadata } from "@/lib/seo/metadata";
+import { breadcrumbJsonLd, faqJsonLd, pageJsonLd } from "@/lib/seo/json-ld";
+import { pageH1, pageMetadata } from "@/lib/seo/metadata";
 
 export const revalidate = 21600;
 
@@ -18,11 +21,10 @@ const breadcrumbs = [
   { name: "Safari Packages", path: "/safari-packages" },
 ];
 
-export const metadata = buildMetadata({
+export const metadata = pageMetadata("/safari-packages", {
   title: "Wildlife Safari Packages in India",
   description:
     "Expertly curated wildlife safari packages across India: tiger safaris, birding tours and luxury jungle experiences for nature lovers.",
-  path: "/safari-packages",
   imageKey: "kanhaTiger",
 });
 
@@ -31,7 +33,7 @@ export default function SafariPackagesPage() {
   return (
     <>
       <PageHero
-        title="Safari Packages"
+        title={pageH1("/safari-packages", "Safari Packages")}
         eyebrow="Our expeditions"
         intro="A curated selection of our finest wildlife destinations — each with stay, meals, forest permits, safaris and trained guides included."
         imageKey="kanhaTiger"
@@ -44,7 +46,19 @@ export default function SafariPackagesPage() {
             id="packages-title"
             eyebrow={`${destinations.length} destinations`}
             title="Choose your wilderness"
-            intro="Open any park for its full departure schedule, itinerary, inclusions and cancellation terms."
+            intro={
+              <>
+                Open any park for its full departure schedule, itinerary, inclusions and cancellation terms. Not sure when to go? Read
+                our guide to the{" "}
+                <Link
+                  href="/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide"
+                  className="font-semibold text-ochre-700 underline underline-offset-4"
+                >
+                  best time to visit India for a tiger safari
+                </Link>
+                .
+              </>
+            }
           />
           <div className="mt-12">
             <DestinationGrid destinations={destinations} priorityCount={3} />
@@ -88,23 +102,18 @@ export default function SafariPackagesPage() {
         </section>
       ) : null}
 
+      <section aria-labelledby="packages-faq-title" className="pb-20 sm:pb-24">
+        <Container size="narrow">
+          <SectionHeading id="packages-faq-title" eyebrow="Good to know" title="Safari package FAQs" />
+          <div className="mt-10">
+            <FaqList faqs={safariPackagesFaqs} group="packages-faq" />
+          </div>
+        </Container>
+      </section>
+
       <CustomExpeditions />
       <EnquirySection />
-      <JsonLd
-        data={[
-          breadcrumbJsonLd(breadcrumbs),
-          {
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            itemListElement: destinations.map((destination, index) => ({
-              "@type": "ListItem",
-              position: index + 1,
-              name: destination.name,
-              url: absoluteUrl(`/destinations/${destination.slug}`),
-            })),
-          },
-        ]}
-      />
+      <JsonLd data={[pageJsonLd("/safari-packages") ?? breadcrumbJsonLd(breadcrumbs), faqJsonLd(safariPackagesFaqs)]} />
     </>
   );
 }

@@ -1,6 +1,6 @@
 // Homepage content, transcribed verbatim from https://curatedcanopysafaris.com/ (audited 18 Sep 2026).
-// Wording, spelling and punctuation are intentionally left exactly as published. Only surrounding whitespace
-// was trimmed. Links point to this app's routes; every original WordPress URL 301-redirects to the same page.
+// Wording is as published; spelling, capitals and spacing were corrected for launch (Oct 2026) and a few
+// internal links were added. Links point to this app's routes; every original WordPress URL 301-redirects to the same page.
 import type { HomeImageKey } from "./home-images";
 
 /** A run of inline text: plain, bold, or a link. */
@@ -19,6 +19,9 @@ export const nav = [
 
 export const reachUs = { label: "Reach Us", href: "/contact" } as const;
 
+// Payment page; checkout runs on Easebuzz (app/actions/payment.ts).
+export const payNow = { label: "Pay Now", href: "/pay" } as const;
+
 export const hero = {
   videoMp4: "/media/hero-1080.mp4",
   videoMp4Small: "/media/hero-720.mp4",
@@ -26,6 +29,8 @@ export const hero = {
   title: "We curate, you discover.",
   subtitle: "Exclusive Safari Destinations, curated just for you",
   scrollTarget: "#aboutus",
+  // Short selling points shown as badges under the slogan.
+  highlights: ["Only 4 guests per jeep", "Expert naturalists", "All-inclusive"],
 } as const;
 
 export const about = {
@@ -38,10 +43,16 @@ export const about = {
     {
       p: [
         { strong: "This platform was created with a simple purpose: to make safari experiences more affordable, accessible, and thoughtfully designed for all. " },
-        "They are economically priced,but we have chosen good resorts for the guests with all facilities required for a comfortable and happy stay. Although the safari vehicles can seat six,we have curated all safaris with four safarists in the gypsy,so that the experience is more comfortable for the guests.",
+        "They are economically priced, but we have chosen good resorts for the guests with all facilities required for a comfortable and happy stay. Although the safari vehicles can seat six, we have curated all safaris with four safarists in the gypsy, so that the experience is more comfortable for the guests.",
       ],
     },
-    { p: ["Alongside value-driven experiences, we also curate mid-range and luxury wildlife expeditions for guests from India and around the world—each planned with care, comfort, and genuine expertise."] },
+    {
+      p: [
+        "Alongside value-driven ",
+        { text: "tiger safari packages in India", href: "/safari-packages" },
+        ", we also curate mid-range and luxury wildlife expeditions for guests from India and around the world—each planned with care, comfort, and genuine expertise.",
+      ],
+    },
     { p: ["Our larger vision is to encourage more people to explore India’s tiger strongholds and diverse wildlife landscapes, fostering awareness, appreciation, and a deeper connection with nature. By enabling meaningful encounters with the wild, we hope to celebrate—and help preserve—India’s rich and extraordinary wildlife heritage."] },
   ] satisfies RichBlock[],
   imageKey: "aboutRaptor" as HomeImageKey,
@@ -54,9 +65,9 @@ export const youngNaturalist = {
     { p: ["They are the custodians of the future, whose love for nature will go a long way in protecting, conserving and developing the critical wildlife areas."] },
     {
       p: [
-        "All students, upto graduation, get a 10% discount on all our expeditions. Students can mail us at ",
+        "All students, up to graduation, get a 10% discount on all our expeditions. Students can mail us at ",
         { text: "enquiries@curatedcanopysafaris.com", href: "mailto:enquiries@curatedcanopysafaris.com" },
-        " or call/whatsapp on our number, with school/college ID card to avail the benefit.",
+        " or call/WhatsApp on our number, with school/college ID card to avail the benefit.",
       ],
     },
   ] satisfies RichBlock[],
@@ -71,7 +82,7 @@ export const journey = {
   // The live counters animate from 20 to their end value over 3 seconds.
   counters: [
     { label: "Tourist Visitors", start: 20, end: 200, suffix: "+", durationMs: 3000 },
-    { label: "Users", start: 20, end: 120, suffix: "+", durationMs: 3000 },
+    { label: "Happy Guests", start: 20, end: 120, suffix: "+", durationMs: 3000 },
   ],
 };
 
@@ -79,15 +90,19 @@ export const whyChoose = {
   title: "Why Choose Curated Canopy Safaris?",
   // One paragraph with line breaks on the live site.
   lines: [
-    "At Curated Canopy Safaris, the jungle is our second home. Our experienced Gypsy drivers and certified naturalist guides have an intimate understanding of forest life. They read tiger pugmarks, interpret jungle sounds, and recognise the alarm calls of chital, barking deer, and langurs—skills that help them track the king of the forest with precision. Our teams also stay updated with the latest wildlife movements and sightings.",
-    "While the tiger may be the star, we believe the true magic of the jungle lies in everything that surrounds it. From graceful deer and elusive mongooses to vibrant birdlife and countless other forest denizens, we ensure you experience the wilderness in its entirety, making every safari immersive and memorable.",
-    "Beyond the safaris, we pay close attention to your comfort throughout your stay. Thoughtful arrangements, seamless logistics, and a deep understanding of what travellers need in the wild allow us to create a safari experience that feels effortless, enriching, and truly enchanting.",
-  ],
+    [
+      "At Curated Canopy Safaris, the jungle is our second home. Our experienced Gypsy drivers and certified naturalist guides have an intimate understanding of forest life. They read tiger pugmarks, interpret jungle sounds, and recognise the alarm calls of chital, barking deer, and langurs—skills that help them track the king of the forest with precision. ",
+      { text: "Our naturalist team", href: "/team" },
+      " also stays updated with the latest wildlife movements and sightings.",
+    ],
+    ["While the tiger may be the star, we believe the true magic of the jungle lies in everything that surrounds it. From graceful deer and elusive mongooses to vibrant birdlife and countless other forest denizens, we ensure you experience the wilderness in its entirety, making every safari immersive and memorable."],
+    ["Beyond the safaris, we pay close attention to your comfort throughout your stay. Thoughtful arrangements, seamless logistics, and a deep understanding of what travellers need in the wild allow us to create a safari experience that feels effortless, enriching, and truly enchanting."],
+  ] satisfies Inline[][],
   imageKey: "whyChital" as HomeImageKey,
 };
 
 export const customExpeditions = {
-  title: "Custom - Designed Expeditions",
+  title: "Custom-Designed Expeditions",
   body: [
     { p: ["We specialise in curating bespoke wildlife expeditions, thoughtfully designed around your preferred dates, interests, and choice of national parks or wildlife habitats."] },
     { p: ["Our itineraries can seamlessly include multiple national parks within a single expedition—such as Kanha and Bandhavgarh, Dudhwa and Pilibhit, or other carefully paired landscapes."] },
@@ -96,12 +111,13 @@ export const customExpeditions = {
   audienceTitle: "Who Can Choose a Custom-Designed Expedition",
   audiences: ["Individual travellers", "Private groups", "Families", "International guests", "Corporate groups", "Educational institutions"],
   closing: "Each expedition is planned with attention to detail, ensuring comfort, authenticity, and meaningful experiences in the wild.",
+  button: { label: "Plan a custom safari", href: "/contact" },
   imageKey: "customEagle" as HomeImageKey,
 };
 
 export const letUsKnow = {
   title: "Let Us Know",
-  intro: "Let us know your destination and preferred dates of the Photography Tour.",
+  intro: "Tell us your park and preferred dates.",
   note: "Our team will get in touch with you very soon.",
   imageKeys: ["enquiryStork", "enquiryKanha"] as HomeImageKey[],
   // Field labels, order and required flags as on the live WPForms form (#1921). The live form's fifth
@@ -125,6 +141,12 @@ export const letUsKnow = {
 export const expeditionsIntro = {
   eyebrow: "Our Upcoming Expeditions",
   title: "A curated selection of our finest wildlife Destinations",
+  // Shown below the destinations list.
+  outro: [
+    "Not sure when to go? Read our guide to the ",
+    { text: "best time for a tiger safari in India", href: "/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide" },
+    ", month by month.",
+  ] satisfies Inline[],
 };
 
 export type Expedition = {
@@ -162,7 +184,7 @@ export const expeditions: Expedition[] = [
     slug: "bandhavgarh-national-park",
     title: "Bandhavgarh National Park",
     description:
-      "Bandhavgarh National Park, located in the Umaria district of Madhya Pradesh, is a compact reserve with an outsized presence. Spread over 1500 sq km, across a rugged terrain of low hills etc.",
+      "Bandhavgarh National Park, located in the Umaria district of Madhya Pradesh, is a compact reserve with an outsized presence, spread over 1,500 sq km of rugged terrain and low hills.",
     thumbKey: "bandhavgarhThumb",
     boxKey: "bandhavgarhBox",
     titleHref: park("bandhavgarh-national-park"),
@@ -182,9 +204,9 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "panna-national-park",
-    title: "Panna national Park",
+    title: "Panna National Park",
     description:
-      "Panna National Park, nestled in the Vindhyan ranges of Madhya Pradesh,  is a landscape where wilderness unfolds in dramatic contrast.The two core zones are Hinouta and Madla.",
+      "Panna National Park, nestled in the Vindhyan ranges of Madhya Pradesh, is a landscape where wilderness unfolds in dramatic contrast. The two core zones are Hinouta and Madla.",
     thumbKey: "pannaThumb",
     boxKey: "pannaBox",
     titleHref: park("panna-national-park"),
@@ -206,7 +228,7 @@ export const expeditions: Expedition[] = [
     slug: "tadoba-andhari-tiger-reserve",
     title: "Tadoba Andhari Tiger Reserve",
     description:
-      "Tadoba Andhari Tiger Reserve,spread over 1700 sq km,having three main core zones-Moharli,Kolsa and Kolara.It carries the weight of age. This is an old forest, one that feels settled into its land in eastern Maharashtra. The air is dry, the light is sharp, and the forest floor lies bare for much of the year, revealing tracks, movement, and signs that are often hidden elsewhere.",
+      "Tadoba Andhari Tiger Reserve, spread over 1,700 sq km, has three main core zones: Moharli, Kolsa and Kolara. It carries the weight of age. This is an old forest, one that feels settled into its land in eastern Maharashtra. The air is dry, the light is sharp, and the forest floor lies bare for much of the year, revealing tracks, movement, and signs that are often hidden elsewhere.",
     thumbKey: "tadobaThumb",
     boxKey: "tadobaBox",
     titleHref: park("tadoba-andhari-tiger-reserve"),
@@ -215,9 +237,9 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "dudhwa-national-park",
-    title: "Dudhwa National park and Kishanpur Wildlife Sanctuary",
+    title: "Dudhwa National Park and Kishanpur Wildlife Sanctuary",
     description:
-      "Dudhwa is located in Lakhimpur Kheri district of Uttar Pradesh,spread over 490 sq km. Tthe sanctuary functions as a vital piece of the larger Dudhwa landscape, offering continuity of habitat rather than spectacle.",
+      "Dudhwa is located in Lakhimpur Kheri district of Uttar Pradesh, spread over 490 sq km. The sanctuary functions as a vital piece of the larger Dudhwa landscape, offering continuity of habitat rather than spectacle.",
     thumbKey: "dudhwaThumb",
     boxKey: "dudhwaBox",
     titleHref: park("dudhwa-national-park"),
@@ -228,7 +250,7 @@ export const expeditions: Expedition[] = [
     slug: "pilibhit-tiger-reserve",
     title: "Pilibhit Tiger Reserve",
     description:
-      "Declared a tiger reserve,in 2014,pilibhit is a comparatively new tiger reserve.But Tiger sightings are excellent. Pilibhit Tiger Reserve lies within the great Terai belt, a landscape born of rivers descending from the Himalaya.",
+      "Declared a tiger reserve in 2014, Pilibhit is a comparatively new tiger reserve, but tiger sightings are excellent. Pilibhit Tiger Reserve lies within the great Terai belt, a landscape born of rivers descending from the Himalaya.",
     thumbKey: "pilibhitThumb",
     boxKey: "pilibhitBox",
     titleHref: park("pilibhit-tiger-reserve"),
@@ -237,7 +259,7 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "jim-corbett-national-park",
-    title: "Jim Corbett National park",
+    title: "Jim Corbett National Park",
     description:
       "Set against the foothills of the Himalayas, Jim Corbett National Park is India’s oldest national park and a timeless wilderness where forests, rivers, and wildlife exist in powerful harmony. Located in Uttarakhand’s Nainital and Pauri Garhwal districts, the park spreads across more than 1,300 square kilometres, encompassing a rich mix of hills, riverine belts, grasslands, and dense sal forests.",
     thumbKey: "corbettThumb",
@@ -248,9 +270,9 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "kaziranga-national-park",
-    title: "Kaziranga National park",
+    title: "Kaziranga National Park",
     description:
-      "Kaziranga National Park lies along the banks of the Brahmaputra River in Assam,flanked by Karbi  hills on the other side, shaped by water, silt, and seasonal change. Spread across a vast floodplain,covering 430 sq km,in Golaghat and Nagaon District of Assam, the park is a mosaic of tall grasslands, marshes, shallow lakes, and patches of woodland—renewed each year by the river’s rise and retreat.",
+      "Kaziranga National Park lies along the banks of the Brahmaputra River in Assam, flanked by the Karbi hills on the other side, shaped by water, silt, and seasonal change. Spread across a vast floodplain, covering 430 sq km in the Golaghat and Nagaon districts of Assam, the park is a mosaic of tall grasslands, marshes, shallow lakes, and patches of woodland—renewed each year by the river’s rise and retreat.",
     thumbKey: "kazirangaThumb",
     boxKey: "kazirangaBox",
     titleHref: park("kaziranga-national-park"),
@@ -259,21 +281,20 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "ranthambore-national-park",
-    title: "Ranthambore National park",
+    title: "Ranthambore National Park",
     description:
       "Ranthambore National Park is one of India’s most iconic wildlife landscapes. Located in eastern Rajasthan, the park unfolds across rocky ridges, dry deciduous forests, open scrub, and ancient lakes—each element adding to its unmistakable character.",
     thumbKey: "ranthamboreThumb",
     boxKey: "ranthamboreBox",
-    // On the live site this card's picture and title link to the Ranthambore schedule, not the park page.
-    titleHref: schedule("ranthambore-national-park"),
+    titleHref: park("ranthambore-national-park"),
     readMoreHref: park("ranthambore-national-park"),
     bookNowHref: schedule("ranthambore-national-park"),
   },
   {
     slug: "gir-national-park",
-    title: "Gir National park",
+    title: "Gir National Park",
     description:
-      "Gir National Park stands apart from India’s other wild places.It covers 4 districts-Junagadh,Gir,Somnath and Amreli. This is the last natural home of the Asiatic lion, a species that has shaped—and been shaped by—this dry, open forest of western Gujarat.",
+      "Gir National Park stands apart from India’s other wild places. It covers 4 districts: Junagadh, Gir, Somnath and Amreli. This is the last natural home of the Asiatic lion, a species that has shaped—and been shaped by—this dry, open forest of western Gujarat.",
     thumbKey: "girThumb",
     boxKey: "girBox",
     titleHref: park("gir-national-park"),
@@ -297,7 +318,7 @@ export const testimonials: HomeTestimonial[] = [
     name: "Dr Suneet Raut, Palghar",
     rating: 5,
     imageKey: "t1",
-    text: "Namaskar, I am Dr Suneet Raut. Myself and my wife, Dr Sushila visited Kanha National park, last year, by April 2025. Our close friend, Dr Prakash Babu,called me whether we were interested doing this Safari trip. As we both are nature lovers, and having visited Tadoba and other sanctuaries,were delighted by this call. It was last week of April.We flew from Mumbai to Jabalpur,then to Kanha sanctuary. I must say,the total experience of those 4 days was WONDERFUL. The flights, transportation to and fro by road, the accommodation, food, overall comforts and personal attention and care of Curated Canopy Safaris was exceptional. One thing I would like to mention, that, Dr Prakash himself is a wildlife enthusiast, has a deep knowledge of birds and animals, has good knowledge of flora and fauna. His planning is meticulous and punctual. His venture CURATED CANOPY Safaris is dependable service. We both look forward to join his safaries in future also. -- Dr Suneet Raut, Palghar",
+    text: "Namaskar, I am Dr Suneet Raut. Myself and my wife, Dr Susheela visited Kanha National park, last year, by April 2025. Our close friend, Dr Prakash Babu,called me whether we were interested doing this Safari trip. As we both are nature lovers, and having visited Tadoba and other sanctuaries,were delighted by this call. It was last week of April.We flew from Mumbai to Jabalpur,then to Kanha sanctuary. I must say,the total experience of those 4 days was WONDERFUL. The flights, transportation to and fro by road, the accommodation, food, overall comforts and personal attention and care of Curated Canopy Safaris was exceptional. One thing I would like to mention, that, Dr Prakash himself is a wildlife enthusiast, has a deep knowledge of birds and animals, has good knowledge of flora and fauna. His planning is meticulous and punctual. His venture CURATED CANOPY Safaris is dependable service. We both look forward to join his safaries in future also. -- Dr Suneet Raut, Palghar",
   },
   {
     name: "Dr. Susheela Raut, Palghar",
@@ -327,13 +348,14 @@ export const testimonials: HomeTestimonial[] = [
 
 export const footer = {
   subsidiary: "Curated Canopy Safaris is a subsidiary of Pugmark Safaris LLP.",
-  incorporation: "Pugmark Safaris LLP is incorporated with the ministry of corporate affairs of Govt.of India",
+  incorporation: "Pugmark Safaris LLP is incorporated with the Ministry of Corporate Affairs of Govt. of India.",
   quickLinksTitle: "Quick Links",
   quickLinks: [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
-    { label: "Our Expeditions", href: "/safari-packages" },
+    { label: "Safari Packages", href: "/safari-packages" },
     { label: "Our Team", href: "/team" },
+    { label: "Blogs", href: "/blogs" },
     { label: "Contact Us", href: "/contact" },
     // Added to the live footer on 12 Oct 2026: Easebuzz payment form for custom packages.
     { label: "Custom Package Payment", href: "https://forms.easebuzz.in/register/PUGMARKmljwM/curated-custompayment" },
@@ -348,16 +370,8 @@ export const footer = {
   contacts: [
     { kind: "phone", label: "+91 9172036513", href: "tel:+919172036513" },
     { kind: "email", label: "enquiries@curatedcanopysafaris.com", href: "mailto:enquiries@curatedcanopysafaris.com" },
-    { kind: "email", label: "pugmarktigersafaris@gmail.com", href: "mailto:pugmarktigersafaris@gmail.com" },
   ],
-  // Social *share* buttons (share the current page), as on the live footer.
-  share: [
-    { network: "facebook", label: "Share on Facebook" },
-    { network: "twitter", label: "Share on Twitter" },
-  ] as const,
-  terms:
-    "These Terms shall be governed by and construed in accordance with the laws of India. The Company has its registered office in Boisar, Maharashtra. Any dispute, claim or proceeding arising out of or relating to the use of this website, these Terms, or any services offered through this website shall be subject to the exclusive jurisdiction of the competent courts at Mumbai, Maharashtra, and users hereby irrevocably submit to such jurisdiction.",
-  gstin: "GSTIN No.- 27ABIFP7813R1ZD",
+  gstin: "GSTIN: 27ABIFP7813R1ZD",
   copyright: [
     "© 2026 ",
     { text: "Curated Canopy Safaris", href: "/" },
@@ -366,18 +380,19 @@ export const footer = {
   ] satisfies Inline[],
 };
 
-/** "Ask Us" Safari Assistant widget, verbatim from the live site. */
+/** "Ask Us" Safari Assistant widget, as on the live site (greeting reworded for launch). */
 export const askUs = {
   buttonLabel: "🌿 Ask Us",
   buttonTitle: "Ask our Safari Assistant",
   panelTitle: "🌿 Safari Assistant",
   closeTitle: "Close",
-  greeting: "Namaste! Ask me anything — tiger safaris, park info, photography tours, booking details and more!",
+  greeting: "Namaste! Ask us about tiger safaris, parks, dates and prices.",
+  inputLabel: "Type your question",
   placeholder: "e.g. Tiger safari in May…",
   send: "Send",
   searching: "Searching…",
   noMatchPrefix: "No exact match found. Try: ",
-  noMatchTerms: "tiger, rhino, corbett, photography, booking",
+  noMatchTerms: "tiger, rhino, corbett, booking",
   parksHeading: "Parks we cover:",
   errorPrefix: "Sorry, could not connect. Please ",
   errorLink: "contact us",

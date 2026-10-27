@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { nav, reachUs } from "@/lib/data/home";
+import { nav, payNow, reachUs } from "@/lib/data/home";
+import { Icon } from "@/components/ui/icon";
 import { cn } from "@/lib/utils";
 import { Logo } from "./logo";
 
@@ -134,6 +135,14 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
+          {/* Icon-only between lg and xl, where the full nav leaves no room for the label. */}
+          <Link
+            href={payNow.href}
+            className="hidden items-center gap-2 rounded-full border border-white/40 px-4 py-2.5 text-sm font-bold tracking-wide text-white backdrop-blur-sm transition-[background-color,color,transform] duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-forest-900 sm:inline-flex lg:px-3 xl:px-5"
+          >
+            <Icon name="card" className="size-4" />
+            <span className="lg:sr-only xl:not-sr-only">{payNow.label}</span>
+          </Link>
           <Link
             href={reachUs.href}
             className="btn-sheen hidden rounded-full bg-sand-200 px-5 py-2.5 text-sm font-bold tracking-wide text-ochre-700 shadow-sm transition-[background-color,transform,box-shadow] duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-lg sm:inline-flex"
@@ -227,6 +236,17 @@ export function SiteHeader() {
             style={{ transitionDelay: open ? "420ms" : "0ms" }}
           >
             {reachUs.label}
+          </Link>
+          <Link
+            href={payNow.href}
+            className={cn(
+              "mt-3 flex w-full items-center justify-center gap-2 rounded-full border border-white/40 px-6 py-4 text-base font-bold tracking-wide text-white transition-[opacity,transform] duration-500",
+              open ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0",
+            )}
+            style={{ transitionDelay: open ? "470ms" : "0ms" }}
+          >
+            <Icon name="card" className="size-5" />
+            {payNow.label}
           </Link>
         </nav>
       </div>

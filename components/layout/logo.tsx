@@ -10,7 +10,7 @@ export function Logo({ className, imageClassName, priority }: { className?: stri
     <Link href="/" className={cn("inline-flex shrink-0 items-center", className)} aria-label="Curated Canopy Safaris — Home">
       <Image
         src={logo.src}
-        alt=""
+        alt={logo.alt}
         width={logo.width}
         height={logo.height}
         priority={priority}

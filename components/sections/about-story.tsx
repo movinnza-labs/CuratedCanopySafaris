@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { SafariImage } from "@/components/ui/safari-image";
@@ -24,6 +25,9 @@ export function AboutStory({ showLink = false }: { showLink?: boolean }) {
             {rest.map((paragraph) => (
               <p key={paragraph.slice(0, 32)}>{paragraph}</p>
             ))}
+            <p>
+              Want to know who plans your expedition? <Link href="/team">Meet our team</Link>.
+            </p>
           </div>
           {showLink ? (
             <ButtonLink href="/about" variant="outline" className="mt-8" icon="arrowRight">

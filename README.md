@@ -23,7 +23,7 @@ Requires Node.js 20.9 or later.
 
 | Variable | Required | Purpose |
 |---|---|---|
-| `NEXT_PUBLIC_SITE_URL` | Recommended | Canonical site URL for metadata, the sitemap and structured data. Defaults to `https://curatedcanopysafaris.com`. |
+| `SITE_INDEXING` | No | Every host except `curatedcanopysafaris.com` (staging, previews) gets `X-Robots-Tag: noindex, nofollow` from `proxy.ts`. Set to `on` only if the live site sits behind a proxy that hides the real hostname. Canonicals, the sitemap and structured data always use `https://curatedcanopysafaris.com`. |
 | `ENQUIRY_WEBHOOK_URL` | Recommended | Enquiry-form submissions are POSTed here as JSON, e.g. to a Formspree, Make, Zapier or n8n webhook. If it is unset or the request fails, the visitor gets pre-filled email and WhatsApp buttons instead, so no enquiry is lost. |
 | `DEPARTURES_AS_OF` | QA only | Previews schedules as of a given date (`YYYY-MM-DD`). Never set it in production. |
 

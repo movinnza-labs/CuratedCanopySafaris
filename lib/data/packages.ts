@@ -1136,7 +1136,11 @@ export const packages: SafariPackage[] = [
   {
     "id": "gir-national-park",
     "destinationSlug": "gir-national-park",
-    "safaris": "4 Safaris and visit to Somnath Temple, or 5 Gir Safaris (4 safarists per gypsy)",
+    "safaris": "Choose 4 or 5 Safaris (4 safarists per gypsy)",
+    "details": [
+      "Option 1: 4 Gir Safaris and a visit to Somnath Temple",
+      "Option 2: 5 Gir Safaris"
+    ],
     "price": {
       "amount": 35000,
       "currency": "INR",

@@ -1,37 +1,39 @@
+import Link from "next/link";
 import { ContactDetails } from "@/components/sections/contact-details";
 import { EnquiryForm } from "@/components/sections/enquiry-form";
 import { PageHero } from "@/components/sections/page-hero";
+import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
+import { Icon } from "@/components/ui/icon";
 import { JsonLd } from "@/components/ui/json-ld";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { destinations } from "@/lib/data/destinations";
 import { site } from "@/lib/data/site";
-import { breadcrumbJsonLd } from "@/lib/seo/json-ld";
-import { buildMetadata } from "@/lib/seo/metadata";
+import { breadcrumbJsonLd, pageJsonLd } from "@/lib/seo/json-ld";
+import { pageH1, pageMetadata } from "@/lib/seo/metadata";
 
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Contact Us", path: "/contact" },
 ];
 
-export const metadata = buildMetadata({
+export const metadata = pageMetadata("/contact", {
   title: "Contact Us – Book Your Wildlife Adventure",
   description:
     "Get in touch with Curated Canopy Safaris to plan your perfect wildlife safari. Contact our experts for bookings, custom itineraries, and travel assistance across India.",
-  path: "/contact",
 });
 
 type Props = { searchParams: Promise<{ destination?: string | string[] }> };
 
 export default async function ContactPage({ searchParams }: Props) {
   const { destination } = await searchParams;
-  const options = [...destinations.map((d) => d.name), "Velavadar National Park"];
+  const options = destinations.map((d) => d.name);
   const requested = typeof destination === "string" && options.includes(destination) ? destination : undefined;
 
   return (
     <>
       <PageHero
-        title="Contact Us"
+        title={pageH1("/contact", "Contact Us")}
         eyebrow="Let’s plan your next wild expedition"
         intro="Tell us where and when you’d like to go — our team will get in touch with you very soon."
         imageKey="heroTigerByWater"
@@ -56,14 +58,29 @@ export default async function ContactPage({ searchParams }: Props) {
             <h2 id="contact-form-title" className="text-2xl font-semibold text-forest-900 sm:text-3xl">
               Send us an enquiry
             </h2>
-            <p className="mt-2 text-ink-600">Fields marked * are required.</p>
+            <p className="mt-2 text-ink-600">
+              Still choosing a park?{" "}
+              <Link href="/safari-packages" className="font-semibold text-ochre-700 underline underline-offset-4">
+                Browse safari packages
+              </Link>{" "}
+              first, or tell us what you have in mind below. Fields marked * are required.
+            </p>
+            <div className="mt-6 flex flex-wrap items-center gap-4 rounded-2xl bg-forest-50 p-4">
+              <p className="flex items-center gap-2 font-semibold text-forest-900">
+                <Icon name="clock" className="size-5 text-forest-600" />
+                We reply within a few hours.
+              </p>
+              <ButtonLink href={site.contact.whatsappHref} external variant="outline" size="sm" icon="whatsapp" iconPosition="start">
+                WhatsApp us
+              </ButtonLink>
+            </div>
             <div className="mt-8">
               <EnquiryForm destinations={options} defaultDestination={requested} showCity />
             </div>
           </div>
         </Container>
       </section>
-      <JsonLd data={breadcrumbJsonLd(breadcrumbs)} />
+      <JsonLd data={pageJsonLd("/contact") ?? breadcrumbJsonLd(breadcrumbs)} />
     </>
   );
 }

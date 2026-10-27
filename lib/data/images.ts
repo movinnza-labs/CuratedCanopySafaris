@@ -107,7 +107,7 @@ export const images = {
   },
   "kanhaBarasingha": {
     "src": "/images/destinations/kanha/hard-ground-barasingha.jpg",
-    "alt": "Hard-ground barasingha stag in a marsh",
+    "alt": "Hard-ground barasingha stag in a marsh, Kanha National Park",
     "width": 753,
     "height": 493
   },
@@ -125,13 +125,13 @@ export const images = {
   },
   "penchTigress": {
     "src": "/images/destinations/pench/crouching-tigress.jpg",
-    "alt": "Crouching tigress on a forest track",
+    "alt": "Crouching tigress on a forest track in Pench National Park",
     "width": 537,
     "height": 630
   },
   "penchRaptor": {
     "src": "/images/destinations/pench/raptor-on-branch.jpg",
-    "alt": "Raptor perched on a forest branch",
+    "alt": "Raptor perched on a forest branch in Pench National Park",
     "width": 1600,
     "height": 1067
   },
@@ -149,7 +149,7 @@ export const images = {
   },
   "pannaEagle": {
     "src": "/images/destinations/panna/eagle-on-branch.jpg",
-    "alt": "Eagle perched on a bare branch",
+    "alt": "Eagle perched on a bare branch, Panna National Park",
     "width": 1600,
     "height": 1066
   },
@@ -239,7 +239,7 @@ export const images = {
   },
   "ranthamboreChital": {
     "src": "/images/destinations/ranthambore/chital-stag-and-fawn.jpg",
-    "alt": "Chital stag and fawn",
+    "alt": "Chital stag and fawn, Ranthambore National Park",
     "width": 1600,
     "height": 1029
   },

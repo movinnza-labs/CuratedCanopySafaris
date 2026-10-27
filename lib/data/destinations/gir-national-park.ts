@@ -7,18 +7,24 @@ export const gir: Destination = {
   state: "Gujarat",
   tagline: "In the Land of the Lion",
   summary:
-    "Gir National Park stands apart from India’s other wild places. It covers 4 districts – Junagadh, Gir, Somnath and Amreli. This is the last natural home of the Asiatic lion, a species that has shaped—and been shaped by—this dry, open forest of western Gujarat.",
+    "Gir National Park stands apart from India’s other wild places. It covers 3 districts – Junagadh, Gir Somnath and Amreli. This is the last natural home of the Asiatic lion, a species that has shaped—and been shaped by—this dry, open forest of western Gujarat.",
   seo: {
     title: "Gir Lion Safari Booking | Asiatic Lion Tours in Gujarat",
     description:
       "Book your Gir Lion Safari and witness the world’s last wild Asiatic lions in their natural habitat. Guided jungle safaris & tour packages available. Book now!",
   },
   imageKeys: ["girLions", "girLioness"],
+  scheduleLinkText: "Gir National Park tour packages",
+  relatedSlugs: ["ranthambore-national-park", "kanha-national-park"],
+  relatedIntro:
+    "Extend your Gir trip with [Ranthambore tiger safari booking](/destinations/ranthambore-national-park) or [Kanha National Park Safari](/destinations/kanha-national-park).",
+  bestTimeNote:
+    "For a month-by-month view across India’s parks, read our guide to the [best time for a wildlife safari in India](/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide).",
   intro: [
     {
       heading: "In the Land of the Lion – Gir National Park",
       paragraphs: [
-        "Gir National Park stands apart from India’s other wild places. It covers 4 districts – Junagadh, Gir, Somnath and Amreli. This is the last natural home of the Asiatic lion, a species that has shaped—and been shaped by—this dry, open forest of western Gujarat. Gir is not dense or remote; it is a working landscape where scrub, rocky hills, and wide valleys meet human life without sharp boundaries.",
+        "Gir National Park stands apart from India’s other wild places. It covers 3 districts – Junagadh, Gir Somnath and Amreli. This is the last natural home of the Asiatic lion, a species that has shaped—and been shaped by—this dry, open forest of western Gujarat. Gir is not dense or remote; it is a working landscape where scrub, rocky hills, and wide valleys meet human life without sharp boundaries.",
         "The forest here is built for visibility. Trees grow spaced apart, the ground is largely open, and dry riverbeds cut long lines through the land. Heat dominates much of the year, and water dictates movement, drawing life toward streams and reservoirs during the harsher months. The terrain offers little concealment, yet it provides exactly what the lion requires—space, prey, and tolerance.",
         "Gir also has a healthy leopard population, although not frequently seen.",
         "Gir has a rich birdlife too. There are around 350 species of birds seen in and around Gir.",
@@ -95,4 +101,36 @@ export const gir: Destination = {
     byTrain: "The closest railway stations are Junagadh and Veraval.",
     byRoad: "Gir is well connected by road from Ahmedabad, Rajkot, and Somnath.",
   },
+  faqs: [
+    {
+      question: "Where is Gir National Park?",
+      answer:
+        "Gir National Park is in western Gujarat, across the Junagadh, Gir Somnath and Amreli districts. It is the only place in the world where you can see Asiatic lions in the wild.",
+    },
+    {
+      question: "How likely am I to see Asiatic lions in Gir?",
+      answer:
+        "The Asiatic lion is the main highlight of a Gir safari. The forest is dry and open, so lions are often seen resting under trees or walking along forest tracks. In summer, water sources draw wildlife and sightings become more frequent.",
+    },
+    {
+      question: "What is the difference between the Gir safari areas?",
+      answer:
+        "The Gir Core Zone Safari gives the best chance of seeing Asiatic lions in their natural habitat. Devalia Safari Park is a fenced area where wildlife can be seen more easily in a shorter time. The Gir Interpretation Zone focuses on understanding the ecosystem, in a controlled setting.",
+    },
+    {
+      question: "What other wildlife lives in Gir?",
+      answer:
+        "Gir has a good population of chital, sambar, nilgai and wild boar, and a healthy leopard population, although leopards are harder to spot.",
+    },
+    {
+      question: "Do people live inside Gir National Park?",
+      answer:
+        "Yes. Maldhari communities live within the forest, grazing livestock and moving with the seasons. Gir’s lions survive through this long-standing coexistence with people.",
+    },
+    {
+      question: "How do I reach Gir National Park?",
+      answer:
+        "The nearest airport is Diu, with Rajkot offering better connections. The closest railway stations are Junagadh and Veraval, and Gir is well connected by road from Ahmedabad, Rajkot and Somnath.",
+    },
+  ],
 };

@@ -134,8 +134,8 @@ export function EnquiryForm({ destinations, defaultDestination, showCity = false
         />
       </div>
 
-      {/* Honeypot field for bots; hidden from people and assistive technology. */}
-      <div aria-hidden className="absolute left-[-9999px] h-px w-px overflow-hidden">
+      {/* Honeypot field for bots (checked in app/actions/enquiry.ts): off-screen, unfocusable and hidden from assistive technology. */}
+      <div aria-hidden inert className="pointer-events-none absolute -left-[9999px] h-px w-px overflow-hidden opacity-0">
         <label>
           Company
           <input type="text" name="company" tabIndex={-1} autoComplete="off" />

@@ -27,6 +27,10 @@ export const bestTimeSeasonBySeason: BlogPost = {
     },
     {
       type: "paragraph",
+      text: "This guide is about choosing a season, not a date: winter for comfort and birdlife, summer for the best chance of seeing tigers, or the monsoon for green, quiet forests. Read on to see which one suits the trip you want. If you already know your season and want to narrow it down further, our [month by month guide](/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide) goes into more detail.",
+    },
+    {
+      type: "paragraph",
       text: "If you are planning your vacation with [Curated Canopy Safaris](/about), knowing how the seasons change will help you make the most of your time there. Whether you are interested in a [Wildlife Safari in India](/safari-packages) or a more immersive [wild safari in India](/safari-packages), knowing when to go is the first step to success.",
     },
     {
@@ -61,7 +65,7 @@ export const bestTimeSeasonBySeason: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "But winter has its own good things. The temperature is cool, which makes safaris more fun, the terrain appears bright, and the birds are at their best. This time of year is great for first-time visitors who want to see a lot of different kinds of animals.",
+      text: "But winter has its own good things. The temperature is cool, which makes safaris more fun, the terrain appears bright, and the birds are at their best. This time of year is great for first-time visitors who want to see a lot of different kinds of animals, whether in the teak forests of [Pench National Park](/destinations/pench-national-park) or on a [Jim Corbett safari](/destinations/jim-corbett-national-park) through its grasslands and river valleys.",
     },
     {
       type: "paragraph",
@@ -132,7 +136,12 @@ export const bestTimeSeasonBySeason: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "The greatest time to go on a tiger safari in India really depends on what you want to do. If seeing animals is the most important thing, go in the middle of summer. If comfort is more important, late winter is a great time to go.",
+      text: "The greatest time to go on a tiger safari in India really depends on what you want to do. If seeing animals is the most important thing, go in the middle of summer. If comfort is more important, late winter is a great time to go. Our [tiger safari packages](/safari-packages) can be built around either.",
+    },
+    {
+      type: "cta",
+      title: "Still deciding between winter and summer?",
+      text: "Message us on WhatsApp with what matters most to you, and we’ll suggest the season and park that fit your trip.",
     },
     {
       type: "heading",
@@ -192,6 +201,30 @@ export const bestTimeSeasonBySeason: BlogPost = {
     {
       type: "paragraph",
       text: "If you want to see the majestic tiger in its native habitat, you need to plan your vacation around the correct tiger safari season in India. And with good planning, you can make your trip a genuinely remarkable wildlife encounter.",
+    },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Which season is best for seeing tigers in India?",
+          answer:
+            "Summer (March to June). As water dries up, tigers and other animals gather around the last water sources, and thinner vegetation makes them easier to see. April and May are the best months.",
+        },
+        {
+          question: "Is winter a good time for a tiger safari?",
+          answer:
+            "Winter (October to February) is cool and comfortable, with birds at their best, so it suits first-time visitors who want to see a range of wildlife. Tiger sightings can be less common, as plentiful water lets tigers roam freely.",
+        },
+        {
+          question: "Can I go on a tiger safari during the monsoon?",
+          answer:
+            "Most tiger reserves close from July to September because of safety concerns and poor road conditions. Where parks are partly open, dense vegetation makes animals hard to see, so the monsoon suits nature lovers more than tiger seekers.",
+        },
+        {
+          question: "What if I want a balance of comfort and sightings?",
+          answer: "February and early March are a good middle ground: still part of the tiger safari season, but before the worst of the heat.",
+        },
+      ],
     },
   ],
 };

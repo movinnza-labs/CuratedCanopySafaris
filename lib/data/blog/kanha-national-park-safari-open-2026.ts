@@ -23,7 +23,7 @@ export const kanhaSafariOpen2026: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Jungle safari bookings for the 2026-27 season are now open for [Kanha Tiger Reserve](/destinations/kanha-national-park). That update comes straight from Madhya Pradesh Tourism and the MP Forest Department, 2026. So the Kanha National Park safari open 2026 question has a clear answer. Yes. The booking counter is live right now. This guide covers the 2026 season dates, the Kanha safari 120 days advance booking window, step-by-step booking instructions, and how to plan your trip around permit availability.",
+      text: "Jungle safari bookings for the 2026-27 season are now open for every [Kanha National Park tiger safari](/destinations/kanha-national-park). That update comes straight from Madhya Pradesh Tourism and the MP Forest Department, 2026. So the Kanha National Park safari open 2026 question has a clear answer. Yes. This guide covers the 2026 season dates, the 120-day advance booking window, step-by-step booking instructions, and how to plan your trip around permit availability.",
     },
     {
       type: "heading",
@@ -53,9 +53,9 @@ export const kanhaSafariOpen2026: BlogPost = {
       text: "Diwali week and Christmas week fill first every year. If your 2026 trip falls near a festival, book the moment your travel dates are fixed, not after.",
     },
     {
-      type: "callout",
+      type: "cta",
       title: "Want your 2026 safari dates locked early?",
-      text: "[Browse our safari packages](/safari-packages) and check your dates.",
+      text: "Send us your travel dates on WhatsApp and we’ll check Kanha permit availability for you, or [browse our safari packages](/safari-packages) first.",
     },
     {
       type: "heading",
@@ -64,7 +64,7 @@ export const kanhaSafariOpen2026: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Here’s the part most first-time visitors miss. Safaris can be booked 120 days in advance, and safari booking advance requirements (120 days, 30/90 days by nationality) apply depending on your citizenship status. Demand peaks from December to May. That’s the real [Kanha Tiger Reserve](/destinations/kanha-national-park) booking window. Miss it, and you’re picking from leftovers. The same rule governs permits across Madhya Pradesh — our [Satpura safari booking guide](/blogs/satpura-safari-booking-guide-2026) shows just how fast core zones disappear once the window opens.",
+      text: "Here’s the part most first-time visitors miss. Safaris can be booked up to 120 days in advance, though the advance booking rules can differ for Indian and foreign visitors. Demand peaks from December to May. That’s the real [Kanha Tiger Reserve](/destinations/kanha-national-park) booking window. Miss it, and you’re picking from leftovers. The same rule governs permits across Madhya Pradesh — our [Satpura safari booking guide](/blogs/satpura-safari-booking-guide-2026) shows just how fast core zones disappear once the window opens.",
     },
     {
       type: "paragraph",
@@ -90,7 +90,7 @@ export const kanhaSafariOpen2026: BlogPost = {
     {
       type: "list",
       items: [
-        "Count back 120 days from your travel date. That’s your booking day for Kanha safari 120 days advance booking eligibility.",
+        "Count back 120 days from your travel date. That’s the earliest day the portal lets you book, so check the rules for your nationality before then.",
         "Keep ID details ready for every passenger. Names must match exactly.",
         "Pick your gate and slot: morning and evening safari timings both run daily.",
         "Pay online. UPI and cards work. Save the permit PDF.",
@@ -99,6 +99,11 @@ export const kanhaSafariOpen2026: BlogPost = {
     {
       type: "paragraph",
       text: "Which slot should you pick? Morning drives are longer and cooler. Evening drives suit late arrivals. For Kanha Tiger Reserve safari permit booking in peak months, take whichever slot is open. A confirmed evening permit beats a wishlisted morning one.",
+    },
+    {
+      type: "callout",
+      title: "Check your dates before you book",
+      text: "See [Kanha safari dates and price](/destinations/kanha-national-park/schedule) for the season, then book your permit on the portal.",
     },
     {
       type: "paragraph",
@@ -125,6 +130,30 @@ export const kanhaSafariOpen2026: BlogPost = {
     {
       type: "paragraph",
       text: "Most people plan a Kanha trip backwards. They book flights to Jabalpur or Nagpur, fix the resort, and only then look at safari permit availability. By that point, the good zones are gone. Flip the order. Secure the permit inside the 120-day window, then arrange travel around it. A confirmed jeep in the right zone is the whole trip. Everything else is just the commute.",
+    },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Is Kanha National Park open for safaris in 2026?",
+          answer:
+            "Yes. Jungle safari bookings for the 2026-27 season are open, as per Madhya Pradesh Tourism. Safaris run from October 15th to June 30th, and the park closes for the monsoon (July–September).",
+        },
+        {
+          question: "How far in advance can I book a Kanha safari?",
+          answer:
+            "Permits can be booked up to 120 days ahead on the MP Forest Department’s online portal. Advance booking rules can differ for Indian and foreign visitors, so check the rules for your nationality before you pay.",
+        },
+        {
+          question: "Can I buy a Kanha safari permit at the gate?",
+          answer: "No. Permits are booked online on the MP Forest Department’s portal, not at the gate.",
+        },
+        {
+          question: "What if my preferred zone or date is sold out?",
+          answer:
+            "Try another gate (Mukki and Sarhi often have space when Kanha and Kisli are full), book a buffer zone safari, shift your dates to weekdays, or look at Bandhavgarh or Pench. Check the portal daily, as cancellations open up last-minute slots.",
+        },
+      ],
     },
     {
       type: "callout",

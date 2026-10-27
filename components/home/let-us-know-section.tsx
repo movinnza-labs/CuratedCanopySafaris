@@ -3,7 +3,7 @@ import { Reveal } from "@/components/ui/reveal";
 import { letUsKnow } from "@/lib/data/home";
 import { LetUsKnowForm } from "./let-us-know-form";
 
-/** "Let Us Know" enquiry block — appears twice on the live homepage (after Custom Expeditions and after Testimonials). */
+/** "Let Us Know" enquiry block, shown once on the homepage (after Custom Expeditions). */
 export function LetUsKnowSection({ id }: { id: string }) {
   const [first, second] = letUsKnow.imageKeys;
   return (

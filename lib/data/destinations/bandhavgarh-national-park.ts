@@ -14,6 +14,12 @@ export const bandhavgarh: Destination = {
       "Plan your Bandhavgarh National Park safari with expert guides. High tiger density, thrilling jeep rides & tailored packages await. Book your trip today!",
   },
   imageKeys: ["bandhavgarhTigress", "bandhavgarhOwl"],
+  scheduleLinkText: "Bandhavgarh National Park tour package",
+  relatedSlugs: ["kanha-national-park", "panna-national-park"],
+  relatedIntro:
+    "Extend your Bandhavgarh trip with [Kanha National Park Safari](/destinations/kanha-national-park) or [Panna safari booking](/destinations/panna-national-park).",
+  bestTimeNote:
+    "For a month-by-month view across India’s parks, read our guide to the [best time for a tiger safari in India](/blogs/best-time-to-visit-india-for-tiger-safari-month-by-month-guide).",
   intro: [
     {
       heading: "A paradise called Bandhavgarh",
