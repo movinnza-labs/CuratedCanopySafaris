@@ -91,12 +91,12 @@ export function PaymentForm() {
         </div>
       ) : null}
 
-      <div className="flex flex-wrap items-center gap-4">
-        <button type="submit" disabled={pending} className={buttonClasses({ size: "lg" })}>
+      <div className="grid gap-3">
+        <button type="submit" disabled={pending} className={buttonClasses({ size: "lg", className: "w-full justify-center disabled:opacity-70" })}>
           <Icon name="card" className="size-4" />
-          {pending ? "Connecting to Easebuzz…" : "Proceed to pay"}
+          {pending ? "Connecting to Easebuzz…" : "Proceed to secure payment"}
         </button>
-        <p className="text-sm text-ink-500">You will pay on Easebuzz’s secure checkout (UPI, cards, net banking, wallets).</p>
+        <p className="text-center text-sm text-ink-500">You will be taken to Easebuzz to complete the payment.</p>
       </div>
     </form>
   );

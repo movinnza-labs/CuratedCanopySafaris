@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PageHero } from "@/components/sections/page-hero";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Icon } from "@/components/ui/icon";
@@ -32,8 +32,16 @@ export default async function PaymentResultPage({ searchParams }: { searchParams
 
   return (
     <>
-      <PageHero title="Payment status" breadcrumbs={breadcrumbs} />
-      <section className="py-16 sm:py-20">
+      {/* Same slim header strip as /pay: a checkout screen, not a photo banner. */}
+      <section aria-labelledby="page-title" className="bg-forest-950 pt-28 pb-10 text-sand-50 sm:pt-32 sm:pb-12">
+        <Container>
+          <Breadcrumbs items={breadcrumbs} className="mb-4" />
+          <h1 id="page-title" className="text-3xl font-semibold sm:text-4xl">
+            Payment status
+          </h1>
+        </Container>
+      </section>
+      <section className="bg-sand-50 py-12 sm:py-16">
         <Container size="narrow">
           <div role="status" className={`rounded-2xl p-8 text-center ${ok ? "bg-forest-50" : "bg-sand-100"} text-forest-900`}>
             <Icon name={ok ? "check" : "info"} className="mx-auto size-10 text-ochre-500" />

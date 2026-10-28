@@ -314,6 +314,10 @@ p:not(.uppercase, .font-display) {
 p:not(.uppercase, .flex, .inline-flex) {
   text-align: justify !important;
 }
+/* Opt-out for short UI copy (e.g. the checkout), where justified text opens wide gaps between words. */
+.no-justify p:not(.text-center) {
+  text-align: left !important;
+}
 /* In centred sections the final line stays centred, so short lines don't jump to the left. */
 .text-center p:not(.uppercase, .flex, .inline-flex),
 p.text-center {
