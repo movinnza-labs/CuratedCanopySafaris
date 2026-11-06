@@ -30,6 +30,9 @@ export type PaymentRequest = {
   surl: string;
   furl: string;
   udf1?: string;
+  udf2?: string;
+  udf3?: string;
+  udf4?: string;
 };
 
 /** key|txnid|amount|productinfo|firstname|email|udf1|…|udf10|salt */

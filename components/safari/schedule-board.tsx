@@ -5,6 +5,7 @@ import { getItinerary } from "@/lib/data/itineraries";
 import { site } from "@/lib/data/site";
 import { getTerms } from "@/lib/data/terms";
 import type { Departure, Itinerary, SafariPackage, TermsPolicy } from "@/lib/data/types";
+import { formatDate } from "@/lib/utils";
 import { ItineraryPanel } from "./itinerary-panel";
 import { TermsPanel } from "./terms-panel";
 
@@ -69,13 +70,58 @@ function DepartureCard({ pkg, departure, destinationName }: { pkg: SafariPackage
             Book Now<span className="sr-only">: {departure.label} (opens in a new tab)</span>
           </a>
         ) : (
-          <a href="/contact" className={`${bookButton} bg-ochre-600 text-white hover:bg-ochre-700`}>
-            Enquire Now
-          </a>
+          <Link
+            href={`/pay?package=${encodeURIComponent(pkg.id)}&date=${departure.start}`}
+            className={`${bookButton} bg-ochre-600 text-white hover:bg-ochre-700`}
+          >
+            <Icon name="card" className="size-4 shrink-0" />
+            Book Now<span className="sr-only">: {departure.label}</span>
+          </Link>
         )}
         <HoldLink href={holdHref(destinationName, pkg, departure)} label={departure.label} />
       </div>
     </li>
+  );
+}
+
+/** Departures grouped by the month they start in, in date order. */
+function byMonth(departures: Departure[]) {
+  const groups = new Map<string, Departure[]>();
+  for (const departure of departures) {
+    const month = formatDate(departure.start, { month: "long", year: "numeric" });
+    groups.set(month, [...(groups.get(month) ?? []), departure]);
+  }
+  return [...groups];
+}
+
+/** Package name, season, description and quick facts, shown above a named package's dates. */
+function PackageHeader({ pkg, openCount }: { pkg: SafariPackage; openCount: number }) {
+  return (
+    <header className="mb-8 rounded-2xl border border-sand-300/70 bg-sand-100 p-6 sm:p-8">
+      {pkg.season ? <p className="text-sm font-bold tracking-wide text-ochre-700 uppercase">{pkg.season}</p> : null}
+      <h3 className="mt-1 text-2xl font-semibold text-forest-900 sm:text-3xl">{pkg.title}</h3>
+      {pkg.intro ? <p className="mt-3 max-w-2xl leading-relaxed text-ink-700">{pkg.intro}</p> : null}
+      <ul className="mt-5 flex flex-wrap gap-2 text-sm text-forest-900">
+        <li className="flex items-center gap-2 rounded-full bg-white px-3.5 py-1.5">
+          <Icon name="jeep" className="size-4 text-ochre-600" />
+          {pkg.safaris}
+        </li>
+        <li className="flex items-center gap-2 rounded-full bg-white px-3.5 py-1.5">
+          <Icon name="clock" className="size-4 text-ochre-600" />
+          {[...new Set(pkg.departures.map((d) => d.duration))].join(" / ")}
+        </li>
+        <li className="flex items-center gap-2 rounded-full bg-white px-3.5 py-1.5 font-semibold">
+          <Icon name="card" className="size-4 text-ochre-600" />
+          {pkg.price.display} per person
+        </li>
+        {openCount > 0 ? (
+          <li className="flex items-center gap-2 rounded-full bg-white px-3.5 py-1.5">
+            <Icon name="calendar" className="size-4 text-ochre-600" />
+            {openCount} {openCount === 1 ? "departure" : "departures"} open
+          </li>
+        ) : null}
+      </ul>
+    </header>
   );
 }
 
@@ -132,15 +178,27 @@ export function ScheduleBoard({ packages, destinationName, today }: { packages: 
       <div className="space-y-12 lg:col-span-8">
         {packages.map((pkg) => {
           const { upcoming } = splitDepartures(pkg, today);
+          // Months sit under the package title when there is one, otherwise straight under "Schedules".
+          const MonthHeading = pkg.title ? "h4" : "h3";
           return (
             <section key={pkg.id} aria-label={pkg.title ?? `${destinationName} departures`}>
-              {packages.length > 1 && pkg.title ? <h3 className="mb-5 text-2xl font-semibold text-forest-900">{pkg.title}</h3> : null}
+              {pkg.title ? <PackageHeader pkg={pkg} openCount={upcoming.length} /> : null}
               {upcoming.length > 0 ? (
-                <ul className="grid gap-5 sm:grid-cols-2">
-                  {upcoming.map((departure) => (
-                    <DepartureCard key={departure.start} pkg={pkg} departure={departure} destinationName={destinationName} />
+                <div className="space-y-8">
+                  {byMonth(upcoming).map(([month, departures]) => (
+                    <div key={month}>
+                      <MonthHeading className="mb-4 flex items-center gap-3 font-sans text-sm font-bold tracking-wide text-forest-900 uppercase">
+                        {month}
+                        <span aria-hidden className="h-px flex-1 bg-sand-300" />
+                      </MonthHeading>
+                      <ul className="grid gap-5 sm:grid-cols-2">
+                        {departures.map((departure) => (
+                          <DepartureCard key={departure.start} pkg={pkg} departure={departure} destinationName={destinationName} />
+                        ))}
+                      </ul>
+                    </div>
                   ))}
-                </ul>
+                </div>
               ) : (
                 <DatesPendingCard pkg={pkg} destinationName={destinationName} enquireHref={enquireHref} />
               )}

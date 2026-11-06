@@ -256,10 +256,10 @@ export const images = {
     "height": 1066
   },
   "teamPrakash": {
-    "src": "/images/team/dr-prakash-babu.jpg",
-    "alt": "Dr. Prakash Babu",
-    "width": 900,
-    "height": 1103
+    "src": "/images/team/dr-prakash-babu-kanha.jpg",
+    "alt": "Dr. Prakash Babu with a safari gypsy at Kanha Tiger Reserve",
+    "width": 720,
+    "height": 900
   },
   "teamSalonii": {
     "src": "/images/team/salonii-prakash-babu.jpg",

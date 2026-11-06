@@ -13,6 +13,36 @@ export const itineraries: Itinerary[] = [
     ],
   },
   {
+    id: "kanha-weekend",
+    title: "Kanha Weekend Wildlife Getaway",
+    subtitle: "2 nights, 3 gypsy safaris (4 safarists per gypsy)",
+    days: [
+      { label: "Friday", description: "Arrive at your lodge near Kanha National Park by evening and unwind amidst serene forest surroundings." },
+      { label: "Saturday", description: "Head out on a morning and an afternoon gypsy safari through Kanha’s famed meadows and sal forests." },
+      { label: "Sunday", description: "Set out on a final morning safari, followed by checkout from the lodge." },
+    ],
+  },
+  {
+    id: "bandhavgarh-weekend",
+    title: "Bandhavgarh Weekend Getaway",
+    subtitle: "2 nights, 3 gypsy safaris (4 safarists per gypsy)",
+    days: [
+      { label: "Friday", description: "Reach your lodge near Bandhavgarh National Park by evening and relax in refined comfort." },
+      { label: "Saturday", description: "Embark on a morning and an afternoon gypsy safari in one of India’s most celebrated tiger landscapes." },
+      { label: "Sunday", description: "Conclude your stay with a morning safari before checkout from the lodge." },
+    ],
+  },
+  {
+    id: "pench-weekend",
+    title: "Pench Weekend Getaway",
+    subtitle: "2 nights, 3 gypsy safaris (4 safarists per gypsy)",
+    days: [
+      { label: "Friday", description: "Reach your lodge near Pench National Park by evening and settle into the tranquil wilderness setting." },
+      { label: "Saturday", description: "Venture into the forest on a morning and an afternoon gypsy safari through Pench’s legendary landscapes." },
+      { label: "Sunday", description: "Depart after a memorable morning safari and checkout from the lodge." },
+    ],
+  },
+  {
     id: "bandhavgarh",
     title: "Bandhavgarh National Park",
     days: [
@@ -31,12 +61,32 @@ export const itineraries: Itinerary[] = [
     ],
   },
   {
+    id: "panna-weekend",
+    title: "Panna Weekend Wildlife Getaway",
+    subtitle: "2 nights, 3 gypsy safaris (4 safarists per gypsy)",
+    days: [
+      { label: "Friday", description: "Arrive at your lodge near Panna National Park by evening and settle in amid the park’s scenic river valleys and forested surroundings." },
+      { label: "Saturday", description: "Enjoy a morning and an afternoon gypsy safari, exploring Panna’s diverse landscapes and natural beauty." },
+      { label: "Sunday", description: "Conclude your stay with a morning safari, followed by checkout from the lodge." },
+    ],
+  },
+  {
     id: "panna",
     title: "Panna National Park",
     days: [
       { label: "Friday", description: "Arrive at your lodge near Panna National Park by evening and settle in amid the park’s scenic river valleys and forested surroundings." },
       { label: "Saturday & Sunday", description: "Enjoy morning and afternoon safaris, exploring Panna’s diverse landscapes and natural beauty." },
       { label: "Monday", description: "Conclude your stay with a morning safari, followed by checkout from the lodge." },
+    ],
+  },
+  {
+    id: "satpura-weekend",
+    title: "Satpura Weekend Getaway",
+    subtitle: "2 nights, 3 gypsy safaris (4 safarists per gypsy)",
+    days: [
+      { label: "Friday", description: "Arrive at your lodge at Satpura Tiger Reserve by evening, nestled within a pristine and lesser-explored wilderness." },
+      { label: "Saturday", description: "Discover Satpura’s unique charm on a morning and an afternoon gypsy safari through rugged hills and dense forests." },
+      { label: "Sunday", description: "Complete your experience with a morning safari before checkout from the lodge." },
     ],
   },
   {
@@ -49,6 +99,16 @@ export const itineraries: Itinerary[] = [
     ],
   },
   {
+    id: "tadoba-weekend",
+    title: "Tadoba Weekend Wildlife Getaway",
+    subtitle: "2 nights, 3 gypsy safaris (4 safarists per gypsy)",
+    days: [
+      { label: "Friday", description: "Arrive at your lodge near Tadoba Andhari Tiger Reserve by evening and settle in." },
+      { label: "Saturday", description: "Enjoy a morning and an afternoon gypsy safari, exploring Tadoba’s open forests and lakeside landscapes." },
+      { label: "Sunday", description: "Set out on a final morning safari, followed by checkout from the lodge." },
+    ],
+  },
+  {
     id: "tadoba",
     title: "Tadoba Andhari Tiger Reserve",
     days: [
@@ -58,12 +118,32 @@ export const itineraries: Itinerary[] = [
     ],
   },
   {
+    id: "dudhwa-weekend",
+    title: "Dudhwa Weekend Wildlife Getaway",
+    subtitle: "2 nights, 3 gypsy safaris (4 safarists per gypsy)",
+    days: [
+      { label: "Friday", description: "Arrive at your lodge near Dudhwa National Park by evening, and unwind amid the park’s lush grasslands and forests." },
+      { label: "Saturday", description: "Enjoy an expertly guided morning and afternoon gypsy safari, exploring Dudhwa’s rich wildlife and tranquil landscapes." },
+      { label: "Sunday", description: "Set out on a final morning safari, followed by checkout from the lodge." },
+    ],
+  },
+  {
     id: "dudhwa",
     title: "Dudhwa National Park",
     days: [
       { label: "Friday", description: "Arrive at your lodge near Dudhwa National Park by evening, and unwind amid the park’s lush grasslands and forests." },
       { label: "Saturday & Sunday", description: "Enjoy expertly guided morning and afternoon safaris, exploring Dudhwa’s rich wildlife and tranquil landscapes." },
       { label: "Monday", description: "Set out on a final morning safari, followed by checkout from the lodge." },
+    ],
+  },
+  {
+    id: "pilibhit-weekend",
+    title: "Pilibhit Weekend Wildlife Getaway",
+    subtitle: "2 nights, 3 gypsy safaris (4 safarists per gypsy)",
+    days: [
+      { label: "Friday", description: "Reach your lodge near Pilibhit Tiger Reserve by evening and settle into the serene surroundings of the sal forests." },
+      { label: "Saturday", description: "Experience a morning and an afternoon gypsy safari, navigating Pilibhit’s dense forests and river corridors known for their natural richness." },
+      { label: "Sunday", description: "Conclude your stay with a morning safari, followed by checkout from the lodge." },
     ],
   },
   {
@@ -106,6 +186,16 @@ export const itineraries: Itinerary[] = [
     ],
   },
   {
+    id: "kaziranga-weekend",
+    title: "Kaziranga Weekend Wildlife Getaway",
+    subtitle: "2 nights, 3 gypsy safaris (4 safarists per gypsy)",
+    days: [
+      { label: "Friday", description: "Arrive at your lodge near Kaziranga National Park by evening, set against the backdrop of vast floodplains and misty grasslands." },
+      { label: "Saturday", description: "Embark on a morning and an afternoon gypsy safari, discovering Kaziranga’s iconic wildlife and vibrant ecosystems." },
+      { label: "Sunday", description: "Enjoy a final morning safari, followed by checkout from the lodge." },
+    ],
+  },
+  {
     id: "kaziranga",
     title: "Kaziranga National Park",
     days: [
@@ -115,12 +205,32 @@ export const itineraries: Itinerary[] = [
     ],
   },
   {
+    id: "ranthambore-weekend",
+    title: "Ranthambore Canter Safari Getaway",
+    subtitle: "2 nights, 3 Canter safaris",
+    days: [
+      { label: "Friday", description: "Arrive at your lodge near Ranthambore National Park by evening and settle in for a relaxed evening at leisure." },
+      { label: "Saturday", description: "Set out on a morning and an afternoon Canter safari, exploring Ranthambore’s historic landscapes and diverse wildlife habitats." },
+      { label: "Sunday", description: "Enjoy a final morning Canter safari, followed by checkout from the lodge." },
+    ],
+  },
+  {
     id: "ranthambore",
     title: "Ranthambore National Park",
     days: [
       { label: "Friday", description: "Arrive at your lodge near Ranthambore National Park by evening and settle in for a relaxed evening at leisure." },
       { label: "Saturday & Sunday", description: "Set out on morning and afternoon Canter safaris, exploring Ranthambore’s historic landscapes and diverse wildlife habitats." },
       { label: "Monday", description: "Enjoy a morning Canter safari, followed by checkout from the lodge." },
+    ],
+  },
+  {
+    id: "gir-weekend",
+    title: "Gir Weekend Getaway",
+    subtitle: "2 nights, 3 gypsy safaris (4 safarists per gypsy)",
+    days: [
+      { label: "Friday", description: "Reach your lodge next to Gir National Park by evening and settle into refined comfort in the land of the Asiatic lion." },
+      { label: "Saturday", description: "Set off on a morning and an afternoon gypsy safari, exploring Gir’s dry deciduous forests and open scrublands." },
+      { label: "Sunday", description: "Complete your experience with a morning safari before checkout from the lodge." },
     ],
   },
   {

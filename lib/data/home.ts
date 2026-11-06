@@ -13,6 +13,7 @@ export const nav = [
   { label: "About Us", href: "/about" },
   { label: "Safari Packages", href: "/safari-packages" },
   { label: "Our Team", href: "/team" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Blogs", href: "/blogs" },
   { label: "Contact Us", href: "/contact" },
 ] as const;
@@ -310,7 +311,8 @@ export const testimonialsIntro = {
   title: "Trusted by many, proven by results",
 };
 
-export type HomeTestimonial = { name: string; rating: number; text: string; imageKey: HomeImageKey };
+/** Guests without a photo show their initials; guests without a published rating show no stars. */
+export type HomeTestimonial = { name: string; rating?: number; text: string; imageKey?: HomeImageKey };
 
 /** Exactly as published (names, 5-star ratings and text, including the reviewers' own spelling). */
 export const testimonials: HomeTestimonial[] = [
@@ -344,6 +346,18 @@ export const testimonials: HomeTestimonial[] = [
     imageKey: "t5",
     text: "Dr. Prakash Babu is a true and passionate naturalist, and the ideal person to begin his venture, Curated Canopy Safaris. It is rightly said that a true naturalist is best suited to design wildlife safaris, as such a person is deeply well-versed with nature, flora, and fauna. Dr. Babu brings with him rich and varied experiences from safaris and sanctuaries across India. Along with wildlife exploration, he consistently strives to inculcate a love and respect for nature among the common man. Living in harmony with nature is essential for the survival of our ecology, which today stands at the edge of a cliff, challenged by increasing human impact. We wish him the very best in pursuing his passion, not only through curated wildlife experiences but also in contributing towards the protection of sanctuaries and wildlife. Apart from this, his deep knowledge of birdlife, combined with immersive wildlife exploration, truly serves as a panacea for human stress.",
   },
+  {
+    name: "Mr. Samuel Kingston",
+    text: "Dear Dr. Prakash Babu and Ms. Saloni, thank you for organising such an incredible trip. While we were initially hesitant to trust our travel plans to someone we hadn’t met, we are so glad we did. We had a thrilling experience and truly appreciate your efforts in securing all our safari bookings despite our last-minute requests. We will highly recommend your services to anyone interested in wildlife travel. Grateful for everything!",
+  },
+  {
+    name: "Ms. Tania Mckenzie",
+    text: "Thank you, Dr. Prakash, for making it possible. It was one of our best experiences. Looking forward to other wildlife trips.",
+  },
+  {
+    name: "Mr. Christopher Livingston",
+    text: "Thank you so much for getting this organized for us at short notice. We had a wonderful time and enjoyed the safari. Thanks again!",
+  },
 ];
 
 export const footer = {
@@ -355,6 +369,7 @@ export const footer = {
     { label: "About Us", href: "/about" },
     { label: "Safari Packages", href: "/safari-packages" },
     { label: "Our Team", href: "/team" },
+    { label: "Gallery", href: "/gallery" },
     { label: "Blogs", href: "/blogs" },
     { label: "Contact Us", href: "/contact" },
     // Added to the live footer on 12 Oct 2026: Easebuzz payment form for custom packages.

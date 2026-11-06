@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl("/safari-packages"), changeFrequency: "weekly", priority: 0.9 },
     { url: absoluteUrl("/about"), changeFrequency: "monthly", priority: 0.6 },
     { url: absoluteUrl("/team"), changeFrequency: "monthly", priority: 0.5 },
+    { url: absoluteUrl("/gallery"), changeFrequency: "monthly", priority: 0.6 },
     { url: absoluteUrl("/blogs"), changeFrequency: "weekly", priority: 0.6 },
     { url: absoluteUrl("/contact"), changeFrequency: "yearly", priority: 0.7 },
     { url: absoluteUrl("/privacy-policy"), changeFrequency: "yearly", priority: 0.2 },

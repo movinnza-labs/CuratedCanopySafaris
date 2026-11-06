@@ -40,6 +40,7 @@ export const mainNav = [
   { label: "About Us", href: "/about" },
   { label: "Safari Packages", href: "/safari-packages" },
   { label: "Our Team", href: "/team" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Blogs", href: "/blogs" },
   { label: "Contact Us", href: "/contact" },
 ] as const;
@@ -49,6 +50,7 @@ export const footerNav = [
   { label: "About Us", href: "/about" },
   { label: "Safari Packages", href: "/safari-packages" },
   { label: "Our Team", href: "/team" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Blogs", href: "/blogs" },
   { label: "Contact Us", href: "/contact" },
   { label: "Privacy Policy", href: "/privacy-policy" },

@@ -3,6 +3,7 @@
 import { randomBytes } from "node:crypto";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { MAX_GUESTS_PER_BOOKING, getBookableDeparture, pickupOptions, quote } from "@/lib/data/departures";
 import { easebuzzConfig, initiatePayment } from "@/lib/payments/easebuzz";
 
 export type PaymentField = "name" | "phone" | "email" | "amount" | "reference";
@@ -71,6 +72,85 @@ export async function startPayment(_previous: PaymentState, formData: FormData):
       surl: `${base}/api/payment/return`,
       furl: `${base}/api/payment/return`,
       udf1: values.reference.replace(/[^a-zA-Z0-9 \-/]/g, ""),
+    },
+    config,
+  );
+
+  if ("error" in result) {
+    return { status: "error", message: `We could not start the payment: ${result.error} Please try again or contact our team.`, values };
+  }
+  redirect(result.url);
+}
+
+export type BookingField = "name" | "phone" | "email" | "guests" | "pickup" | "terms";
+
+export type BookingState = {
+  status: "idle" | "error";
+  message?: string;
+  fieldErrors?: Partial<Record<BookingField, string>>;
+  values?: Partial<Record<BookingField, string>>;
+};
+
+/**
+ * Book Now for a published departure: the package and date come from hidden fields, and the amount is
+ * worked out here from the published fare (+ GST) and the number of guests, never taken from the browser.
+ */
+export async function startBookingPayment(_previous: BookingState, formData: FormData): Promise<BookingState> {
+  const text = (key: string, max: number) => {
+    const value = formData.get(key);
+    return typeof value === "string" ? value.trim().slice(0, max) : "";
+  };
+  const values: Record<BookingField, string> = {
+    name: text("name", 150),
+    phone: text("phone", 20).replace(/[\s()]/g, ""),
+    email: text("email", 160),
+    guests: text("guests", 2),
+    pickup: text("pickup", 80),
+    terms: formData.get("terms") === "on" ? "on" : "",
+  };
+
+  const booking = getBookableDeparture(text("package", 80), text("date", 10));
+  if (!booking) {
+    return { status: "error", message: "This departure is no longer open for online booking. Please pick another date or contact our team.", values };
+  }
+
+  const guests = Number(values.guests);
+  const fieldErrors: BookingState["fieldErrors"] = {};
+  if (!NAME.test(values.name)) fieldErrors.name = "Please enter your full name (letters, numbers and . , ' - only).";
+  if (!PHONE.test(values.phone)) fieldErrors.phone = "Please enter a 10-digit mobile number.";
+  if (!EMAIL.test(values.email)) fieldErrors.email = "Please enter a valid email address.";
+  if (!Number.isInteger(guests) || guests < 1 || guests > MAX_GUESTS_PER_BOOKING) {
+    fieldErrors.guests = `Please choose between 1 and ${MAX_GUESTS_PER_BOOKING} guests.`;
+  }
+  if (!pickupOptions(booking.pkg).includes(values.pickup)) fieldErrors.pickup = "Please choose how you will reach the park.";
+  if (!values.terms) fieldErrors.terms = "Please accept the inclusions, payment and cancellation terms.";
+
+  if (Object.keys(fieldErrors).length > 0) {
+    return { status: "error", message: "Please check the highlighted fields.", fieldErrors, values };
+  }
+
+  const config = easebuzzConfig();
+  if (!config) {
+    console.error("EASEBUZZ_KEY / EASEBUZZ_SALT are not set");
+    return { status: "error", message: "Online payment is unavailable right now. Please contact our team to book.", values };
+  }
+
+  const { pkg, departure } = booking;
+  const base = await origin();
+  const result = await initiatePayment(
+    {
+      txnid: `CCS${Date.now()}${randomBytes(3).toString("hex")}`.toUpperCase(),
+      amount: quote(pkg, guests).total.toFixed(2),
+      productinfo: (pkg.title ?? "Safari booking").replace(/[^a-zA-Z0-9 \-.,()]/g, ""),
+      firstname: values.name,
+      email: values.email,
+      phone: values.phone.replace(/^\+91-?/, ""),
+      surl: `${base}/api/payment/return`,
+      furl: `${base}/api/payment/return`,
+      // Lets the team match the payment to the departure in the Easebuzz dashboard.
+      udf1: `${pkg.id} ${departure.start}`,
+      udf2: `${guests} guests`,
+      udf3: values.pickup,
     },
     config,
   );

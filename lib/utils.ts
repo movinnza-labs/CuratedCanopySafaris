@@ -24,3 +24,13 @@ export function formatDate(iso: string, options: Intl.DateTimeFormatOptions = { 
 export function formatInr(amount: number): string {
   return new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 }).format(amount);
 }
+
+/** Initials for a guest without a photo: "Mr. Samuel Kingston" → "SK" (titles and anything after a comma are skipped). */
+export function initials(name: string): string {
+  const words = (name.split(",")[0] ?? name)
+    .split(/\s+/)
+    .filter((word) => word && !/^(mr|mrs|ms|miss|dr|prof)\.?$/i.test(word));
+  return [words[0], words.length > 1 ? words[words.length - 1] : undefined]
+    .map((word) => word?.[0]?.toUpperCase() ?? "")
+    .join("");
+}

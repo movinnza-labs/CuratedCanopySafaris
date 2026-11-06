@@ -1,6 +1,7 @@
 import { AboutSection } from "@/components/home/about-section";
 import { CustomExpeditionsSection } from "@/components/home/custom-expeditions-section";
 import { ExpeditionsSection } from "@/components/home/expeditions-section";
+import { GlimpseSection } from "@/components/home/glimpse-section";
 import { HeroSection } from "@/components/home/hero-section";
 import { JourneySection } from "@/components/home/journey-section";
 import { LetUsKnowSection } from "@/components/home/let-us-know-section";
@@ -18,12 +19,14 @@ export const metadata = pageMetadata("/", {
   absoluteTitle: true,
 });
 
-/** Section order follows the live homepage, minus its duplicate second "Let Us Know" form. */
+/** Section order follows the live homepage (plus the photo and video gallery), minus its duplicate second "Let Us Know" form. */
 export default function HomePage() {
   return (
     <>
       <HeroSection />
       <AboutSection />
+      {/* Real photos and videos from our safaris, kept high on the page so it is seen early. */}
+      <GlimpseSection />
       <YoungNaturalistSection />
       <JourneySection />
       <WhyChooseSection />

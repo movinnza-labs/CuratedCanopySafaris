@@ -131,7 +131,7 @@ export type Departure = {
   label: string;
   /** Duration as published, e.g. "3N/4D". */
   duration: string;
-  /** Payment/registration form for this departure, as linked on the original site. */
+  /** Payment/registration form for this departure, as linked on the original site. Without one, Book Now opens the on-site booking form (/pay). */
   bookingUrl?: string;
 };
 
@@ -140,6 +140,10 @@ export type SafariPackage = {
   destinationSlug: string;
   /** Package name where the original site gave one (e.g. "Canter Safaris – Ramganga Tigers"). */
   title?: string;
+  /** Season the package runs, shown under the title, e.g. "December 2026 – February 2027". */
+  season?: string;
+  /** Short description shown under the package title. */
+  intro?: string;
   /** Safari count / vehicle occupancy line, e.g. "5 Safaris (4 safarists per gypsy)". */
   safaris: string;
   /** Extra detail lines shown with each departure, e.g. how safaris split across parks. */
@@ -147,6 +151,8 @@ export type SafariPackage = {
   price: { amount: number; currency: "INR"; display: string };
   itineraryId: string;
   termsId: string;
+  /** Group-transfer points guests can choose on the booking form, e.g. ["Jabalpur", "Raipur"]. */
+  pickupPoints?: string[];
   /** Logistics notes as published, e.g. group tour pickup points. */
   notes: string[];
   departures: Departure[];
@@ -164,7 +170,8 @@ export type Testimonial = {
   author: string;
   location?: string;
   quote: string[];
-  imageKey: string;
+  /** Guest photo; without one the card shows the guest's initials. */
+  imageKey?: string;
   /** Park the guest visited, where the testimonial names it. */
   destinationSlug?: string;
 };

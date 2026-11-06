@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { HomeImage } from "@/components/ui/home-image";
 import type { HomeTestimonial } from "@/lib/data/home";
-import { cn } from "@/lib/utils";
+import { cn, initials } from "@/lib/utils";
 
 const AUTOPLAY_MS = 8000;
 
@@ -93,15 +93,25 @@ export function TestimonialCarousel({ items }: { items: HomeTestimonial[] }) {
                   )}
                 />
                 <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-forest-800 shadow-[0_30px_80px_-30px_rgb(0_0_0/0.7)]">
-                  <HomeImage
-                    imageKey={item.imageKey}
-                    fill
-                    sizes="(min-width: 1024px) 304px, 288px"
-                    className={cn(
-                      "object-cover object-top transition-transform ease-out",
-                      active ? "scale-110 duration-[9000ms]" : "scale-100 duration-700",
-                    )}
-                  />
+                  {item.imageKey ? (
+                    <HomeImage
+                      imageKey={item.imageKey}
+                      fill
+                      sizes="(min-width: 1024px) 304px, 288px"
+                      className={cn(
+                        "object-cover object-top transition-transform ease-out",
+                        active ? "scale-110 duration-[9000ms]" : "scale-100 duration-700",
+                      )}
+                    />
+                  ) : (
+                    // No photo: the guest's initials on the forest panel.
+                    <span
+                      aria-hidden
+                      className="absolute inset-0 grid place-items-center bg-gradient-to-br from-forest-700 to-forest-900 font-display text-7xl text-sand-100/90"
+                    >
+                      {initials(item.name)}
+                    </span>
+                  )}
                   <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-forest-950/50 via-transparent to-transparent" />
                 </div>
                 <span
@@ -118,8 +128,8 @@ export function TestimonialCarousel({ items }: { items: HomeTestimonial[] }) {
               </div>
 
               <div className="lg:col-span-8">
-                <Stars rating={item.rating} active={active} />
-                <blockquote className={cn("mt-5", active && "animate-fade-up [animation-delay:350ms]")}>
+                {item.rating ? <Stars rating={item.rating} active={active} /> : null}
+                <blockquote className={cn(Boolean(item.rating) && "mt-5", active && "animate-fade-up [animation-delay:350ms]")}>
                   <p className="font-display text-base leading-[1.7] text-white/90 sm:text-[17px]">{item.text}</p>
                 </blockquote>
                 <figcaption className={cn("mt-6 flex items-center gap-4", active && "animate-fade-up [animation-delay:550ms]")}>

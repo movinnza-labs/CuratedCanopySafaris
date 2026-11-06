@@ -53,4 +53,27 @@ export const testimonials: Testimonial[] = [
       "Apart from this, his deep knowledge of birdlife, combined with immersive wildlife exploration, truly serves as a panacea for human stress.",
     ],
   },
+  {
+    id: "samuel-kingston",
+    author: "Mr. Samuel Kingston",
+    quote: [
+      "Dear Dr. Prakash Babu and Ms. Saloni, thank you for organising such an incredible trip. While we were initially hesitant to trust our travel plans to someone we hadn’t met, we are so glad we did. We had a thrilling experience and truly appreciate your efforts in securing all our safari bookings despite our last-minute requests.",
+      "We will highly recommend your services to anyone interested in wildlife travel.",
+      "Grateful for everything!",
+    ],
+  },
+  {
+    id: "tania-mckenzie",
+    author: "Ms. Tania Mckenzie",
+    quote: [
+      "Thank you, Dr. Prakash, for making it possible. It was one of our best experiences. Looking forward to other wildlife trips.",
+    ],
+  },
+  {
+    id: "christopher-livingston",
+    author: "Mr. Christopher Livingston",
+    quote: [
+      "Thank you so much for getting this organized for us at short notice. We had a wonderful time and enjoyed the safari. Thanks again!",
+    ],
+  },
 ];

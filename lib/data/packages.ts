@@ -84,6 +84,210 @@ export const packages: SafariPackage[] = [
     ]
   },
   {
+    "id": "kanha-weekend-getaways",
+    "destinationSlug": "kanha-national-park",
+    "title": "Kanha Weekend Wildlife Getaways",
+    "season": "December 2026 – February 2027",
+    "intro": "Experience the wilderness of Kanha National Park with curated weekend safari getaways, comfortable stays and memorable wildlife encounters. Bookings open, limited weekend departures.",
+    "safaris": "3 Gypsy Safaris (4 safarists per gypsy)",
+    "price": {
+      "amount": 24000,
+      "currency": "INR",
+      "display": "INR 24,000/- + 5% GST"
+    },
+    "itineraryId": "kanha-weekend",
+    "pickupPoints": [
+      "Jabalpur",
+      "Raipur"
+    ],
+    "termsId": "standard",
+    "notes": [
+      "Group tour Jabalpur to Jabalpur and Raipur to Raipur can be arranged."
+    ],
+    "departures": [
+      {
+        "start": "2026-12-04",
+        "end": "2026-12-06",
+        "label": "4 December – 6 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-11",
+        "end": "2026-12-13",
+        "label": "11 December – 13 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-18",
+        "end": "2026-12-20",
+        "label": "18 December – 20 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-25",
+        "end": "2026-12-27",
+        "label": "25 December – 27 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-01-03",
+        "label": "1 January – 3 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-08",
+        "end": "2027-01-10",
+        "label": "8 January – 10 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-15",
+        "end": "2027-01-17",
+        "label": "15 January – 17 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-22",
+        "end": "2027-01-24",
+        "label": "22 January – 24 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-29",
+        "end": "2027-01-31",
+        "label": "29 January – 31 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-05",
+        "end": "2027-02-07",
+        "label": "5 February – 7 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-12",
+        "end": "2027-02-14",
+        "label": "12 February – 14 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-19",
+        "end": "2027-02-21",
+        "label": "19 February – 21 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-26",
+        "end": "2027-02-28",
+        "label": "26 February – 28 February 2027",
+        "duration": "2N/3D"
+      }
+    ]
+  },
+  {
+    "id": "bandhavgarh-weekend-getaways",
+    "destinationSlug": "bandhavgarh-national-park",
+    "title": "Bandhavgarh Weekend Getaways",
+    "season": "December 2026 – February 2027",
+    "intro": "Explore the legendary tiger landscapes of Bandhavgarh National Park. Enjoy immersive jungle experiences and unforgettable wildlife encounters. Bookings open, limited weekend departures.",
+    "safaris": "3 Gypsy Safaris (4 safarists per gypsy)",
+    "price": {
+      "amount": 24000,
+      "currency": "INR",
+      "display": "INR 24,000/- + 5% GST"
+    },
+    "itineraryId": "bandhavgarh-weekend",
+    "pickupPoints": [
+      "Katni Railway Station",
+      "Jabalpur Airport"
+    ],
+    "termsId": "standard",
+    "notes": [
+      "Group tour from Katni Railway Station or Jabalpur Airport can be arranged."
+    ],
+    "departures": [
+      {
+        "start": "2026-12-04",
+        "end": "2026-12-06",
+        "label": "4 December – 6 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-11",
+        "end": "2026-12-13",
+        "label": "11 December – 13 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-18",
+        "end": "2026-12-20",
+        "label": "18 December – 20 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-25",
+        "end": "2026-12-27",
+        "label": "25 December – 27 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-01-03",
+        "label": "1 January – 3 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-08",
+        "end": "2027-01-10",
+        "label": "8 January – 10 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-15",
+        "end": "2027-01-17",
+        "label": "15 January – 17 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-22",
+        "end": "2027-01-24",
+        "label": "22 January – 24 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-29",
+        "end": "2027-01-31",
+        "label": "29 January – 31 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-05",
+        "end": "2027-02-07",
+        "label": "5 February – 7 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-12",
+        "end": "2027-02-14",
+        "label": "12 February – 14 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-19",
+        "end": "2027-02-21",
+        "label": "19 February – 21 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-26",
+        "end": "2027-02-28",
+        "label": "26 February – 28 February 2027",
+        "duration": "2N/3D"
+      }
+    ]
+  },
+  {
     "id": "bandhavgarh-national-park",
     "destinationSlug": "bandhavgarh-national-park",
     "safaris": "5 Safaris (4 safarists per gypsy)",
@@ -160,6 +364,107 @@ export const packages: SafariPackage[] = [
         "label": "26 June – 29 June 2026",
         "duration": "3N/4D",
         "bookingUrl": "https://forms.easebuzz.in/register/PUGMARKmljwM/BandhavgarhNationalPark4"
+      }
+    ]
+  },
+  {
+    "id": "pench-weekend-getaways",
+    "destinationSlug": "pench-national-park",
+    "title": "Pench Weekend Getaways",
+    "season": "December 2026 – February 2027",
+    "intro": "Discover the forests of Pench National Park and experience exciting wildlife safaris amidst the beautiful landscapes of Central India. Bookings open, limited weekend departures.",
+    "safaris": "3 Gypsy Safaris (4 safarists per gypsy)",
+    "price": {
+      "amount": 24000,
+      "currency": "INR",
+      "display": "INR 24,000/- + 5% GST"
+    },
+    "itineraryId": "pench-weekend",
+    "pickupPoints": [
+      "Nagpur"
+    ],
+    "termsId": "standard",
+    "notes": [
+      "Group tour from Nagpur to Nagpur can be arranged."
+    ],
+    "departures": [
+      {
+        "start": "2026-12-04",
+        "end": "2026-12-06",
+        "label": "4 December – 6 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-11",
+        "end": "2026-12-13",
+        "label": "11 December – 13 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-18",
+        "end": "2026-12-20",
+        "label": "18 December – 20 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-25",
+        "end": "2026-12-27",
+        "label": "25 December – 27 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-01-03",
+        "label": "1 January – 3 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-08",
+        "end": "2027-01-10",
+        "label": "8 January – 10 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-15",
+        "end": "2027-01-17",
+        "label": "15 January – 17 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-22",
+        "end": "2027-01-24",
+        "label": "22 January – 24 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-29",
+        "end": "2027-01-31",
+        "label": "29 January – 31 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-05",
+        "end": "2027-02-07",
+        "label": "5 February – 7 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-12",
+        "end": "2027-02-14",
+        "label": "12 February – 14 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-19",
+        "end": "2027-02-21",
+        "label": "19 February – 21 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-26",
+        "end": "2027-02-28",
+        "label": "26 February – 28 February 2027",
+        "duration": "2N/3D"
       }
     ]
   },
@@ -324,6 +629,107 @@ export const packages: SafariPackage[] = [
     ]
   },
   {
+    "id": "panna-weekend-getaways",
+    "destinationSlug": "panna-national-park",
+    "title": "Panna Weekend Wildlife Getaways",
+    "season": "December 2026 – February 2027",
+    "intro": "Explore the scenic river valleys, gorges and forests of Panna National Park on curated weekend safaris, with comfortable stays and memorable wildlife encounters. Bookings open, limited weekend departures.",
+    "safaris": "3 Gypsy Safaris (4 safarists per gypsy)",
+    "price": {
+      "amount": 26000,
+      "currency": "INR",
+      "display": "INR 26,000/- + 5% GST"
+    },
+    "itineraryId": "panna-weekend",
+    "pickupPoints": [
+      "the nearest railway station or airport"
+    ],
+    "termsId": "standard",
+    "notes": [
+      "Group tour from the nearest railway station or airport can be arranged."
+    ],
+    "departures": [
+      {
+        "start": "2026-12-04",
+        "end": "2026-12-06",
+        "label": "4 December – 6 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-11",
+        "end": "2026-12-13",
+        "label": "11 December – 13 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-18",
+        "end": "2026-12-20",
+        "label": "18 December – 20 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-25",
+        "end": "2026-12-27",
+        "label": "25 December – 27 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-01-03",
+        "label": "1 January – 3 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-08",
+        "end": "2027-01-10",
+        "label": "8 January – 10 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-15",
+        "end": "2027-01-17",
+        "label": "15 January – 17 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-22",
+        "end": "2027-01-24",
+        "label": "22 January – 24 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-29",
+        "end": "2027-01-31",
+        "label": "29 January – 31 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-05",
+        "end": "2027-02-07",
+        "label": "5 February – 7 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-12",
+        "end": "2027-02-14",
+        "label": "12 February – 14 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-19",
+        "end": "2027-02-21",
+        "label": "19 February – 21 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-26",
+        "end": "2027-02-28",
+        "label": "26 February – 28 February 2027",
+        "duration": "2N/3D"
+      }
+    ]
+  },
+  {
     "id": "panna-national-park",
     "destinationSlug": "panna-national-park",
     "safaris": "5 Safaris (4 safarists per gypsy)",
@@ -400,6 +806,107 @@ export const packages: SafariPackage[] = [
         "label": "26 June – 29 June 2026",
         "duration": "3N/4D",
         "bookingUrl": "https://forms.easebuzz.in/register/PUGMARKmljwM/PannaNationalPark4"
+      }
+    ]
+  },
+  {
+    "id": "satpura-weekend-getaways",
+    "destinationSlug": "satpura-tiger-reserve",
+    "title": "Satpura Weekend Getaways",
+    "season": "December 2026 – February 2027",
+    "intro": "Escape to the rugged hills and dense forests of Satpura Tiger Reserve, one of Central India’s most pristine and lesser-explored wildernesses. Bookings open, limited weekend departures.",
+    "safaris": "3 Gypsy Safaris (4 safarists per gypsy)",
+    "price": {
+      "amount": 26000,
+      "currency": "INR",
+      "display": "INR 26,000/- + 5% GST"
+    },
+    "itineraryId": "satpura-weekend",
+    "pickupPoints": [
+      "the nearest railway station or airport"
+    ],
+    "termsId": "standard",
+    "notes": [
+      "Group tour from the nearest railway station or airport can be arranged."
+    ],
+    "departures": [
+      {
+        "start": "2026-12-04",
+        "end": "2026-12-06",
+        "label": "4 December – 6 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-11",
+        "end": "2026-12-13",
+        "label": "11 December – 13 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-18",
+        "end": "2026-12-20",
+        "label": "18 December – 20 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-25",
+        "end": "2026-12-27",
+        "label": "25 December – 27 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-01-03",
+        "label": "1 January – 3 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-08",
+        "end": "2027-01-10",
+        "label": "8 January – 10 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-15",
+        "end": "2027-01-17",
+        "label": "15 January – 17 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-22",
+        "end": "2027-01-24",
+        "label": "22 January – 24 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-29",
+        "end": "2027-01-31",
+        "label": "29 January – 31 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-05",
+        "end": "2027-02-07",
+        "label": "5 February – 7 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-12",
+        "end": "2027-02-14",
+        "label": "12 February – 14 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-19",
+        "end": "2027-02-21",
+        "label": "19 February – 21 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-26",
+        "end": "2027-02-28",
+        "label": "26 February – 28 February 2027",
+        "duration": "2N/3D"
       }
     ]
   },
@@ -512,6 +1019,107 @@ export const packages: SafariPackage[] = [
     ]
   },
   {
+    "id": "tadoba-weekend-getaways",
+    "destinationSlug": "tadoba-andhari-tiger-reserve",
+    "title": "Tadoba Weekend Wildlife Getaways",
+    "season": "December 2026 – February 2027",
+    "intro": "Head into the open forests and lakeside landscapes of Tadoba Andhari Tiger Reserve, one of India’s finest tiger habitats, on curated weekend safaris. Bookings open, limited weekend departures.",
+    "safaris": "3 Gypsy Safaris (4 safarists per gypsy)",
+    "price": {
+      "amount": 23000,
+      "currency": "INR",
+      "display": "INR 23,000/- + 5% GST"
+    },
+    "itineraryId": "tadoba-weekend",
+    "pickupPoints": [
+      "the nearest railway station or airport"
+    ],
+    "termsId": "standard",
+    "notes": [
+      "Group tour from the nearest railway station or airport can be arranged."
+    ],
+    "departures": [
+      {
+        "start": "2026-12-04",
+        "end": "2026-12-06",
+        "label": "4 December – 6 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-11",
+        "end": "2026-12-13",
+        "label": "11 December – 13 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-18",
+        "end": "2026-12-20",
+        "label": "18 December – 20 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-25",
+        "end": "2026-12-27",
+        "label": "25 December – 27 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-01-03",
+        "label": "1 January – 3 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-08",
+        "end": "2027-01-10",
+        "label": "8 January – 10 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-15",
+        "end": "2027-01-17",
+        "label": "15 January – 17 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-22",
+        "end": "2027-01-24",
+        "label": "22 January – 24 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-29",
+        "end": "2027-01-31",
+        "label": "29 January – 31 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-05",
+        "end": "2027-02-07",
+        "label": "5 February – 7 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-12",
+        "end": "2027-02-14",
+        "label": "12 February – 14 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-19",
+        "end": "2027-02-21",
+        "label": "19 February – 21 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-26",
+        "end": "2027-02-28",
+        "label": "26 February – 28 February 2027",
+        "duration": "2N/3D"
+      }
+    ]
+  },
+  {
     "id": "tadoba-andhari-tiger-reserve",
     "destinationSlug": "tadoba-andhari-tiger-reserve",
     "safaris": "4 Safaris (6 safarists per gypsy)",
@@ -592,6 +1200,104 @@ export const packages: SafariPackage[] = [
     ]
   },
   {
+    "id": "dudhwa-weekend-getaways",
+    "destinationSlug": "dudhwa-national-park",
+    "title": "Dudhwa Weekend Wildlife Getaway",
+    "season": "December 2026 – February 2027",
+    "intro": "Explore the wilderness of Dudhwa with Curated Canopy Safaris. Advance booking recommended; safari permits are subject to availability.",
+    "safaris": "3 Gypsy Safaris (4 safarists per gypsy)",
+    "price": {
+      "amount": 20000,
+      "currency": "INR",
+      "display": "INR 20,000/- + 5% GST"
+    },
+    "itineraryId": "dudhwa-weekend",
+    "termsId": "extended",
+    "notes": [
+      "Advance booking recommended. Safari permits are subject to availability."
+    ],
+    "departures": [
+      {
+        "start": "2026-12-04",
+        "end": "2026-12-06",
+        "label": "4 December – 6 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-11",
+        "end": "2026-12-13",
+        "label": "11 December – 13 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-18",
+        "end": "2026-12-20",
+        "label": "18 December – 20 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-25",
+        "end": "2026-12-27",
+        "label": "25 December – 27 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-01-03",
+        "label": "1 January – 3 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-08",
+        "end": "2027-01-10",
+        "label": "8 January – 10 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-15",
+        "end": "2027-01-17",
+        "label": "15 January – 17 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-22",
+        "end": "2027-01-24",
+        "label": "22 January – 24 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-29",
+        "end": "2027-01-31",
+        "label": "29 January – 31 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-05",
+        "end": "2027-02-07",
+        "label": "5 February – 7 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-12",
+        "end": "2027-02-14",
+        "label": "12 February – 14 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-19",
+        "end": "2027-02-21",
+        "label": "19 February – 21 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-26",
+        "end": "2027-02-28",
+        "label": "26 February – 28 February 2027",
+        "duration": "2N/3D"
+      }
+    ]
+  },
+  {
     "id": "dudhwa-national-park",
     "destinationSlug": "dudhwa-national-park",
     "safaris": "5 Safaris (4 safarists per gypsy)",
@@ -641,6 +1347,107 @@ export const packages: SafariPackage[] = [
         "label": "24 April – 27 April 2026",
         "duration": "3N/4D",
         "bookingUrl": "https://forms.easebuzz.in/register/PUGMARKmljwM/DudhwaNationalPark9"
+      }
+    ]
+  },
+  {
+    "id": "pilibhit-weekend-getaways",
+    "destinationSlug": "pilibhit-tiger-reserve",
+    "title": "Pilibhit Weekend Wildlife Getaway",
+    "season": "December 2026 – February 2027",
+    "intro": "Experience the wild landscapes of Pilibhit Tiger Reserve, a beautiful wilderness known for its rich Terai ecosystem, Bengal tigers, leopards, swamp deer and vibrant birdlife. Discover the wilderness of Pilibhit with Curated Canopy Safaris.",
+    "safaris": "3 Gypsy Safaris (4 safarists per gypsy)",
+    "price": {
+      "amount": 20000,
+      "currency": "INR",
+      "display": "INR 20,000/- + 5% GST"
+    },
+    "itineraryId": "pilibhit-weekend",
+    "pickupPoints": [
+      "the nearest railway station or airport"
+    ],
+    "termsId": "extended",
+    "notes": [
+      "Group tour from the nearest railway station or airport can be arranged."
+    ],
+    "departures": [
+      {
+        "start": "2026-12-04",
+        "end": "2026-12-06",
+        "label": "4 December – 6 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-11",
+        "end": "2026-12-13",
+        "label": "11 December – 13 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-18",
+        "end": "2026-12-20",
+        "label": "18 December – 20 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-25",
+        "end": "2026-12-27",
+        "label": "25 December – 27 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-01-03",
+        "label": "1 January – 3 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-08",
+        "end": "2027-01-10",
+        "label": "8 January – 10 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-15",
+        "end": "2027-01-17",
+        "label": "15 January – 17 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-22",
+        "end": "2027-01-24",
+        "label": "22 January – 24 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-29",
+        "end": "2027-01-31",
+        "label": "29 January – 31 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-05",
+        "end": "2027-02-07",
+        "label": "5 February – 7 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-12",
+        "end": "2027-02-14",
+        "label": "12 February – 14 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-19",
+        "end": "2027-02-21",
+        "label": "19 February – 21 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-26",
+        "end": "2027-02-28",
+        "label": "26 February – 28 February 2027",
+        "duration": "2N/3D"
       }
     ]
   },
@@ -968,6 +1775,108 @@ export const packages: SafariPackage[] = [
     ]
   },
   {
+    "id": "kaziranga-weekend-getaways",
+    "destinationSlug": "kaziranga-national-park",
+    "title": "Kaziranga Weekend Wildlife Getaway",
+    "season": "December 2026 – February 2027",
+    "intro": "Journey into the remarkable wilderness of Kaziranga National Park, a UNESCO World Heritage Site renowned for the great one-horned rhinoceros, wild elephants, wild water buffaloes and exceptional birdlife. Experience the extraordinary biodiversity of Kaziranga with Curated Canopy Safaris.",
+    "safaris": "3 Gypsy Safaris (4 safarists per gypsy)",
+    "price": {
+      "amount": 20000,
+      "currency": "INR",
+      "display": "INR 20,000/- + 5% GST"
+    },
+    "itineraryId": "kaziranga-weekend",
+    "pickupPoints": [
+      "the nearest railway station or airport"
+    ],
+    "termsId": "extended",
+    "notes": [
+      "Group tour from the nearest railway station or airport can be arranged.",
+      "Advance booking recommended. Safari permits are subject to availability."
+    ],
+    "departures": [
+      {
+        "start": "2026-12-04",
+        "end": "2026-12-06",
+        "label": "4 December – 6 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-11",
+        "end": "2026-12-13",
+        "label": "11 December – 13 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-18",
+        "end": "2026-12-20",
+        "label": "18 December – 20 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-25",
+        "end": "2026-12-27",
+        "label": "25 December – 27 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-01-03",
+        "label": "1 January – 3 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-08",
+        "end": "2027-01-10",
+        "label": "8 January – 10 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-15",
+        "end": "2027-01-17",
+        "label": "15 January – 17 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-22",
+        "end": "2027-01-24",
+        "label": "22 January – 24 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-29",
+        "end": "2027-01-31",
+        "label": "29 January – 31 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-05",
+        "end": "2027-02-07",
+        "label": "5 February – 7 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-12",
+        "end": "2027-02-14",
+        "label": "12 February – 14 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-19",
+        "end": "2027-02-21",
+        "label": "19 February – 21 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-26",
+        "end": "2027-02-28",
+        "label": "26 February – 28 February 2027",
+        "duration": "2N/3D"
+      }
+    ]
+  },
+  {
     "id": "kaziranga-national-park",
     "destinationSlug": "kaziranga-national-park",
     "safaris": "5 Safaris (4 safarists per gypsy)",
@@ -1016,6 +1925,107 @@ export const packages: SafariPackage[] = [
         "label": "24 April – 27 April 2026",
         "duration": "3N/4D",
         "bookingUrl": "https://forms.easebuzz.in/register/PUGMARKmljwM/KazirangaNationalPark5"
+      }
+    ]
+  },
+  {
+    "id": "ranthambore-canter-getaways",
+    "destinationSlug": "ranthambore-national-park",
+    "title": "Ranthambore Canter Safari Getaways",
+    "season": "December 2026 – February 2027",
+    "intro": "Explore Ranthambore’s historic landscapes, ancient fort and lakes on curated weekend Canter safaris in one of India’s most celebrated tiger reserves. Bookings open, limited weekend departures.",
+    "safaris": "3 Canter Safaris",
+    "price": {
+      "amount": 19500,
+      "currency": "INR",
+      "display": "INR 19,500/- + 5% GST"
+    },
+    "itineraryId": "ranthambore-weekend",
+    "pickupPoints": [
+      "Sawai Madhopur Railway Station"
+    ],
+    "termsId": "standard",
+    "notes": [
+      "These tours are Sawai Madhopur Railway Station to Sawai Madhopur Railway Station."
+    ],
+    "departures": [
+      {
+        "start": "2026-12-04",
+        "end": "2026-12-06",
+        "label": "4 December – 6 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-11",
+        "end": "2026-12-13",
+        "label": "11 December – 13 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-18",
+        "end": "2026-12-20",
+        "label": "18 December – 20 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-25",
+        "end": "2026-12-27",
+        "label": "25 December – 27 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-01-03",
+        "label": "1 January – 3 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-08",
+        "end": "2027-01-10",
+        "label": "8 January – 10 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-15",
+        "end": "2027-01-17",
+        "label": "15 January – 17 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-22",
+        "end": "2027-01-24",
+        "label": "22 January – 24 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-29",
+        "end": "2027-01-31",
+        "label": "29 January – 31 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-05",
+        "end": "2027-02-07",
+        "label": "5 February – 7 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-12",
+        "end": "2027-02-14",
+        "label": "12 February – 14 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-19",
+        "end": "2027-02-21",
+        "label": "19 February – 21 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-26",
+        "end": "2027-02-28",
+        "label": "26 February – 28 February 2027",
+        "duration": "2N/3D"
       }
     ]
   },
@@ -1130,6 +2140,107 @@ export const packages: SafariPackage[] = [
         "label": "26 June – 29 June 2026",
         "duration": "3N/4D",
         "bookingUrl": "https://forms.easebuzz.in/register/PUGMARKmljwM/RanthamboreNationalPark14"
+      }
+    ]
+  },
+  {
+    "id": "gir-weekend-getaways",
+    "destinationSlug": "gir-national-park",
+    "title": "Gir Weekend Getaways",
+    "season": "December 2026 – February 2027",
+    "intro": "Journey to Gir National Park, the last home of the Asiatic lion, and explore its dry deciduous forests and open scrublands on curated weekend safaris. Bookings open, limited weekend departures.",
+    "safaris": "3 Gypsy Safaris (4 safarists per gypsy)",
+    "price": {
+      "amount": 23000,
+      "currency": "INR",
+      "display": "INR 23,000/- + 5% GST"
+    },
+    "itineraryId": "gir-weekend",
+    "pickupPoints": [
+      "the nearest railway station or airport"
+    ],
+    "termsId": "standard",
+    "notes": [
+      "Group tour from the nearest railway station or airport can be arranged."
+    ],
+    "departures": [
+      {
+        "start": "2026-12-04",
+        "end": "2026-12-06",
+        "label": "4 December – 6 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-11",
+        "end": "2026-12-13",
+        "label": "11 December – 13 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-18",
+        "end": "2026-12-20",
+        "label": "18 December – 20 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2026-12-25",
+        "end": "2026-12-27",
+        "label": "25 December – 27 December 2026",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-01-03",
+        "label": "1 January – 3 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-08",
+        "end": "2027-01-10",
+        "label": "8 January – 10 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-15",
+        "end": "2027-01-17",
+        "label": "15 January – 17 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-22",
+        "end": "2027-01-24",
+        "label": "22 January – 24 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-01-29",
+        "end": "2027-01-31",
+        "label": "29 January – 31 January 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-05",
+        "end": "2027-02-07",
+        "label": "5 February – 7 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-12",
+        "end": "2027-02-14",
+        "label": "12 February – 14 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-19",
+        "end": "2027-02-21",
+        "label": "19 February – 21 February 2027",
+        "duration": "2N/3D"
+      },
+      {
+        "start": "2027-02-26",
+        "end": "2027-02-28",
+        "label": "26 February – 28 February 2027",
+        "duration": "2N/3D"
       }
     ]
   },

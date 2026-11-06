@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { getDestinationName } from "@/lib/data/destinations";
 import { testimonials } from "@/lib/data/testimonials";
 import type { Testimonial } from "@/lib/data/types";
+import { initials } from "@/lib/utils";
 import { TestimonialPager } from "./testimonial-pager";
 
 function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
@@ -30,14 +31,18 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         ) : null}
       </blockquote>
       <figcaption className="mt-6 flex items-center gap-4 border-t border-sand-200 pt-5">
-        {isImageKey(testimonial.imageKey) ? (
+        {testimonial.imageKey && isImageKey(testimonial.imageKey) ? (
           <SafariImage
             imageKey={testimonial.imageKey}
             alt={testimonial.author}
             sizes="56px"
             className="size-14 shrink-0 rounded-full object-cover object-top"
           />
-        ) : null}
+        ) : (
+          <span aria-hidden className="grid size-14 shrink-0 place-items-center rounded-full bg-forest-800 font-display text-xl text-sand-100">
+            {initials(testimonial.author)}
+          </span>
+        )}
         <div>
           <p className="font-semibold text-forest-900">{testimonial.author}</p>
           <p className="text-sm text-ink-500">

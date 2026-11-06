@@ -8,7 +8,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { Container } from "@/components/ui/container";
 import { JsonLd } from "@/components/ui/json-ld";
 import { SafariImage, isImageKey } from "@/components/ui/safari-image";
-import { getPackagesForDestination } from "@/lib/data/departures";
+import { getActivePackages } from "@/lib/data/departures";
 import { destinations, getDestination } from "@/lib/data/destinations";
 import type { ImageKey } from "@/lib/data/images";
 import { breadcrumbJsonLd, pageJsonLd } from "@/lib/seo/json-ld";
@@ -44,7 +44,7 @@ export default async function DestinationSchedulePage({ params }: Props) {
   if (!destination) notFound();
 
   const today = todayInIndia();
-  const packages = getPackagesForDestination(destination.slug);
+  const packages = getActivePackages(destination.slug, today);
   const imageKey = (destination.imageKeys.find(isImageKey) as ImageKey | undefined) ?? "pageHeader";
   const parkPath = `/destinations/${destination.slug}`;
   // Link text names the park itself ("Dudhwa National Park", not "... & Kishanpur Wildlife Sanctuary").
