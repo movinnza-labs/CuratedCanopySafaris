@@ -294,7 +294,7 @@ export default async function DestinationPage({ params }: Props) {
       {destination.zones ? (
         <section id="zones" aria-labelledby="zones-title" className="py-20 sm:py-24">
           <Container>
-            <SectionHeading id="zones-title" eyebrow="Where you’ll explore" title={destination.zones.heading} intro={destination.zones.intro} />
+            <SectionHeading id="zones-title" eyebrow="Where you’ll explore" title={destination.zones.heading} intro={destination.zones.intro ? <RichText text={destination.zones.intro} /> : undefined} />
             <div className="mt-10">
               <ZoneList items={destination.zones.items} />
             </div>

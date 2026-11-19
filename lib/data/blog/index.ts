@@ -2,6 +2,7 @@ import type { BlogPost } from "../types";
 import { bestTimeMonthByMonth } from "./best-time-to-visit-india-for-tiger-safari-month-by-month-guide";
 import { bestTimeSeasonBySeason } from "./best-time-for-tiger-safari-in-india-season-by-season-guide";
 import { bestTimeToVisitDudhwa } from "./best-time-to-visit-dudhwa-national-park";
+import { jimCorbettSafariZones } from "./jim-corbett-safari-zones";
 import { howToBookPannaSafariOnline } from "./how-to-book-panna-safari-online";
 import { kanhaSafariOpen2026 } from "./kanha-national-park-safari-open-2026";
 import { satpuraSafariBookingGuide2026 } from "./satpura-safari-booking-guide-2026";
@@ -9,6 +10,7 @@ import { tadobaSafariBookingGuide } from "./tadoba-safari-booking-guide";
 
 /** Newest first. */
 export const blogPosts: BlogPost[] = [
+  jimCorbettSafariZones,
   tadobaSafariBookingGuide,
   bestTimeToVisitDudhwa,
   kanhaSafariOpen2026,

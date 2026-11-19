@@ -58,7 +58,7 @@ export const jimCorbett: Destination = {
   zones: {
     heading: "Safari Zones in Jim Corbett National Park",
     intro:
-      "Corbett has multiple safari zones, each offering a different terrain and experience. Dhikala is visited by Canter only, while Bijrani, Jhirna and the other day zones are explored by Jeep (Gypsy).",
+      "Corbett has multiple safari zones, each offering a different terrain and experience. Dhikala is visited by Canter only, while Bijrani, Jhirna and the other day zones are explored by Jeep (Gypsy). Read our [Dhikala vs Bijrani vs Jhirna comparison](/blogs/jim-corbett-safari-zones).",
     items: [
       {
         name: "Dhikala Zone",

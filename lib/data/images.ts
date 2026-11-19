@@ -351,6 +351,12 @@ export const images = {
     "width": 1600,
     "height": 922
   },
+  "blogCorbettZones": {
+    "src": "/images/blog/jim-corbett-safari-zones.jpg",
+    "alt": "Open grassland in the Dhikala zone of Jim Corbett National Park beside the Ramganga River",
+    "width": 1600,
+    "height": 918
+  },
   "blogBestTimeSeason": {
     "src": "/images/blog/best-time-for-tiger-safari-in-india.jpg",
     "alt": "Illustration: Best Time for Tiger Safari in India",
